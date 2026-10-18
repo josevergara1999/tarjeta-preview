@@ -9,6 +9,9 @@
 <meta name="apple-mobile-web-app-title" content="Giro">
 <meta name="theme-color" content="#F4F1EA">
 <title>Giro · Valle Las Trancas</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
 <style>html,body{height:100%;overflow:hidden;overscroll-behavior:none;-webkit-tap-highlight-color:transparent}</style>
 <script src="./support.js"></script>
 </head>
@@ -1105,7 +1108,7 @@ class Component extends DCLogic {
       isCarousel: true,
       carStyle: view === 'list' && !s.morph
         ? { position: 'relative', height: ri * 112 + 24, userSelect: 'none' }
-        : { position: 'relative', flex: 1, minHeight: 680, perspective: 1300, touchAction: 'none', overflow: 'hidden', userSelect: 'none' }, viewBtn: view === 'carousel' ? 'Ver lista' : 'Ver ruleta',
+        : { position: 'relative', flex: 1, minHeight: 600, perspective: 1300, touchAction: 'none', overflow: 'hidden', userSelect: 'none' }, viewBtn: view === 'carousel' ? 'Ver lista' : 'Ver ruleta',
       toggleView: () => this.toggleView(),
       filtRows: view === 'list' && !s.morph ? '1fr' : '0fr',
       filtChips: this.filtros.map(x => { const on = x.id === filt.id; return { label: x.label, bg: on ? '#1C1D1B' : 'transparent', fg: on ? '#F4F1EA' : '#1C1D1B', bd: on ? '#1C1D1B' : 'rgba(28,29,27,.2)', go: () => this.setState({ filtro: x.id }) }; }),
@@ -1227,6 +1230,26 @@ class Component extends DCLogic {
   }
   codeFor(c, franja) { let s = 0; for (const ch of c.id + (franja || '')) s = (s * 33 + ch.charCodeAt(0)) >>> 0; const f = this.franjas.find(x => x.id === franja); return 'G' + (1000 + s % 9000) + '-' + (f ? f.name[0] : 'T'); }
 }
+</script>
+<script>
+// Ajuste para pantallas más bajas que el iPhone del diseño (Android con barra del navegador):
+// si la ruleta no cabe, se escala completa para que el lector quede siempre a la vista.
+(function () {
+  var last = null;
+  function fit() {
+    var el = document.querySelector('[data-screen-label="Ruleta"]');
+    if (!el) return;
+    el.style.zoom = ''; el.style.height = '';
+    var ih = window.innerHeight, need = el.scrollHeight, z = Math.min(1, ih / need);
+    if (z < 0.999) { el.style.zoom = z; el.style.height = (ih / z) + 'px'; }
+  }
+  new MutationObserver(function () {
+    var el = document.querySelector('[data-screen-label="Ruleta"]');
+    if (el !== last) { last = el; if (el) fit(); }
+  }).observe(document.body, { childList: true, subtree: true });
+  addEventListener('resize', function () { fit(); });
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(function () {});
+})();
 </script>
 </body>
 </html>
