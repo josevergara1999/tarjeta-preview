@@ -810,7 +810,7 @@ class Component extends DCLogic {
     if (!this._conf) { const cols = ['#E0A030', '#F4F1EA', '#2F5D4A', '#8FA9A0', '#C9C5B8']; this._conf = Array.from({ length: 48 }, (_, i) => ({ l: Math.random() * 100, d: Math.random() * 1.2, t: 2.6 + Math.random() * 1.6, w: 6 + Math.random() * 6, h: 8 + Math.random() * 8, c: cols[i % cols.length], r: Math.random() * 360, rd: i % 2 ? 1 : -1, round: i % 3 === 0 })); }
     return React.createElement('div', { style: { position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden' } }, this._conf.map((p, i) => React.createElement('div', { key: i, style: { position: 'absolute', left: p.l + '%', top: '-20px', width: p.w + 'px', height: p.h + 'px', background: p.c, borderRadius: p.round ? '50%' : '2px', transform: 'rotate(' + p.r + 'deg)', animation: 'giroConfeti ' + p.t + 's cubic-bezier(.25,.6,.4,1) ' + (p.d + .7) + 's infinite', '--rd': p.rd } })));
   }
-  zf() { const e = document.querySelector('[data-screen-label="Ruleta"]'); return (e && parseFloat(e.style.zoom)) || 1; }
+  zf() { const e = document.querySelector('[data-screen-label="Ruleta"]'); return (e && parseFloat(e.dataset.z)) || 1; }
   measure() { try { const r = this.carRef.current.getBoundingClientRect(), z = this.zf(); if (r.height) { this._H = r.height / z; this._W = r.width / z; } } catch (e) {} }
   toggleView() {
     clearTimeout(this.tm);
@@ -1236,13 +1236,19 @@ class Component extends DCLogic {
 // Ajuste para pantallas más bajas que el iPhone del diseño (Android con barra del navegador):
 // si la ruleta no cabe, se escala completa para que el lector quede siempre a la vista.
 (function () {
-  var last = null;
+  var last = null, down = false, pend = false;
+  // no reescalar mientras el dedo arrastra (en Android la barra de Chrome cambia el alto a mitad del gesto)
+  addEventListener('pointerdown', function () { down = true; }, true);
+  addEventListener('pointerup', function () { down = false; if (pend) { pend = false; setTimeout(fit, 900); } }, true);
+  addEventListener('pointercancel', function () { down = false; }, true);
   function fit() {
     var el = document.querySelector('[data-screen-label="Ruleta"]');
     if (!el) return;
-    el.style.zoom = ''; el.style.height = '';
+    if (down) { pend = true; return; }
+    el.style.scale = ''; el.style.width = ''; el.style.height = ''; el.style.transformOrigin = ''; delete el.dataset.z;
     var ih = window.innerHeight, need = el.scrollHeight, z = Math.min(1, ih / need);
-    if (z < 0.999) { el.style.zoom = z; el.style.height = (ih / z) + 'px'; }
+    // scale en vez de zoom: las medidas y el movimiento del dedo se convierten igual en todos los Chrome
+    if (z < 0.999) { el.dataset.z = z; el.style.transformOrigin = '0 0'; el.style.scale = z; el.style.width = (100 / z) + '%'; el.style.height = (ih / z) + 'px'; }
   }
   new MutationObserver(function () {
     var el = document.querySelector('[data-screen-label="Ruleta"]');
