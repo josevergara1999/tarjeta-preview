@@ -533,7 +533,7 @@
         </div>
         </sc-if>
       </div>
-      <div style="position:absolute;left:0;right:0;bottom:0;height:148px;background:linear-gradient(180deg,#1C1D1B,#111210);display:flex;flex-direction:column;align-items:center;padding-top:34px;box-sizing:border-box;z-index:120;transform:{{ dockTransform }};opacity:{{ dockOp }};pointer-events:{{ dockPE }};transition:transform .5s cubic-bezier(.4,0,.2,1),opacity .35s ease">
+      <div style="position:absolute;left:0;right:0;bottom:0;height:var(--dock-h,104px);background:linear-gradient(180deg,#1C1D1B,#111210);display:flex;flex-direction:column;align-items:center;padding-top:22px;box-sizing:border-box;z-index:120;transform:{{ dockTransform }};opacity:{{ dockOp }};pointer-events:{{ dockPE }};transition:transform .5s cubic-bezier(.4,0,.2,1),opacity .35s ease">
         <div style="{{ shoulderL }}"></div>
         <div style="{{ shoulderR }}"></div>
         <button onClick="{{ openWallet }}" style="position:absolute;right:14px;top:-16px;width:44px;height:44px;border-radius:14px;border:1.5px solid rgba(224,160,48,.55);background:#1C1D1B;color:#E0A030;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,.35);appearance:none;padding:0;z-index:3;animation:{{ walletAnim }}">
@@ -765,7 +765,7 @@ class Component extends DCLogic {
   rutaSegs() { const p = this.ruta, n = p.length, segs = []; for (let i = 0; i < n - 1; i++) { const a = p[Math.max(i - 1, 0)], b = p[i], c = p[i + 1], d = p[Math.min(i + 2, n - 1)]; const c1 = [b[0] + (c[0] - a[0]) / 6, b[1] + (c[1] - a[1]) / 6], c2 = [c[0] - (d[0] - b[0]) / 6, c[1] - (d[1] - b[1]) / 6]; segs.push('C' + c1.map(Math.round).join(' ') + ' ' + c2.map(Math.round).join(' ') + ' ' + c.join(' ')); } return segs; }
   slopeX(y) { const t = (216 - y) / 172; return 165 + 157 * Math.pow(1 - t, 1.6) + 6; }
   wave(y, i) { const a = 3, ph = i % 2 ? 1 : -1; return 'M0 ' + y + ' Q45 ' + (y - a * ph) + ' 90 ' + y + ' T180 ' + y + ' T270 ' + y + ' T362 ' + y; }
-  CARD_W = 250; CARD_H = 380; DOCK_H = 148;
+  CARD_W = 250; CARD_H = 380; DOCK_H = 104;
   pinPress(k) { const s = this.state; if (s.pinErr || s.pinBusy || k === '') return; if (k === '⌫') { this.setState({ pin: s.pin.slice(0, -1) }); return; } if (s.pin.length < 4) this.setState({ pin: s.pin + k }); }
   pinSubmit() {
     const s = this.state; if (s.pinErr || s.pinBusy) return;
