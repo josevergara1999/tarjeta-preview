@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Giro">
+<meta name="theme-color" content="#F4F1EA">
+<title>Giro · Valle Las Trancas</title>
+<style>html,body{height:100%;overflow:hidden;overscroll-behavior:none;-webkit-tap-highlight-color:transparent}</style>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><script src="./image-slot.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet"><style>body{margin:0;background:#E6E2D9;font-family:system-ui,sans-serif}a{color:#1C1D1B}a:hover{color:#2F5D4A}@keyframes giroConfeti{0%{transform:translate3d(0,0,0) rotate(0);opacity:1}80%{opacity:1}100%{transform:translate3d(calc(var(--rd) * 60px),900px,0) rotate(calc(var(--rd) * 720deg));opacity:0}}@keyframes giroArrive{0%{transform:translate(var(--cx,0px),var(--cy,0px)) scale(var(--cs,.4)) rotate(-8deg)}18%{transform:translate(var(--cx,0px),var(--cy,0px)) scale(var(--cs,.4)) rotate(-8deg)}55%{transform:translate(calc(var(--cx,0px) * .3),calc(var(--cy,0px) - 260px)) scale(.9) rotate(6deg)}100%{transform:translate(0,0) scale(1) rotate(-4deg)}}@keyframes giroSquashA{0%{transform:scaleY(1)}35%{transform:scaleY(.95)}65%{transform:scaleY(1.02)}100%{transform:scaleY(1)}}@keyframes giroSquashB{0%{transform:scaleY(1)}35%{transform:scaleY(.95)}65%{transform:scaleY(1.02)}100%{transform:scaleY(1)}}@keyframes giroShiver{0%,100%{transform:translate(0,0) rotate(0)}10%{transform:translate(-1px,-1px) rotate(-3deg)}20%{transform:translate(1px,0) rotate(3deg)}30%{transform:translate(-1px,1px) rotate(-2deg)}40%{transform:translate(1px,-1px) rotate(2deg)}50%{transform:translate(0,0) rotate(0)}}@keyframes giroDrop{0%{transform:translateY(-260px) scale(1.6) rotate(12deg);opacity:0}30%{opacity:1}100%{transform:translateY(0) scale(1) rotate(0)}}@keyframes giroDraw{to{stroke-dashoffset:0}}@keyframes giroFade{to{opacity:1}}@keyframes giroSlotDown{0%{transform:translateY(-14px) scale(1.2)}100%{transform:translateY(0) scale(1)}}@keyframes giroWalletIdle{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes giroShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-10px)}40%{transform:translateX(9px)}60%{transform:translateX(-6px)}80%{transform:translateX(4px)}}@keyframes giroEject{0%{translate:0 0}35%{translate:0 -22px}100%{translate:0 0}}@keyframes giroWallet{0%{transform:scale(1)}25%{transform:scale(1.28) rotate(-6deg)}50%{transform:scale(.94) rotate(4deg)}75%{transform:scale(1.08)}100%{transform:scale(1)}}@keyframes giroStamp{0%{opacity:0;transform:rotate(-8deg) scale(1.8)}60%{opacity:1;transform:rotate(-8deg) scale(.94)}100%{opacity:1;transform:rotate(-8deg) scale(1)}}@keyframes giroScan{0%{left:-40%}100%{left:106%}}@keyframes giroSlotIn{0%{opacity:0;transform:scale(.6) translateY(4px)}100%{opacity:1;transform:scale(1) translateY(0)}}@keyframes giroSpin{0%{rotate:y 0deg}100%{rotate:y 360deg}}@keyframes giroSheen{0%{background-position:200% 0;opacity:0}20%{opacity:1}80%{opacity:1}100%{background-position:-100% 0;opacity:0}}@keyframes giroTour{0%{transform:rotateX(0) rotateY(0) scale(1)}10%{transform:rotateX(-12deg) rotateY(-14deg) scale(1.03)}22%{transform:rotateX(-16deg) rotateY(0) scale(1.03)}34%{transform:rotateX(-12deg) rotateY(14deg) scale(1.03)}46%{transform:rotateX(0) rotateY(18deg) scale(1.03)}58%{transform:rotateX(12deg) rotateY(14deg) scale(1.03)}70%{transform:rotateX(16deg) rotateY(0) scale(1.03)}82%{transform:rotateX(12deg) rotateY(-14deg) scale(1.03)}92%{transform:rotateX(-12deg) rotateY(-14deg) scale(1.03)}100%{transform:rotateX(0) rotateY(0) scale(1)}}@keyframes giroSheenTour{0%{background-position:180% 0;opacity:0}10%{background-position:170% 0;opacity:1}34%{background-position:20% 0}58%{background-position:-10% 0}82%{background-position:150% 0;opacity:1}100%{background-position:180% 0;opacity:0}}@keyframes giroRumble{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.985)}}@keyframes giroBoomSq{0%{transform:scaleY(1)}30%{transform:scaleY(.86)}55%{transform:scaleY(1.06)}100%{transform:scaleY(1)}}@keyframes giroHopA{0%{transform:translateY(0)}45%{transform:translateY(-26px) rotate(2deg)}100%{transform:translateY(0)}}@keyframes giroHopB{0%{transform:translateY(0)}45%{transform:translateY(-26px) rotate(2deg)}100%{transform:translateY(0)}}@keyframes giroLaunch{0%{transform:translateY(0) scale(1);opacity:1}70%{opacity:1}100%{transform:translateY(-700px) scale(1.6) rotate(8deg);opacity:0}}@keyframes giroPuff{0%{transform:translateY(0) scale(.4);opacity:.95}100%{transform:translateY(-170px) scale(1.9);opacity:0}}@keyframes giroPuffBig{0%{transform:translateY(0) scale(.3);opacity:1}100%{transform:translateY(-260px) scale(2.4);opacity:0}}@keyframes giroEmberA{0%{transform:translate(0,0);opacity:1}100%{transform:translate(-90px,-240px);opacity:0}}@keyframes giroEmberB{0%{transform:translate(0,0);opacity:1}100%{transform:translate(70px,-260px);opacity:0}}@keyframes giroEmberC{0%{transform:translate(0,0);opacity:1}100%{transform:translate(-30px,-300px);opacity:0}}@keyframes giroEmberD{0%{transform:translate(0,0);opacity:1}100%{transform:translate(120px,-200px);opacity:0}}@keyframes giroEmberE{0%{transform:translate(0,0);opacity:1}100%{transform:translate(30px,-280px);opacity:0}}@keyframes giroBlast{0%{transform:scale(.2);opacity:1}100%{transform:scale(7);opacity:0}}@keyframes giroRing{0%{transform:scale(.3);opacity:1}100%{transform:scale(9);opacity:0}}@keyframes giroEmberF{0%{transform:translate(0,0);opacity:1}100%{transform:translate(-180px,-180px);opacity:0}}@keyframes giroEmberG{0%{transform:translate(0,0);opacity:1}100%{transform:translate(190px,-160px);opacity:0}}@keyframes giroSputD{0%{transform:translate(0,0);opacity:1}100%{transform:translate(-70px,-90px);opacity:0}}@keyframes giroSputE{0%{transform:translate(0,0);opacity:1}100%{transform:translate(64px,-95px);opacity:0}}@keyframes giroSputF{0%{transform:translate(0,0);opacity:1}100%{transform:translate(18px,-160px);opacity:0}}@keyframes giroRockA{0%{transform:translate(0,0) rotate(0)}60%{opacity:1}100%{transform:translate(-55px,30px) rotate(300deg);opacity:0}}@keyframes giroRockB{0%{transform:translate(0,0) rotate(0)}60%{opacity:1}100%{transform:translate(60px,26px) rotate(-280deg);opacity:0}}@keyframes giroRockC{0%{transform:translate(0,0) rotate(0)}60%{opacity:1}100%{transform:translate(-20px,-10px) rotate(200deg);opacity:0}}@keyframes giroSputA{0%{transform:translate(0,0);opacity:1}100%{transform:translate(-40px,-110px);opacity:0}}@keyframes giroSputB{0%{transform:translate(0,0);opacity:1}100%{transform:translate(36px,-120px);opacity:0}}@keyframes giroSputC{0%{transform:translate(0,0);opacity:1}100%{transform:translate(-8px,-140px);opacity:0}}@keyframes giroMarch{to{stroke-dashoffset:-20}}@keyframes giroIn{from{transform:translateY(24px);opacity:0}to{transform:none;opacity:1}}@keyframes giroChev{0%,100%{transform:rotate(-45deg) translate(0,0);opacity:.4}50%{transform:rotate(-45deg) translate(-4px,-4px);opacity:1}}@keyframes giroPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}</style></helmet>
+<div style="position:fixed;inset:0;background:#F4F1EA">
+  <div style="position:relative;height:100%;overflow:hidden;background:#F4F1EA;font-family:'IBM Plex Sans',sans-serif;color:#1C1D1B">
+
+  <sc-if value="{{ celebra }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="Cumbre" onClick="{{ closeCelebra }}" style="position:absolute;inset:0;z-index:30;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:40px 28px;box-sizing:border-box;text-align:center;overflow:hidden;cursor:pointer">
+    <div style="position:absolute;inset:0;background:rgba(28,29,27,.8);backdrop-filter:blur(2px);animation:giroIn .6s ease .9s both"></div>
+    {{ confeti }}
+    <div data-layer="tarjeta-grande" onPointerMove="{{ tiltMove }}" onPointerLeave="{{ tiltEnd }}" onClick="{{ stopProp }}" style="position:relative;width:250px;aspect-ratio:1.586;animation:giroArrive 1.6s cubic-bezier(.22,1,.36,1) both;transform-origin:50% 50%;color:#F4F1EA;perspective:700px;touch-action:none;cursor:default">
+      <div style="position:relative;width:100%;height:100%;border-radius:18px;background:#1C1D1B url(assets/tarjeta-topo-2.png) center/cover no-repeat;border:1px solid rgba(244,241,234,.18);box-shadow:0 30px 60px -20px rgba(0,0,0,.8),0 0 0 8px rgba(224,160,48,.15);padding:18px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transform:{{ tiltTf }};transition:{{ tiltTr }};transform-style:preserve-3d;animation:{{ spinAnim }}">
+        <div style="position:absolute;inset:0;background:linear-gradient(115deg, rgba(244,241,234,0) 30%, rgba(244,241,234,.35) 50%, rgba(244,241,234,0) 70%);background-size:300% 100%;pointer-events:none;animation:{{ sheenAnim }}"></div>
+        <div style="position:absolute;inset:-40%;background:radial-gradient(circle at {{ sheenX }} {{ sheenY }}, rgba(244,241,234,.28), rgba(244,241,234,.06) 28%, rgba(244,241,234,0) 55%);pointer-events:none;transition:{{ tiltTr }}"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(28,29,27,.35) 0%, rgba(28,29,27,0) 30%, rgba(28,29,27,0) 55%, rgba(28,29,27,.6) 100%)"></div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;position:relative"><div style="font:700 15px/1 'Sora',sans-serif;letter-spacing:-.02em;text-shadow:0 1px 6px rgba(0,0,0,.5)">giro</div><svg width="24" height="24" viewBox="0 0 28 28" style="display:block;flex:none;overflow:visible"><sc-if value="{{ isManana }}" hint-placeholder-val="{{ false }}"><path d="M14 10 L25 26 H3 Z" fill="none" stroke="#E0A030" stroke-width="2.2" stroke-linejoin="round"></path><path d="M10.2 10 A3.8 3.8 0 0 1 17.8 10" fill="#E0A030"></path><g stroke="#E0A030" stroke-width="2.2" stroke-linecap="round"><path d="M14 1.5 V3.5"></path><path d="M8 4 L9.4 5.4 M20 4 L18.6 5.4"></path><path d="M5 10 H7.5 M20.5 10 H23"></path></g></sc-if><sc-if value="{{ isTarde }}" hint-placeholder-val="{{ true }}"><circle cx="19" cy="6.5" r="3.4" fill="#E0A030"></circle><g stroke="#E0A030" stroke-width="2.2" stroke-linecap="round"><path d="M19 0 V1.3 M25.5 6.5 H24.2 M23.6 1.9 L22.7 2.8 M14.4 1.9 L15.3 2.8 M12.5 6.5 H13.8"></path></g><path d="M11 10 L22 26 H0 Z" fill="none" stroke="#E0A030" stroke-width="2.2" stroke-linejoin="round"></path></sc-if><sc-if value="{{ isNoche }}" hint-placeholder-val="{{ false }}"><path d="M21 2.5 A5 5 0 1 0 25.5 9.5 A4 4 0 0 1 21 2.5 Z" fill="#E0A030"></path><circle cx="6" cy="5" r=".9" fill="#E0A030"></circle><circle cx="11" cy="2.5" r=".7" fill="#E0A030"></circle><path d="M11 10 L22 26 H0 Z" fill="none" stroke="#E0A030" stroke-width="2.2" stroke-linejoin="round"></path></sc-if></svg></div>
+        <div style="position:relative;display:flex;flex-direction:column;gap:4px;text-align:left"><div style="font:500 9px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;opacity:.7">TITULAR</div><div style="font:600 15px/1.1 'Sora',sans-serif;letter-spacing:-.01em">Josefa Pérez</div><div style="font:400 11px/1 'IBM Plex Sans',sans-serif;opacity:.7">Tarjeta física · Valle Las Trancas</div></div>
+        <div style="position:absolute;left:0;right:0;bottom:0;height:5px;background:#E0A030"></div>
+      </div>
+    </div>
+    <div style="position:relative;display:flex;flex-direction:column;gap:8px;animation:giroIn .5s ease 1.4s both">
+      <div style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;color:#E0A030">CUMBRE · 10 / 10</div>
+      <div style="font:700 26px/1.1 'Sora',sans-serif;letter-spacing:-.03em;color:#F4F1EA">¡Llegaste a la cumbre!</div>
+      <div style="font:400 13px/1.45 'IBM Plex Sans',sans-serif;color:#F4F1EA;opacity:.75;max-width:280px;text-wrap:pretty">Tu tarjeta física Giro está lista. Retírala en el mesón de cualquier comercio adherido.</div>
+    </div>
+    <div style="position:relative;font:600 13px/1 'Sora',sans-serif;padding:14px 22px;border-radius:999px;background:#F4F1EA;color:#1C1D1B;animation:giroIn .5s ease 1.7s both">Entendido</div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isLogin }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="Acceso" onKeyDown="{{ pinKeyDown }}" tabIndex="0" style="height:100%;display:flex;flex-direction:column;justify-content:center;padding:0 24px;box-sizing:border-box;animation:giroIn .4s ease both;background:#1C1D1B;color:#F4F1EA;position:relative;overflow:hidden;outline:none">
+    <div style="position:absolute;left:50%;top:50%;width:120vh;height:120vw;min-width:1200px;min-height:800px;background:url(assets/tarjeta-topo-2.png) center/cover no-repeat;transform:translate(-50%,-50%) rotate(90deg) scale(1.08);filter:blur(14px) saturate(1.1);pointer-events:none"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(28,29,27,.55), rgba(28,29,27,.3) 50%, rgba(28,29,27,.6));pointer-events:none"></div>
+    <div style="position:relative;display:flex;flex-direction:column;gap:6px;align-items:center;text-align:center;margin-bottom:34px;text-shadow:0 1px 3px rgba(28,29,27,.8)">
+      <div style="font:500 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;color:#E0A030">GIRO · VALLE LAS TRANCAS</div>
+      <div style="font:700 30px/1.05 'Sora',sans-serif;letter-spacing:-.03em">Hola, Josefa</div>
+    </div>
+    <div style="position:relative;display:flex;flex-direction:column;gap:14px;width:100%;max-width:340px;align-self:center">
+      <div style="display:flex;gap:10px;align-items:stretch;animation:{{ pinShake }}">
+        <label style="flex:1;position:relative;display:flex;align-items:center;height:60px;border-radius:16px;border:1px solid {{ pinRing }};background:linear-gradient(180deg, rgba(244,241,234,.16), rgba(244,241,234,.08));backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:inset 0 1px 0 rgba(244,241,234,.28),0 8px 20px -12px rgba(0,0,0,.6);padding:0 18px;box-sizing:border-box;cursor:text;transition:border-color .2s ease">
+          <input value="{{ pin }}" onChange="{{ pinChange }}" onKeyDown="{{ pinEnter }}" inputMode="none" pattern="[0-9]*" maxLength="4" autoComplete="one-time-code" placeholder="Clave de 4 dígitos" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:text">
+          <div style="display:flex;gap:9px;align-items:center;pointer-events:none;flex:1">
+            <sc-if value="{{ pinEmpty }}" hint-placeholder-val="{{ true }}"><div style="font:400 14px/1 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.55)">Clave de 4 dígitos</div></sc-if>
+            <sc-for list="{{ pinDots }}" as="d" hint-placeholder-count="0"><div style="width:11px;height:11px;border-radius:50%;background:{{ d.bg }};transition:background .15s ease"></div></sc-for>
+          </div>
+          <div style="font:500 9px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;color:{{ pinMsgFg }};pointer-events:none;transition:color .2s">{{ pinMsg }}</div>
+        </label>
+        <button onClick="{{ pinBio }}" title="Entrar con huella" style="appearance:none;width:60px;height:60px;flex:none;border-radius:50%;border:1px solid rgba(244,241,234,.3);background:linear-gradient(180deg, rgba(244,241,234,.2), rgba(244,241,234,.1));backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:inset 0 1px 0 rgba(244,241,234,.28),0 8px 20px -12px rgba(0,0,0,.6);color:#F4F1EA;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .1s ease,background .15s ease" style-active="transform:scale(.94);background:rgba(244,241,234,.3)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 5.2A8 8 0 0 1 20 11v1.5"></path><path d="M4.4 8.2A8 8 0 0 0 4 11v2"></path><path d="M7 11a5 5 0 0 1 10 0v2.5a2.5 2.5 0 0 1-5 0V11"></path><path d="M9.5 11v2.5a4.5 4.5 0 0 0 4.5 4.5c.6 0 1.1-.1 1.6-.3"></path><path d="M12 11v9"></path><path d="M12 8a3 3 0 0 0-3 3v1"></path></svg></button>
+      </div>
+      <button onClick="{{ pinSubmit }}" style="appearance:none;border:0;border-radius:999px;background:#E0A030;color:#1C1D1B;font:600 16px/1 'Sora',sans-serif;height:58px;cursor:pointer;box-shadow:0 14px 30px -14px rgba(224,160,48,.7);transition:transform .1s ease,filter .15s ease" style-active="transform:scale(.985);filter:brightness(1.05)">Entrar</button>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:6px;font:600 13px/1 'IBM Plex Sans',sans-serif;text-shadow:0 1px 2px rgba(28,29,27,.8)">
+        <div style="cursor:pointer;color:#F4F1EA">Recupera o crea tu clave</div>
+        <div style="cursor:pointer;color:#F4F1EA;opacity:.85">No soy Josefa</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,84px);grid-auto-rows:58px;justify-content:center;margin-top:22px;width:252px;align-self:center">
+        <sc-for list="{{ pinKeys }}" as="k" hint-placeholder-count="12">
+        <button onClick="{{ k.go }}" style="appearance:none;border:0;background:none;color:#F4F1EA;font:500 26px/1 'Sora',sans-serif;height:58px;cursor:{{ k.cursor }};display:flex;align-items:center;justify-content:center;position:relative;text-shadow:0 1px 3px rgba(28,29,27,.7);transition:background .12s ease;border-radius:12px" style-active="background:rgba(244,241,234,.14)">{{ k.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <div data-screen-label="Inicio" style="height:100%;overflow:auto;scrollbar-width:none;display:block;padding:66px 20px 40px;box-sizing:border-box;animation:giroIn .4s ease both">
+  <div style="display:flex;flex-direction:column;gap:18px">
+    <div style="display:flex;align-items:center;justify-content:space-between">
+      <div style="font:500 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#5A5C57">VALLE LAS TRANCAS</div>
+      <div style="width:30px;height:30px;border-radius:50%;background:#2F5D4A;color:#F4F1EA;font:600 12px/30px 'Sora',sans-serif;text-align:center">JP</div>
+    </div>
+    <div style="font:700 26px/1.1 'Sora',sans-serif;letter-spacing:-.03em">Hola, Josefa</div>
+
+    <div onClick="{{ goRuleta }}" onPointerMove="{{ homeTiltMove }}" onPointerLeave="{{ homeTiltEnd }}" onPointerUp="{{ homeTiltEnd }}" style="position:relative;flex:none;aspect-ratio:1.586;perspective:900px;cursor:pointer;touch-action:pan-y;margin-top:{{ mazoTop }}">
+    <sc-if value="{{ modeMazoOn }}" hint-placeholder-val="{{ false }}">
+    <sc-for list="{{ walletHome }}" as="w" hint-placeholder-count="0">
+    <div key="{{ w.id }}" onClick="{{ w.peek }}" style="position:absolute;left:{{ w.peekL }};right:{{ w.peekL }};top:{{ w.peekT }};height:90px;border-radius:14px 14px 0 0;background:#FFFFFF;border:1.5px solid #E0A030;border-bottom:0;box-sizing:border-box;z-index:0;display:flex;align-items:flex-start;gap:8px;padding:5px 12px;color:#1C1D1B;box-shadow:0 -6px 16px -10px rgba(28,29,27,.5);transition:top .4s cubic-bezier(.22,1,.36,1);cursor:pointer" style-hover="top:{{ w.peekTH }}">
+      <div style="width:20px;height:20px;border-radius:6px;background:{{ w.monoBg }};display:flex;align-items:center;justify-content:center;font:700 9px/1 'Sora',sans-serif;flex:none">{{ w.initial }}</div>
+      <div style="flex:1;min-width:0;font:600 11px/20px 'Sora',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ w.name }}</div>
+      <div style="font:700 11px/20px 'Sora',sans-serif;letter-spacing:.06em;color:#B07A12;font-variant-numeric:tabular-nums">{{ w.code }}</div>
+    </div>
+    </sc-for>
+    </sc-if>
+    <div style="position:absolute;inset:0;border-radius:20px;color:#F4F1EA;padding:20px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 18px 40px -16px rgba(28,29,27,.6);transform-style:preserve-3d;transform:{{ homeTf }};transition:{{ homeTr }};z-index:1">
+      <sc-if value="{{ modeReversoOn }}" hint-placeholder-val="{{ false }}">
+      <div onClick="{{ stop }}" style="position:absolute;inset:0;border-radius:20px;background:#1C1D1B;box-sizing:border-box;transform:rotateY(180deg) translateZ(1px);backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;display:flex;flex-direction:column;gap:6px;padding:12px 14px 14px;cursor:default;color:#F4F1EA">
+        <div style="position:absolute;inset:-6%;background:url(assets/tarjeta-topo-2.png) 62% 30%/112% auto no-repeat;transform:scaleX(-1);pointer-events:none"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(28,29,27,.5) 0%, rgba(28,29,27,.2) 40%, rgba(28,29,27,.6) 100%);pointer-events:none"></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;position:relative;text-shadow:0 1px 2px rgba(28,29,27,.8)"><div style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;color:#E0A030">CARTERA · {{ walletHomeLabelUp }}</div><button onClick="{{ wCardBack }}" style="appearance:none;border:1px solid rgba(244,241,234,.35);border-radius:999px;background:rgba(28,29,27,.4);color:#F4F1EA;font:600 10px/1 'Sora',sans-serif;padding:5px 10px;cursor:pointer;text-shadow:none">Volver</button></div>
+        <div style="flex:1;min-height:0;display:flex;flex-direction:column;gap:6px;position:relative">
+          <sc-for list="{{ walletBack }}" as="w" key="key" hint-placeholder-count="3">
+          <div key="{{ w.key }}" onClick="{{ w.sel }}" style="flex:{{ w.rowFlex }};min-height:0;height:{{ w.rowH }};border-radius:12px;background:{{ w.rowBg }};border:1px solid {{ w.rowRing }};color:#F4F1EA;overflow:hidden;position:relative;cursor:pointer;backdrop-filter:blur(6px);opacity:{{ w.rowOp }};margin-top:{{ w.rowMt }};transition:flex .45s cubic-bezier(.4,0,.2,1),height .45s cubic-bezier(.4,0,.2,1),opacity .6s ease,margin-top .45s cubic-bezier(.4,0,.2,1),background .5s ease,border-color .5s ease">
+            <div style="position:absolute;left:0;right:0;top:0;height:30px;display:flex;align-items:center;gap:8px;padding:0 10px">
+              <div style="width:18px;height:18px;border-radius:5px;background:{{ w.monoBg }};display:flex;align-items:center;justify-content:center;font:700 8px/1 'Sora',sans-serif;flex:none">{{ w.initial }}</div>
+              <div style="flex:1;min-width:0;position:relative;display:flex"><div style="position:relative;max-width:100%;font:600 11px/1 'Sora',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#F4F1EA;transition:color .5s ease">{{ w.name }}<div style="position:absolute;left:-2px;right:-2px;top:50%;height:1.5px;margin-top:-1px;background:#E0A030;transform:scaleX({{ w.strike }});transform-origin:left center;transition:transform .55s cubic-bezier(.4,0,.2,1) .25s"></div></div></div>
+              <div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;color:{{ w.fnameFg }};flex:none;transition:color .5s ease .3s">{{ w.fnameUp }}</div>
+              <sc-if value="{{ w.rowIdle }}" hint-placeholder-val="{{ true }}"><div style="position:relative;font:700 10px/1 'Sora',sans-serif;letter-spacing:.05em;color:#E0A030;font-variant-numeric:tabular-nums;flex:none;opacity:{{ w.codeOp }};transition:opacity .5s ease .3s">{{ w.code }}<div style="position:absolute;left:-2px;right:-2px;top:50%;height:1.5px;margin-top:-1px;background:#E0A030;transform:scaleX({{ w.strike }});transform-origin:left center;transition:transform .55s cubic-bezier(.4,0,.2,1) .45s"></div></div></sc-if>
+              <sc-if value="{{ w.rowSel }}" hint-placeholder-val="{{ false }}"><button onClick="{{ w.unsel }}" style="appearance:none;border:1px solid rgba(244,241,234,.35);border-radius:999px;background:none;color:#F4F1EA;width:22px;height:22px;flex:none;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0"><svg width="9" height="9" viewBox="0 0 10 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M2 2l6 6M8 2l-6 6"></path></svg></button></sc-if>
+            </div>
+            <sc-if value="{{ w.scanning }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:12px;z-index:3"><div style="position:absolute;top:0;bottom:0;width:34%;left:-40%;background:linear-gradient(90deg,rgba(255,228,170,0),rgba(255,228,170,.55) 50%,rgba(255,228,170,0));animation:giroScan 1.1s ease-in-out infinite"></div></div></sc-if>
+            <div style="position:absolute;left:0;right:0;top:30px;bottom:0;display:flex;flex-direction:column;gap:8px;padding:0 10px 10px;opacity:{{ w.rowBodyOp }};transition:opacity .3s ease .15s;pointer-events:{{ w.rowBodyPE }}">
+            <div style="flex:1;min-height:0;display:flex;align-items:center;gap:12px">
+              <div onClick="{{ w.zoom }}" style="width:84px;height:84px;flex:none;background:#FFFFFF;border-radius:10px;padding:5px;box-sizing:border-box;box-shadow:0 0 0 1.5px rgba(224,160,48,.6);cursor:zoom-in;transition:transform .15s ease" style-hover="transform:scale(1.04)"><svg viewBox="0 0 25 25" width="74" height="74" shape-rendering="crispEdges" style="display:block"><sc-for list="{{ w.qr }}" as="q" hint-placeholder-count="0"><rect x="{{ q.x }}" y="{{ q.y }}" width="1" height="1" fill="#1C1D1B"></rect></sc-for></svg></div>
+              <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:6px">
+                <div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;color:rgba(244,241,234,.6)">CÓDIGO DE CANJE</div>
+                <div style="font:700 22px/1 'Sora',sans-serif;letter-spacing:.14em;color:#E0A030;font-variant-numeric:tabular-nums;white-space:nowrap">{{ w.code }}</div>
+                <div style="font:600 12px/1.2 'Sora',sans-serif;letter-spacing:-.01em;text-wrap:pretty;color:#F4F1EA">{{ w.benefit }}</div>
+                <div style="font:400 10px/1.3 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.65)">Muéstralo en caja · giro de la {{ w.fname }}</div>
+              </div>
+            </div>
+            </div>
+          </div>
+          </sc-for>
+          <sc-for list="{{ walletPend }}" as="p" hint-placeholder-count="0">
+          <div key="{{ p.id }}" onClick="{{ p.go }}" style="flex:0 0 30px;height:{{ pendRowH }};min-height:0;opacity:{{ pendRowOp }};margin-top:{{ pendRowMt }};border-radius:12px;border:1px dashed rgba(224,160,48,.55);background:rgba(28,29,27,.55);backdrop-filter:blur(6px);color:#F4F1EA;display:flex;align-items:center;gap:8px;padding:0 10px;box-sizing:border-box;overflow:hidden;cursor:pointer;transition:height .45s cubic-bezier(.4,0,.2,1),opacity .3s ease,margin-top .45s cubic-bezier(.4,0,.2,1)" style-hover="background:rgba(224,160,48,.14)">
+            <div style="width:18px;height:18px;border-radius:5px;border:1.5px solid #E0A030;display:flex;align-items:center;justify-content:center;flex:none"><svg width="9" height="9" viewBox="0 0 10 10" stroke="#E0A030" stroke-width="1.8" stroke-linecap="round"><path d="M5 1.5v7M1.5 5h7"></path></svg></div>
+            <div style="flex:1;min-width:0;font:600 11px/1 'Sora',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Elegir giro de la {{ p.fname }}</div>
+            <div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;color:#E0A030;flex:none">PENDIENTE</div>
+          </div>
+          </sc-for>
+        </div>
+      </div>
+      </sc-if>
+      <div style="position:absolute;inset:0;border-radius:20px;overflow:hidden;background:#1C1D1B;transform:translateZ(0);backface-visibility:hidden;-webkit-backface-visibility:hidden">
+        <div style="position:absolute;inset:-6%;background:url(assets/tarjeta-topo-2.png) 38% 30%/112% auto no-repeat;transform:{{ homeBgTf }};transition:{{ homeTr }}"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(28,29,27,.35) 0%, rgba(28,29,27,0) 30%, rgba(28,29,27,0) 55%, rgba(28,29,27,.55) 100%)"></div>
+        <div style="position:absolute;left:0;bottom:0;width:62%;height:52%;background:radial-gradient(ellipse at 25% 80%, rgba(28,29,27,.65), rgba(28,29,27,0) 70%);pointer-events:none"></div>
+        <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:rgba(244,241,234,.12)"><div style="height:100%;width:{{ cardPct }};background:#E0A030;transition:width .4s"></div></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;position:relative;transform:translateZ(24px);backface-visibility:hidden;-webkit-backface-visibility:hidden">
+        <div style="width:34px;height:30px;display:flex;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 28 28" style="display:block;flex:none;overflow:visible"><sc-if value="{{ isManana }}" hint-placeholder-val="{{ false }}"><path d="M14 10 L25 26 H3 Z" fill="none" stroke="#F4F1EA" stroke-width="2" stroke-linejoin="round"></path><path d="M10.2 10 A3.8 3.8 0 0 1 17.8 10" fill="#F4F1EA"></path><g stroke="#F4F1EA" stroke-width="2" stroke-linecap="round"><path d="M14 1.5 V3.5"></path><path d="M8 4 L9.4 5.4 M20 4 L18.6 5.4"></path><path d="M5 10 H7.5 M20.5 10 H23"></path></g></sc-if><sc-if value="{{ isTarde }}" hint-placeholder-val="{{ true }}"><circle cx="19" cy="6.5" r="3.4" fill="#F4F1EA"></circle><g stroke="#F4F1EA" stroke-width="2" stroke-linecap="round"><path d="M19 0 V1.3 M25.5 6.5 H24.2 M23.6 1.9 L22.7 2.8 M14.4 1.9 L15.3 2.8 M12.5 6.5 H13.8"></path></g><path d="M11 10 L22 26 H0 Z" fill="none" stroke="#F4F1EA" stroke-width="2" stroke-linejoin="round"></path></sc-if><sc-if value="{{ isNoche }}" hint-placeholder-val="{{ false }}"><path d="M21 2.5 A5 5 0 1 0 25.5 9.5 A4 4 0 0 1 21 2.5 Z" fill="#F4F1EA"></path><circle cx="6" cy="5" r=".9" fill="#F4F1EA"></circle><circle cx="11" cy="2.5" r=".7" fill="#F4F1EA"></circle><path d="M11 10 L22 26 H0 Z" fill="none" stroke="#F4F1EA" stroke-width="2" stroke-linejoin="round"></path></sc-if></svg></div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <sc-if value="{{ modeReversoOn }}" hint-placeholder-val="{{ false }}"><button onClick="{{ wCardFlip }}" style="appearance:none;border:1px solid rgba(224,160,48,.6);border-radius:999px;background:rgba(28,29,27,.55);color:#E0A030;font:600 10px/1 'Sora',sans-serif;padding:6px 10px;cursor:pointer;display:flex;align-items:center;gap:5px"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 4A3.5 3.5 0 0 1 8 2.5M8.5 6A3.5 3.5 0 0 1 2 7.5"></path><path d="M8 .8V2.6H6.2M2 9.2V7.4h1.8"></path></svg>{{ walletBadge }} cupones</button></sc-if>
+          <div style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;opacity:.95;text-shadow:0 0 10px rgba(28,29,27,.9),0 1px 2px rgba(28,29,27,.8)">GIRO · LAS TRANCAS</div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;position:relative;transform:translateZ(34px);backface-visibility:hidden;-webkit-backface-visibility:hidden">
+        <div style="position:relative;display:flex;flex-direction:column;gap:6px;text-shadow:0 1px 2px rgba(28,29,27,.8),0 0 12px rgba(28,29,27,.7)">
+          <div style="position:relative;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;opacity:.85">TITULAR</div>
+          <div style="position:relative;font:600 16px/1.1 'Sora',sans-serif;letter-spacing:-.01em">Josefa Pérez</div>
+          <div style="position:relative;font:400 12.5px/1 'IBM Plex Sans',sans-serif;opacity:.92">{{ visitasLabel }} · socia desde 2026</div>
+          <sc-if value="{{ modeBolsilloOn }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;gap:6px;margin-top:4px;text-shadow:none">
+            <sc-for list="{{ walletHome }}" as="w" hint-placeholder-count="0">
+            <div key="{{ w.id }}" onClick="{{ w.peek }}" style="display:flex;align-items:center;gap:5px;padding:3px 7px 3px 3px;border-radius:7px;background:#F4F1EA;color:#1C1D1B;border:1px solid #E0A030;cursor:pointer;white-space:nowrap;box-shadow:0 4px 10px -4px rgba(0,0,0,.5)" style-hover="transform:translateY(-2px)">
+              <div style="width:16px;height:16px;border-radius:4px;background:{{ w.monoBg }};display:flex;align-items:center;justify-content:center;font:700 8px/1 'Sora',sans-serif;flex:none">{{ w.initial }}</div>
+              <div style="font:700 9.5px/1 'Sora',sans-serif;letter-spacing:.03em;color:#B07A12;font-variant-numeric:tabular-nums;white-space:nowrap">{{ w.code }}</div>
+            </div>
+            </sc-for>
+          </div>
+          </sc-if>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+          <div style="font:700 34px/1 'Sora',sans-serif;letter-spacing:-.03em;color:#E0A030;text-shadow:0 1px 3px rgba(28,29,27,.7)">{{ giros }}</div>
+          <div style="font:500 11px/1 'IBM Plex Sans',sans-serif;opacity:.95;text-shadow:0 1px 2px rgba(28,29,27,.8),0 0 10px rgba(28,29,27,.7)">{{ girosLabel }}</div>
+          <sc-if value="{{ walletOn }}" hint-placeholder-val="{{ false }}"><div style="font:500 10px/1 'IBM Plex Sans',sans-serif;color:#E0A030;text-shadow:0 1px 2px rgba(28,29,27,.8);white-space:nowrap">{{ walletShort }}</div></sc-if>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div style="font:400 12px/1.4 'IBM Plex Sans',sans-serif;color:#5A5C57;text-align:center;margin-top:-8px">{{ homeCardHint }}</div>
+
+    <div style="display:flex;flex:none;flex-direction:column;border:1.5px solid rgba(28,29,27,.2);border-radius:14px;overflow:hidden">
+      <button onClick="{{ goHistorial }}" style="appearance:none;flex:none;border:none;background:none;color:#1C1D1B;font:600 14px/1 'Sora',sans-serif;padding:16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px" style-active="background:rgba(28,29,27,.05)"><span>{{ histBtn }}</span><span style="display:flex;align-items:center;gap:10px;font:400 12px/1 'IBM Plex Sans',sans-serif;color:#5A5C57">{{ histCount }}<span style="width:8px;height:8px;border-right:1.5px solid #5A5C57;border-bottom:1.5px solid #5A5C57;transform:rotate({{ histRot }});transition:transform .3s ease;margin-top:-3px"></span></span></button>
+      <div style="display:grid;grid-template-rows:{{ histRows }};transition:grid-template-rows .35s ease">
+        <div style="overflow:hidden;min-height:0">
+          <div style="display:flex;flex-direction:column;gap:8px;padding:0 10px 10px">
+            <div style="font:400 12px/1.4 'IBM Plex Sans',sans-serif;color:#5A5C57;padding:0 6px">{{ histSub }}</div>
+            <sc-for list="{{ hist5 }}" as="h" hint-placeholder-count="0">
+            <div style="position:relative;margin-top:4px;transform:rotate({{ h.tilt }});filter:drop-shadow(0 4px 8px rgba(28,29,27,.18))">
+              <div style="height:9px;background:#1C1D1B;clip-path:polygon(0 100%,2% 0,4% 100%,6% 0,8% 100%,10% 0,12% 100%,14% 0,16% 100%,18% 0,20% 100%,22% 0,24% 100%,26% 0,28% 100%,30% 0,32% 100%,34% 0,36% 100%,38% 0,40% 100%,42% 0,44% 100%,46% 0,48% 100%,50% 0,52% 100%,54% 0,56% 100%,58% 0,60% 100%,62% 0,64% 100%,66% 0,68% 100%,70% 0,72% 100%,74% 0,76% 100%,78% 0,80% 100%,82% 0,84% 100%,86% 0,88% 100%,90% 0,92% 100%,94% 0,96% 100%,98% 0,100% 100%)"></div>
+              <div style="display:flex;align-items:center;gap:12px;padding:8px 16px 12px;border-radius:0 0 16px 16px;background:#1C1D1B;color:#F4F1EA;position:relative;overflow:hidden">
+                <div style="position:absolute;left:-7px;top:-9px;width:14px;height:14px;border-radius:50%;background:#F4F1EA"></div><div style="position:absolute;right:-7px;top:-9px;width:14px;height:14px;border-radius:50%;background:#F4F1EA"></div>
+                <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:3px">
+                  <div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;color:rgba(244,241,234,.5)">CÓDIGO DE CANJE · {{ h.when }}</div>
+                  <div style="font:700 20px/1 'Sora',sans-serif;letter-spacing:.2em;color:#E0A030;font-variant-numeric:tabular-nums">{{ h.code }}</div>
+                  <div style="font:600 12px/1.2 'Sora',sans-serif;letter-spacing:-.01em;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ h.benefit }}</div>
+                  <div style="font:400 11px/1.2 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.65)">{{ h.name }}</div>
+                </div>
+                <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex:none">
+                  <div style="width:32px;height:32px;border-radius:10px;background:{{ h.tint }};color:{{ h.fg }};font:700 14px/32px 'Sora',sans-serif;text-align:center">{{ h.initial }}</div>
+                  <div style="font:500 9px/1 ui-monospace,Menlo,monospace;letter-spacing:.08em;color:{{ h.stateFg }}">{{ h.state }}</div>
+                </div>
+              </div>
+            </div>
+            </sc-for>
+            <sc-if value="{{ histMore }}" hint-placeholder-val="{{ false }}">
+            <button onClick="{{ goHistAll }}" style="appearance:none;border:1.5px solid rgba(28,29,27,.2);background:transparent;color:#1C1D1B;border-radius:12px;padding:12px;margin-top:6px;font:600 13px/1 'Sora',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px">Ver todos los canjes<span style="font:400 12px/1 'IBM Plex Sans',sans-serif;color:#5A5C57">{{ histCount }}</span></button>
+          
+  <sc-if value="{{ qrZoomOn }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ qrZoomClose }}" style="position:absolute;inset:0;z-index:260;background:rgba(244,241,234,.96);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;animation:giroIn .22s ease both;cursor:zoom-out">
+    <div style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;color:#5A5C57">MUÉSTRALO EN CAJA · {{ qrZoom.fnameUp }}</div>
+    <div style="width:270px;height:270px;background:#FFFFFF;border-radius:20px;padding:16px;box-sizing:border-box;box-shadow:0 0 0 2px rgba(224,160,48,.7),0 24px 50px -24px rgba(28,29,27,.5);animation:giroArrive .35s cubic-bezier(.2,1,.3,1) both"><svg viewBox="0 0 25 25" width="238" height="238" shape-rendering="crispEdges" style="display:block"><sc-for list="{{ qrZoom.qr }}" as="q" hint-placeholder-count="0"><rect x="{{ q.x }}" y="{{ q.y }}" width="1" height="1" fill="#1C1D1B"></rect></sc-for></svg></div>
+    <div style="font:700 30px/1 'Sora',sans-serif;letter-spacing:.2em;color:#B07A12;font-variant-numeric:tabular-nums">{{ qrZoom.code }}</div>
+    <div style="font:600 14px/1.2 'Sora',sans-serif;color:#1C1D1B;text-align:center;padding:0 30px">{{ qrZoom.name }} · {{ qrZoom.benefit }}</div>
+    <div style="font:400 12px/1 'IBM Plex Sans',sans-serif;color:#5A5C57;margin-top:6px">Toca para volver</div>
+  </div>
+  </sc-if>
+  <sc-if value="{{ wOverlay }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ wClose }}" style="position:absolute;inset:0;z-index:250;background:rgba(28,29,27,.72);backdrop-filter:blur(3px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;animation:giroIn .25s ease both">
+    <div onClick="{{ stop }}" style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;color:#E0A030">TU CARTERA · {{ walletHomeLabelUp }}</div>
+    <div onClick="{{ stop }}" onPointerDown="{{ wDown }}" style="position:relative;height:380px;width:100%;perspective:900px;cursor:grab;touch-action:pan-y;overflow:hidden">
+        <sc-for list="{{ walletHome }}" as="w" hint-placeholder-count="3">
+        <div key="{{ w.id }}" onClick="{{ w.tap }}" style="position:absolute;left:50%;top:0;width:250px;height:380px;margin-left:-125px;transform:{{ w.tf }};z-index:{{ w.z }};opacity:{{ w.op }};transition:{{ wTrans }};transform-style:preserve-3d;cursor:pointer">
+          <div style="position:absolute;inset:0;border-radius:22px;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;filter:drop-shadow(0 -8px 14px rgba(0,0,0,.55))">
+            <div style="flex:1;min-height:0;padding:14px 14px 10px;display:flex;flex-direction:column;gap:6px;border-radius:22px 22px 0 0;background:#FFFFFF;position:relative;color:#1C1D1B">
+              <div style="position:absolute;inset:0;border-radius:22px 22px 0 0;border:1.5px solid #E0A030;border-bottom:0;pointer-events:none"></div>
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div style="width:40px;height:40px;border-radius:11px;background:{{ w.monoBg }};display:flex;align-items:center;justify-content:center;font:700 16px/1 'Sora',sans-serif;letter-spacing:-.02em">{{ w.initial }}</div>
+                <div style="text-align:right"><div style="font:700 13px/1 'Sora',sans-serif;letter-spacing:.06em;color:#B07A12;font-variant-numeric:tabular-nums">{{ w.code }}</div><div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;color:#5A5C57;margin-top:5px">LISTO · {{ w.fnameUp }}</div></div>
+              </div>
+              <div style="font:400 10px/1.2 'IBM Plex Sans',sans-serif;color:#5A5C57;margin-top:2px">{{ w.rubro }}</div>
+              <div style="font:600 13px/1.2 'Sora',sans-serif">{{ w.name }}</div>
+              <div style="font:700 19px/1.1 'Sora',sans-serif;letter-spacing:-.03em;text-wrap:pretty">{{ w.benefit }}</div>
+              <div style="align-self:flex-start;padding:5px 10px;border-radius:999px;background:#E0A030;font:600 11px/1 'Sora',sans-serif">{{ w.tag }}</div>
+              <div style="flex:1;min-height:60px;border-radius:12px;overflow:hidden;position:relative;margin-top:4px;background:#E9E5DC"><image-slot id="foto-{{ w.id }}" shape="rect" placeholder="Foto de {{ w.name }}"></image-slot></div>
+              <div style="font:400 10px/1 'IBM Plex Sans',sans-serif;color:#5A5C57;margin-top:2px">Toca para ver el QR</div>
+            </div>
+            <div style="position:relative;height:0;z-index:2"><div style="position:absolute;left:10px;right:10px;top:-.75px;border-top:1.5px dashed rgba(28,29,27,.22)"></div><div style="position:absolute;left:0;top:-10px;width:10px;height:20px;overflow:hidden;z-index:3"><div style="position:absolute;left:-10px;top:0;width:20px;height:20px;border-radius:50%;background:#1C1D1B;border:1.5px solid #E0A030;box-sizing:border-box"></div></div><div style="position:absolute;right:0;top:-10px;width:10px;height:20px;overflow:hidden;z-index:3"><div style="position:absolute;right:-10px;top:0;width:20px;height:20px;border-radius:50%;background:#1C1D1B;border:1.5px solid #E0A030;box-sizing:border-box"></div></div></div>
+            <div style="height:86px;box-sizing:border-box;border-radius:0 0 22px 22px;background:#1C1D1B;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px">
+              <div style="position:absolute;inset:0;border-radius:0 0 22px 22px;border:1.5px solid #E0A030;border-top:0;pointer-events:none"></div>
+              <div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;color:rgba(244,241,234,.5)">CÓDIGO DE CANJE · MUÉSTRALO EN CAJA</div>
+              <div style="font:700 24px/1 'Sora',sans-serif;letter-spacing:.22em;color:#E0A030;font-variant-numeric:tabular-nums">{{ w.code }}</div>
+              <div style="display:flex;gap:3px;margin-top:2px"><span style="width:14px;height:3px;background:#E0A030;border-radius:2px"></span><span style="width:4px;height:3px;background:rgba(244,241,234,.5);border-radius:2px"></span><span style="width:9px;height:3px;background:rgba(244,241,234,.5);border-radius:2px"></span><span style="width:5px;height:3px;background:#E0A030;border-radius:2px"></span><span style="width:12px;height:3px;background:rgba(244,241,234,.5);border-radius:2px"></span></div>
+            </div>
+          </div>
+          <div style="position:absolute;inset:0;border-radius:22px;background:#1C1D1B;color:#F4F1EA;border:1.5px solid #E0A030;box-sizing:border-box;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:rotateY(180deg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:14px">
+            <div style="font:500 9px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;color:rgba(244,241,234,.55)">MUÉSTRALO EN CAJA · {{ w.fnameUp }}</div>
+            <div style="width:124px;height:124px;background:#F4F1EA;border-radius:10px;padding:8px;box-sizing:border-box;box-shadow:0 0 0 1.5px rgba(224,160,48,.6)"><svg viewBox="0 0 25 25" width="108" height="108" shape-rendering="crispEdges" style="display:block"><sc-for list="{{ w.qr }}" as="q" hint-placeholder-count="0"><rect x="{{ q.x }}" y="{{ q.y }}" width="1" height="1" fill="#1C1D1B"></rect></sc-for></svg></div>
+            <div style="font:700 22px/1 'Sora',sans-serif;letter-spacing:.2em;color:#E0A030">{{ w.code }}</div>
+            <div style="font:400 11px/1.3 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.7);text-align:center">{{ w.name }} · {{ w.benefit }}</div>
+            <div style="font:400 10px/1 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.5);margin-top:4px">Toca para volver al frente</div>
+          </div>
+        </div>
+        </sc-for>
+      </div>
+    <div onClick="{{ stop }}" style="font:400 11px/1.3 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.65)">{{ walletHint }}</div>
+    <div onClick="{{ stop }}" style="display:flex;align-items:center;gap:18px"><div style="display:flex;justify-content:center;gap:6px"><sc-for list="{{ walletHome }}" as="w" hint-placeholder-count="3"><div onClick="{{ w.goDot }}" style="width:{{ w.dotW }};height:6px;border-radius:3px;background:{{ w.dotBg }};transition:width .3s ease,background .3s ease;cursor:pointer"></div></sc-for></div><button onClick="{{ wClose }}" style="appearance:none;border:1.5px solid rgba(244,241,234,.3);border-radius:999px;background:none;color:#F4F1EA;font:600 11px/1 'Sora',sans-serif;padding:9px 14px;cursor:pointer;display:flex;align-items:center;gap:6px"><svg width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="#E0A030" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 1v7.5M1.8 5.3 5 8.5l3.2-3.2"></path></svg>Guardar</button></div>
+  </div>
+  </sc-if>
+  </sc-if>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <div style="font:600 15px/1.2 'Sora',sans-serif;letter-spacing:-.01em">{{ caminoTitle }}</div>
+        <div style="font:500 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.08em;color:#5A5C57">{{ cardStep }}</div>
+      </div>
+      <div style="height:4px;border-radius:2px;background:rgba(28,29,27,.1);overflow:hidden"><div style="height:100%;width:{{ cardPct }};background:#E0A030;border-radius:2px;transition:width .6s ease"></div></div>
+      <div onClick="{{ tapVolcan }}" data-layer="volcan" style="position:relative;flex:none;width:100%;cursor:pointer;display:flex;flex-direction:column;gap:10px">
+        <div style="position:relative;width:100%;aspect-ratio:1086/820;overflow:visible">
+        <div style="position:absolute;inset:0;overflow:hidden">
+        <div style="position:absolute;left:0;top:-25.6%;width:100%;aspect-ratio:1086/1448;transform-origin:50% 61%;animation:{{ volcanAnim }}">
+          <img src="assets/capa-volcanes.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;display:block">
+          <img src="assets/capa-humo.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;display:block;opacity:{{ humoOp }};transition:opacity .8s ease">
+        </div>
+        <img src="assets/capa-verde.png?v=2" alt="" style="position:absolute;left:0;top:-25.6%;width:100%;display:block">
+        <svg viewBox="0 210 1086 820" preserveAspectRatio="xMidYMid meet" style="position:absolute;inset:0;width:100%;height:100%;display:block">
+          <path d="{{ rutaRest }}" fill="none" stroke="#F3EFE7" stroke-opacity=".55" stroke-width="4" stroke-dasharray="7 13" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="{{ rutaDone }}" fill="none" stroke="#E0A030" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="transition:d .6s ease"></path>
+          <sc-if value="{{ notCumbre }}" hint-placeholder-val="{{ true }}">
+          <path d="{{ rutaNext }}" fill="none" stroke="#E0A030" stroke-width="5" stroke-dasharray="8 12" stroke-linecap="round" stroke-linejoin="round" style="animation:giroMarch 1.4s linear infinite"></path>
+          </sc-if>
+          <sc-for list="{{ paradas }}" as="p" hint-placeholder-count="10">
+          <circle cx="{{ p.x }}" cy="{{ p.y }}" r="{{ p.r }}" fill="{{ p.fill }}" stroke="{{ p.stroke }}" stroke-width="5" style="transition:fill .5s ease"></circle>
+          </sc-for>
+        </svg>
+        </div>
+        <svg viewBox="0 210 1086 820" preserveAspectRatio="xMidYMid meet" style="position:absolute;inset:0;width:100%;height:100%;display:block;overflow:visible;pointer-events:none">
+          <sc-if value="{{ puffSmall }}" hint-placeholder-val="{{ false }}">
+          <g transform="translate(375 494)"><circle cx="0" cy="0" r="22" fill="#96A79F" style="animation:giroPuff 1.3s ease-out both"></circle><circle cx="22" cy="-12" r="16" fill="#B9C5BE" style="animation:giroPuff 1.3s ease-out .1s both"></circle><circle cx="-20" cy="-14" r="14" fill="#96A79F" style="animation:giroPuff 1.3s ease-out .18s both"></circle><circle cx="4" cy="-28" r="12" fill="#DDD9CE" style="animation:giroPuff 1.3s ease-out .26s both"></circle></g>
+          </sc-if>
+          <sc-if value="{{ readyIdle }}" hint-placeholder-val="{{ false }}">
+          <g transform="translate(375 494)"><circle cx="0" cy="0" r="12" fill="#96A79F" style="animation:giroPuff 2.4s ease-out infinite"></circle><circle cx="14" cy="-8" r="9" fill="#B9C5BE" style="animation:giroPuff 2.4s ease-out .9s infinite"></circle>
+            <g fill="#E0A030"><circle r="4" style="animation:giroSputA 1.8s ease-out infinite"></circle><circle r="3" style="animation:giroSputB 1.8s ease-out .6s infinite"></circle><circle r="3.5" style="animation:giroSputC 1.8s ease-out 1.2s infinite"></circle><circle r="2.5" style="animation:giroSputD 1.6s ease-out .3s infinite"></circle><circle r="3" style="animation:giroSputE 2s ease-out .9s infinite"></circle><circle r="2" style="animation:giroSputF 1.5s ease-out 1.4s infinite"></circle></g>
+            <g fill="#3A3A38"><rect x="-2" y="-2" width="4" height="4" style="animation:giroRockA 1.7s ease-out .2s infinite"></rect><rect x="-1.5" y="-1.5" width="3" height="3" style="animation:giroRockB 1.9s ease-out 1s infinite"></rect><rect x="-2" y="-2" width="4" height="4" style="animation:giroRockC 1.6s ease-out 1.5s infinite"></rect></g>
+            <g fill="#F4F1EA"><circle r="2" style="animation:giroSputB 2.2s ease-out .45s infinite"></circle><circle r="1.5" style="animation:giroSputE 1.9s ease-out 1.7s infinite"></circle></g></g>
+          </sc-if>
+          <sc-if value="{{ puffBig }}" hint-placeholder-val="{{ false }}">
+          <g transform="translate(375 494)"><circle cx="0" cy="0" r="46" fill="#E0A030" style="animation:giroBlast 1.1s ease-out both"></circle><circle cx="0" cy="0" r="46" fill="none" stroke="#E0A030" stroke-width="10" style="animation:giroRing 1.2s ease-out .15s both"></circle><circle cx="0" cy="0" r="46" fill="none" stroke="#F4F1EA" stroke-width="6" style="animation:giroRing 1.4s ease-out .35s both"></circle>
+            <circle cx="0" cy="0" r="30" fill="#96A79F" style="animation:giroPuffBig 1.1s ease-out infinite"></circle><circle cx="34" cy="-18" r="22" fill="#B9C5BE" style="animation:giroPuffBig 1.1s ease-out .2s infinite"></circle><circle cx="-32" cy="-22" r="20" fill="#96A79F" style="animation:giroPuffBig 1.1s ease-out .4s infinite"></circle><circle cx="8" cy="-40" r="18" fill="#DDD9CE" style="animation:giroPuffBig 1.1s ease-out .6s infinite"></circle><circle cx="-10" cy="-10" r="24" fill="#B9C5BE" style="animation:giroPuffBig 1.1s ease-out .8s infinite"></circle><circle cx="50" cy="-30" r="30" fill="#96A79F" style="animation:giroPuffBig 1.1s ease-out .3s infinite"></circle><circle cx="-54" cy="-34" r="28" fill="#DDD9CE" style="animation:giroPuffBig 1.1s ease-out .5s infinite"></circle>
+            <g fill="#E0A030"><circle r="9" style="animation:giroEmberF .9s ease-out .1s infinite"></circle><circle r="8" style="animation:giroEmberG .9s ease-out .5s infinite"></circle><circle r="7" style="animation:giroEmberA .9s ease-out infinite"></circle><circle r="5" style="animation:giroEmberB .9s ease-out .15s infinite"></circle><circle r="6" style="animation:giroEmberC .9s ease-out .3s infinite"></circle><circle r="4" style="animation:giroEmberD .9s ease-out .45s infinite"></circle><circle r="5" style="animation:giroEmberE .9s ease-out .6s infinite"></circle></g></g>
+          </sc-if>
+          <path d="M375 502 L375 478" stroke="#1C1D1B" stroke-width="3" stroke-dasharray="4 6" opacity=".45"></path>
+        </svg>
+        <div style="position:absolute;left:34.5%;top:26.5%;width:56px;height:36px;transform:translate(-50%,-50%) rotate(-8deg);pointer-events:none"><div data-layer="tarjeta" style="width:100%;height:100%;opacity:{{ pinOp }};transition:opacity .5s ease;animation:{{ cardAnim }}">
+          <div style="position:relative;width:56px;height:36px;border-radius:5px;background:{{ miniBg }};color:{{ miniFg }};box-shadow:0 3px 8px rgba(28,29,27,.3);padding:5px;transition:background .5s ease;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden">
+            <div style="position:absolute;right:-14px;top:-16px;width:64px;height:64px;border-radius:50%;background:radial-gradient(closest-side, rgba(224,160,48,.4), rgba(224,160,48,0))"></div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;position:relative"><div style="font:700 5px/1 'Sora',sans-serif;letter-spacing:-.02em">giro</div><svg width="6" height="5" viewBox="0 0 22 20"><path d="M11 2 L20 18 H2 Z" fill="none" stroke="#E0A030" stroke-width="3" stroke-linejoin="round"></path><circle cx="11" cy="2.5" r="2.5" fill="#E0A030"></circle></svg></div>
+            <div style="position:relative;display:flex;flex-direction:column;gap:2px"><div style="width:18px;height:2px;border-radius:1px;background:currentColor;opacity:.9"></div><div style="width:11px;height:2px;border-radius:1px;background:currentColor;opacity:.45"></div></div>
+            <div style="position:absolute;left:0;right:0;bottom:0;height:2px;background:#E0A030"></div>
+          </div>
+        </div></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font:500 9px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;color:#8A8C86;margin-top:-4px"><span>{{ cumbreLabel }}</span><span>BASE · 0</span></div>
+        <div style="font:400 12px/1.4 'IBM Plex Sans',sans-serif;color:{{ cardTextFg }};text-wrap:pretty;transition:color .4s ease">{{ cardText }}</div>
+        <sc-if value="{{ newTip }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;left:47%;right:8px;top:15%;z-index:2;pointer-events:none;display:flex"><div style="position:relative;background:#1C1D1B;color:#F4F1EA;border-radius:12px;padding:10px 12px;font:500 11px/1.35 'IBM Plex Sans',sans-serif;text-align:left;box-shadow:0 10px 24px -10px rgba(28,29,27,.6);animation:giroIn .3s ease both"><div style="position:absolute;left:-5px;top:16px;width:10px;height:10px;background:#1C1D1B;transform:rotate(45deg);border-radius:2px"></div><span style="color:#E0A030;font-weight:600">Nueva meta: Tarjeta Cumbre.</span> Requiere <span style="color:#E0A030;font-weight:600">50 escaneos</span>. El volcán vuelve a la calma.</div></div>
+        </sc-if>
+        <sc-if value="{{ readyTip }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;left:47%;right:8px;top:15%;z-index:2;pointer-events:none;display:flex"><div style="position:relative;background:#1C1D1B;color:#F4F1EA;border-radius:12px;padding:10px 12px;font:500 11px/1.35 'IBM Plex Sans',sans-serif;text-align:left;box-shadow:0 10px 24px -10px rgba(28,29,27,.6);animation:giroIn .3s ease both"><div style="position:absolute;left:-5px;top:16px;width:10px;height:10px;background:#1C1D1B;transform:rotate(45deg);border-radius:2px"></div><span style="color:#E0A030;font-weight:600">¡Completaste el camino!</span> Toca el volcán para <span style="color:#E0A030;font-weight:600">reclamar tu tarjeta</span>.</div></div>
+        </sc-if>
+        <sc-if value="{{ volcanTip }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;left:47%;right:8px;top:15%;z-index:2;pointer-events:none;display:flex"><div style="position:relative;background:#1C1D1B;color:#F4F1EA;border-radius:12px;padding:10px 12px;font:500 11px/1.35 'IBM Plex Sans',sans-serif;text-align:left;box-shadow:0 10px 24px -10px rgba(28,29,27,.6);animation:giroIn .3s ease both"><div style="position:absolute;left:-5px;top:16px;width:10px;height:10px;background:#1C1D1B;transform:rotate(45deg);border-radius:2px"></div>{{ volcanText }}</div></div>
+        </sc-if>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </sc-if>
+
+
+  <sc-if value="{{ isHistorial }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="Historial" style="height:100%;overflow:auto;scrollbar-width:none;display:block;padding:66px 20px 40px;box-sizing:border-box;animation:giroIn .35s ease both">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <button onClick="{{ goHome }}" style="appearance:none;border:0;width:34px;height:34px;border-radius:50%;background:#1C1D1B;color:#F4F1EA;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:none"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M9 2 L4 7 L9 12" fill="none" stroke="#F4F1EA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div style="font:500 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#5A5C57">HISTORIAL DE CANJES</div>
+      </div>
+      <div style="display:flex;align-items:baseline;justify-content:space-between"><div style="font:700 26px/1.1 'Sora',sans-serif;letter-spacing:-.03em">Tus talones</div><div style="font:400 13px/1 'IBM Plex Sans',sans-serif;color:#5A5C57">{{ histCount }}</div></div>
+      <div style="display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 -20px;padding:2px 20px">
+        <sc-for list="{{ histDates }}" as="d" hint-placeholder-count="0">
+        <button onClick="{{ d.go }}" style="appearance:none;flex:none;border:1.5px solid {{ d.bd }};background:{{ d.bg }};color:{{ d.fg }};border-radius:999px;padding:8px 14px;font:600 12px/1 'Sora',sans-serif;cursor:pointer;display:flex;align-items:center;gap:6px;transition:background .2s ease,color .2s ease">{{ d.label }}<span style="font:400 11px/1 'IBM Plex Sans',sans-serif;opacity:.7">{{ d.n }}</span></button>
+        </sc-for>
+      </div>
+      <div style="font:400 12px/1.4 'IBM Plex Sans',sans-serif;color:#5A5C57">{{ histFiltSub }}</div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <sc-for list="{{ histFiltered }}" as="h" hint-placeholder-count="0">
+        <div style="position:relative;margin-top:4px;transform:rotate({{ h.tilt }});filter:drop-shadow(0 4px 8px rgba(28,29,27,.18))">
+          <div style="height:9px;background:#1C1D1B;clip-path:polygon(0 100%,2% 0,4% 100%,6% 0,8% 100%,10% 0,12% 100%,14% 0,16% 100%,18% 0,20% 100%,22% 0,24% 100%,26% 0,28% 100%,30% 0,32% 100%,34% 0,36% 100%,38% 0,40% 100%,42% 0,44% 100%,46% 0,48% 100%,50% 0,52% 100%,54% 0,56% 100%,58% 0,60% 100%,62% 0,64% 100%,66% 0,68% 100%,70% 0,72% 100%,74% 0,76% 100%,78% 0,80% 100%,82% 0,84% 100%,86% 0,88% 100%,90% 0,92% 100%,94% 0,96% 100%,98% 0,100% 100%)"></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:8px 16px 12px;border-radius:0 0 16px 16px;background:#1C1D1B;color:#F4F1EA;position:relative;overflow:hidden">
+            <div style="position:absolute;left:-7px;top:-9px;width:14px;height:14px;border-radius:50%;background:#F4F1EA"></div><div style="position:absolute;right:-7px;top:-9px;width:14px;height:14px;border-radius:50%;background:#F4F1EA"></div>
+            <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:3px">
+              <div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;color:rgba(244,241,234,.5)">CÓDIGO DE CANJE · {{ h.when }}</div>
+              <div style="font:700 20px/1 'Sora',sans-serif;letter-spacing:.2em;color:#E0A030;font-variant-numeric:tabular-nums">{{ h.code }}</div>
+              <div style="font:600 12px/1.2 'Sora',sans-serif;letter-spacing:-.01em;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ h.benefit }}</div>
+              <div style="font:400 11px/1.2 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.65)">{{ h.name }}</div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex:none">
+              <div style="width:32px;height:32px;border-radius:10px;background:{{ h.tint }};color:{{ h.fg }};font:700 14px/32px 'Sora',sans-serif;text-align:center">{{ h.initial }}</div>
+              <div style="font:500 9px/1 ui-monospace,Menlo,monospace;letter-spacing:.08em;color:{{ h.stateFg }}">{{ h.state }}</div>
+            </div>
+          </div>
+        </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isRuleta }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="Ruleta" style="height:100%;overflow:auto;scrollbar-width:none;display:flex;flex-direction:column;animation:giroIn .35s ease both">
+    <div style="padding:66px 20px 14px;display:flex;flex-direction:column;gap:14px;position:sticky;top:0;background:#F4F1EA;z-index:160">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:10px">
+          <div onClick="{{ goHome }}" style="width:30px;height:30px;border-radius:50%;background:rgba(28,29,27,.06);display:flex;align-items:center;justify-content:center;cursor:pointer;flex:none"><div style="width:8px;height:8px;border-left:2px solid #1C1D1B;border-bottom:2px solid #1C1D1B;transform:rotate(45deg);margin-left:3px"></div></div>
+          <div style="font:500 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#5A5C57">RULETA DEL DÍA</div>
+        </div>
+        <div onClick="{{ openCard }}" style="display:flex;align-items:center;gap:8px;cursor:pointer"><div style="font:500 11px/1 'IBM Plex Sans',sans-serif;color:#5A5C57">{{ visitasLabel }}</div><div style="width:30px;height:30px;border-radius:50%;background:#2F5D4A;color:#F4F1EA;font:600 12px/30px 'Sora',sans-serif;text-align:center">JP</div></div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:stretch">
+        <div onClick="{{ openBuy }}" style="display:flex;align-items:center;gap:10px;padding:0 16px 0 12px;height:56px;border-radius:16px;background:{{ pillBg }};color:{{ pillFg }};flex:none;cursor:pointer" style-active="transform:scale(.97)">
+          <div style="width:30px;height:26px;position:relative;flex:none">
+            <div style="position:absolute;left:3px;top:3px;width:24px;height:20px;background:currentColor;clip-path:polygon(50% 0,100% 100%,0 100%)"><div style="position:absolute;left:6px;top:7px;width:12px;height:11px;background:{{ pillBg }};clip-path:polygon(50% 0,100% 100%,0 100%)"></div></div>
+            <div style="position:absolute;left:11px;top:-1px;width:8px;height:8px;border-radius:50%;background:{{ dotTarde }}"></div>
+            <div style="position:absolute;left:-1px;bottom:-1px;width:8px;height:8px;border-radius:50%;background:{{ dotManana }}"></div>
+            <div style="position:absolute;right:-1px;bottom:-1px;width:8px;height:8px;border-radius:50%;background:{{ dotNoche }}"></div>
+          </div>
+          <div style="font:700 22px/1 'Sora',sans-serif;letter-spacing:-.02em">{{ giros }}</div>
+          <div style="font:500 12px/1.1 'IBM Plex Sans',sans-serif;opacity:.8">{{ girosLabel }}</div>
+        </div>
+        <div style="flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;height:56px">
+          <sc-for list="{{ slots }}" as="s" hint-placeholder-count="3">
+          <div onClick="{{ s.go }}" style="position:relative;border-radius:12px;background:{{ s.bg }};color:{{ s.fg }};border:1.5px {{ s.bstyle }} {{ s.border }};box-shadow:{{ s.ring }};opacity:{{ s.op }};box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:3px;cursor:pointer;transition:background .35s ease,color .35s ease,border-color .35s ease,box-shadow .2s,opacity .2s" style-active="transform:scale(.96)"><sc-if value="{{ s.sel }}" hint-placeholder-val="{{ false }}"><svg width="26" height="26" viewBox="0 0 28 28" style="display:block;overflow:visible"><sc-if value="{{ s.isM }}" hint-placeholder-val="{{ false }}"><path d="M14 10 L25 26 H3 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;animation:giroDraw .5s ease-out .05s forwards"></path><path d="M10.2 10 A3.8 3.8 0 0 1 17.8 10" fill="currentColor" style="opacity:0;animation:giroFade .3s ease-out .35s forwards"></path><g stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="opacity:0;animation:giroFade .3s ease-out .45s forwards"><path d="M14 1.5 V3.5"></path><path d="M8 4 L9.4 5.4 M20 4 L18.6 5.4"></path><path d="M5 10 H7.5 M20.5 10 H23"></path></g></sc-if><sc-if value="{{ s.isT }}" hint-placeholder-val="{{ false }}"><path d="M11 10 L22 26 H0 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;animation:giroDraw .5s ease-out .05s forwards"></path><circle cx="19" cy="6.5" r="3.4" fill="currentColor" style="opacity:0;animation:giroFade .3s ease-out .35s forwards"></circle><g stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="opacity:0;animation:giroFade .3s ease-out .45s forwards"><path d="M19 0 V1.3 M25.5 6.5 H24.2 M23.6 1.9 L22.7 2.8 M14.4 1.9 L15.3 2.8 M12.5 6.5 H13.8"></path></g></sc-if><sc-if value="{{ s.isN }}" hint-placeholder-val="{{ false }}"><path d="M11 10 L22 26 H0 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;animation:giroDraw .5s ease-out .05s forwards"></path><path d="M21 2.5 A5 5 0 1 0 25.5 9.5 A4 4 0 0 1 21 2.5 Z" fill="currentColor" style="opacity:0;animation:giroFade .3s ease-out .35s forwards"></path><g fill="currentColor" style="opacity:0;animation:giroFade .3s ease-out .45s forwards"><circle cx="6" cy="5" r=".9"></circle><circle cx="11" cy="2.5" r=".7"></circle></g></sc-if></svg></sc-if><sc-if value="{{ s.unsel }}" hint-placeholder-val="{{ true }}"><div style="font:600 11px/1 'Sora',sans-serif;animation:giroSlotIn .3s ease-out both;text-decoration:{{ s.deco }}">{{ s.name }}</div><sc-if value="{{ s.showSub }}" hint-placeholder-val="{{ false }}"><div style="display:flex;align-items:center;gap:4px;font:500 9px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 5.2 L4.2 7.4 L8 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>{{ s.sub }}</div></sc-if></sc-if><sc-if value="{{ s.usedSel }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;top:-5px;right:-5px;width:16px;height:16px;border-radius:50%;background:#E0A030;display:flex;align-items:center;justify-content:center"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 5.2 L4.2 7.4 L8 3" fill="none" stroke="#1C1D1B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></sc-if></div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="font:400 13px/1.35 'IBM Plex Sans',sans-serif;color:#3F413D">{{ hint }}</div>
+    </div>
+
+    <sc-if value="{{ usedNow }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ openCode }}" style="margin:4px 20px 12px;padding:16px;border-radius:18px;background:#2F5D4A;color:#F4F1EA;display:flex;flex-direction:column;gap:10px;cursor:pointer;animation:giroIn .35s ease-out">
+      <div style="font:500 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;opacity:.8">{{ usedKicker }}</div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px">
+        <div><div style="font:600 18px/1.2 'Sora',sans-serif;letter-spacing:-.02em">{{ usedNow.benefit }}</div><div style="font:400 13px/1.3 'IBM Plex Sans',sans-serif;opacity:.85;margin-top:2px">{{ usedNow.name }} · {{ usedNow.condLower }}</div></div>
+        <div style="font:700 26px/1 'Sora',sans-serif;letter-spacing:.04em;background:#F4F1EA;color:#1C1D1B;padding:10px 12px;border-radius:10px;flex:none">{{ usedNow.code }}</div>
+      </div>
+      <div style="font:400 12px/1.3 'IBM Plex Sans',sans-serif;opacity:.85">Toca para mostrar el código en grande.</div>
+    </div>
+    </sc-if>
+
+    <div style="padding:6px 20px 8px;display:flex;justify-content:space-between;align-items:center">
+      <div><div style="font:600 13px/1 'Sora',sans-serif">La ruleta</div><div style="font:400 11px/1 'IBM Plex Sans',sans-serif;color:#5A5C57;margin-top:4px">orden: % de socios que volvería</div></div>
+      <button onClick="{{ toggleView }}" style="appearance:none;border:1px solid rgba(28,29,27,.2);border-radius:999px;background:transparent;color:#1C1D1B;font:600 12px/1 'Sora',sans-serif;padding:9px 14px;cursor:pointer;white-space:nowrap;flex:none">{{ viewBtn }}</button>
+    </div>
+    <div style="display:grid;grid-template-rows:{{ filtRows }};transition:grid-template-rows .35s ease"><div style="overflow:hidden;min-height:0"><div style="display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:2px 20px 10px">
+      <sc-for list="{{ filtChips }}" as="ch" hint-placeholder-count="5">
+      <button onClick="{{ ch.go }}" style="appearance:none;flex:none;border:1px solid {{ ch.bd }};border-radius:999px;background:{{ ch.bg }};color:{{ ch.fg }};font:600 11px/1 'Sora',sans-serif;padding:8px 12px;cursor:pointer;white-space:nowrap;transition:background .2s,color .2s">{{ ch.label }}</button>
+      </sc-for>
+    </div></div></div>
+
+    <div style="position:relative;flex:1;display:flex;flex-direction:column">
+    <sc-if value="{{ isCarousel }}" hint-placeholder-val="{{ true }}">
+    <div ref="{{ carRef }}" style="{{ carStyle }}">
+      <div style="{{ groundStyle }}"></div>
+      <div style="{{ ghostStyle }}"></div>
+      <div style="{{ haloStyle }}"></div>
+      <sc-for list="{{ cards }}" as="k" key="id" hint-placeholder-count="3">
+        <div key="{{ k.key }}" style="{{ k.style }}" onPointerDown="{{ k.onDown }}" onClick="{{ k.onClick }}">
+          <div style="position:absolute;inset:-1.5px;pointer-events:{{ k.facePE }};border-radius:22px;box-sizing:border-box;display:flex;flex-direction:column;backface-visibility:hidden;-webkit-backface-visibility:hidden;opacity:{{ k.faceOp }};filter:{{ k.faceFilter }};transition:opacity .35s ease {{ k.faceDelay }}">
+          <div style="flex:1;min-height:0;padding:14px 14px 10px;display:flex;flex-direction:column;gap:6px;border-radius:22px 22px 0 0;background:{{ k.bg }};position:relative;transition:background .7s ease .15s">
+          <div style="position:absolute;inset:0;border-radius:22px 22px 0 0;border:1.5px solid {{ k.ring }};border-bottom:0;pointer-events:none;transition:border-color .7s ease .15s"></div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start">
+            <div style="width:40px;height:40px;border-radius:11px;background:{{ k.monoBg }};color:{{ k.monoFg }};transition:background .7s ease .15s,color .7s ease .15s;display:flex;align-items:center;justify-content:center;font:700 16px/1 'Sora',sans-serif;letter-spacing:-.02em">{{ k.initial }}</div>
+            <div style="text-align:right"><div style="display:flex;align-items:center;justify-content:flex-end;gap:4px;font:600 15px/1 'Sora',sans-serif;color:{{ k.fg }};transition:color .7s ease .15s"><svg width="12" height="11" viewBox="0 0 12 11"><path d="M6 10.5 L1.2 5.8 A2.9 2.9 0 0 1 6 2.2 A2.9 2.9 0 0 1 10.8 5.8 Z" fill="#2F5D4A"></path></svg>{{ k.sat }}</div><div style="font:400 9px/1 'IBM Plex Sans',sans-serif;color:#5A5C57;margin-top:3px">de los socios volvería</div></div>
+          </div>
+          <div style="font:400 10px/1.2 'IBM Plex Sans',sans-serif;color:#5A5C57;margin-top:2px">{{ k.rubro }}</div>
+          <div style="font:600 13px/1.2 'Sora',sans-serif;color:{{ k.fg }};transition:color .7s ease .15s">{{ k.name }}</div>
+          <div style="font:700 19px/1.1 'Sora',sans-serif;letter-spacing:-.03em;color:{{ k.fg }};text-wrap:pretty;transition:color .7s ease .15s">{{ k.benefit }}</div>
+          <div style="align-self:flex-start;padding:5px 10px;border-radius:999px;background:{{ k.pillBg }};color:{{ k.pillFg }};font:600 11px/1 'Sora',sans-serif;transition:background .7s ease .15s,color .7s ease .15s">{{ k.pillText }}</div>
+          <div style="flex:1;min-height:60px;border-radius:12px;overflow:hidden;position:relative;margin-top:4px;background:#E9E5DC">
+            <div style="position:absolute;inset:0;filter:{{ k.greyF }};transition:filter .7s ease .15s;pointer-events:{{ k.slotPE }}"><image-slot id="foto-{{ k.id }}" shape="rect" placeholder="Foto de {{ k.name }}"></image-slot></div>
+            <sc-if value="{{ k.stamp }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(233,229,220,.55);pointer-events:none;flex-direction:column;animation:{{ k.stampFade }}"><div style="transform:rotate(-8deg);animation:{{ k.stampAnim }};padding:7px 12px;border:2.5px solid {{ k.stampColor }};border-radius:6px;color:{{ k.stampColor }};font:800 13px/1 'Sora',sans-serif;letter-spacing:.14em;text-transform:uppercase;background:rgba(244,241,234,.85);box-shadow:0 2px 6px rgba(28,29,27,.12)">{{ k.stampWord }}</div><sc-if value="{{ k.countdown }}" hint-placeholder-val="{{ false }}"><div style="margin-top:8px;padding:4px 10px;border-radius:999px;background:#1C1D1B;color:{{ k.cdColor }};font:600 11px/1 'IBM Plex Mono','IBM Plex Sans',monospace;letter-spacing:.08em;font-variant-numeric:tabular-nums">{{ k.countdown }}</div></sc-if></div></sc-if>
+          </div>
+          <div style="display:flex;align-items:center;gap:5px;font:400 10px/1 'IBM Plex Sans',sans-serif;color:#5A5C57;margin-top:2px"><svg width="9" height="11" viewBox="0 0 9 11"><path d="M4.5 10.5 C1.5 6.8 .5 5.2 .5 4 A4 4 0 0 1 8.5 4 C8.5 5.2 7.5 6.8 4.5 10.5 Z" fill="#5A5C57"></path><circle cx="4.5" cy="4" r="1.5" fill="#fff"></circle></svg>{{ k.lugar }}</div>
+          </div>
+          <div style="position:relative;height:0;z-index:2"><div style="position:absolute;left:10px;right:10px;top:-.75px;border-top:1.5px dashed rgba(28,29,27,.22);opacity:{{ k.stubOp }}"></div><div style="position:absolute;left:0;top:-10px;width:10px;height:20px;overflow:hidden;z-index:3"><div style="position:absolute;left:-10px;top:0;width:20px;height:20px;border-radius:50%;background:#EAE6DC;border:1.5px solid {{ k.ring }};box-sizing:border-box"></div></div><div style="position:absolute;right:0;top:-10px;width:10px;height:20px;overflow:hidden;z-index:3"><div style="position:absolute;right:-10px;top:0;width:20px;height:20px;border-radius:50%;background:#EAE6DC;border:1.5px solid {{ k.ring }};box-sizing:border-box"></div></div><sc-if value="{{ k.tornVis }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 250 6" preserveAspectRatio="none" style="position:absolute;left:10px;right:10px;top:-1.5px;width:calc(100% - 20px);height:8px;display:block;overflow:visible"><path d="M0 0 L0 1 L6 5 L12 1 L18 5 L24 1 L30 5 L36 1 L42 5 L48 1 L54 5 L60 1 L66 5 L72 1 L78 5 L84 1 L90 5 L96 1 L102 5 L108 1 L114 5 L120 1 L126 5 L132 1 L138 5 L144 1 L150 5 L156 1 L162 5 L168 1 L174 5 L180 1 L186 5 L192 1 L198 5 L204 1 L210 5 L216 1 L222 5 L228 1 L234 5 L240 1 L246 5 L250 1 L250 0 Z" fill="{{ k.bg }}"></path><path d="M0 1 L6 5 L12 1 L18 5 L24 1 L30 5 L36 1 L42 5 L48 1 L54 5 L60 1 L66 5 L72 1 L78 5 L84 1 L90 5 L96 1 L102 5 L108 1 L114 5 L120 1 L126 5 L132 1 L138 5 L144 1 L150 5 L156 1 L162 5 L168 1 L174 5 L180 1 L186 5 L192 1 L198 5 L204 1 L210 5 L216 1 L222 5 L228 1 L234 5 L240 1 L246 5 L250 1" fill="none" stroke="{{ k.ring }}" stroke-width="1.2" vector-effect="non-scaling-stroke"></path></svg></sc-if></div>
+          <div style="height:86px;box-sizing:border-box;padding:10px 14px 14px;display:flex;flex-direction:column;gap:6px;border-radius:0 0 22px 22px;background:{{ k.bg }};transform:{{ k.stubTf }};opacity:{{ k.stubOp }};transform-origin:0 0;transition:transform .9s cubic-bezier(.4,.5,.3,1),opacity .5s ease .4s,background .7s ease .15s;pointer-events:none;position:relative">
+          <div style="position:absolute;inset:0;border-radius:0 0 22px 22px;border:1.5px solid {{ k.ring }};border-top:0;pointer-events:none;transition:border-color .7s ease .15s"></div>
+            <sc-if value="{{ k.hasCode }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;inset:0;border-radius:0 0 22px 22px;background:#1C1D1B;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px">
+              <div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;color:rgba(244,241,234,.5)">CÓDIGO DE CANJE · MUÉSTRALO EN CAJA</div>
+              <div style="font:700 24px/1 'Sora',sans-serif;letter-spacing:.22em;color:#E0A030;font-variant-numeric:tabular-nums">{{ k.code }}</div>
+              <div style="display:flex;gap:3px;margin-top:2px"><span style="width:14px;height:3px;background:#E0A030;border-radius:2px"></span><span style="width:4px;height:3px;background:rgba(244,241,234,.5);border-radius:2px"></span><span style="width:9px;height:3px;background:rgba(244,241,234,.5);border-radius:2px"></span><span style="width:5px;height:3px;background:#E0A030;border-radius:2px"></span><span style="width:12px;height:3px;background:rgba(244,241,234,.5);border-radius:2px"></span></div>
+            </div>
+            </sc-if>
+            <div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;color:#5A5C57">CONDICIÓN</div>
+            <div style="display:flex;align-items:center;gap:7px;padding:9px 10px;border-radius:9px;background:{{ k.condBg }};font:500 11px/1.25 'IBM Plex Sans',sans-serif;color:{{ k.condFg }};transition:background .7s ease .15s,color .7s ease .15s"><span style="width:6px;height:6px;border-radius:50%;background:currentColor;flex:none"></span>{{ k.cond }}</div>
+          </div>
+          </div>
+          <div style="position:absolute;inset:-1.5px;pointer-events:{{ k.facePE }};border-radius:22px;box-sizing:border-box;display:flex;flex-direction:column;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:rotateY(180deg);color:#F4F1EA;filter:{{ k.faceFilter }};opacity:{{ k.backOp }}">
+            <div style="flex:1;min-height:0;padding:14px 14px 10px;display:flex;flex-direction:column;gap:8px;border-radius:22px 22px 0 0;background:#1C1D1B;position:relative">
+              <div style="position:absolute;inset:0;border-radius:22px 22px 0 0;border:1.5px solid #E0A030;border-bottom:0;pointer-events:none"></div>
+              <div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;color:rgba(244,241,234,.55)">{{ k.backKicker }}</div>
+              <div style="display:flex;gap:10px;align-items:center">
+                <div style="width:40px;height:40px;border-radius:11px;flex:none;background:{{ k.tint }};color:#1C1D1B;display:flex;align-items:center;justify-content:center;font:700 16px/1 'Sora',sans-serif">{{ k.initial }}</div>
+                <div style="min-width:0"><div style="font:700 17px/1.1 'Sora',sans-serif;letter-spacing:-.03em;text-wrap:pretty">{{ k.benefit }}</div><div style="font:400 11px/1.3 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.7);margin-top:2px">{{ k.name }}</div></div>
+              </div>
+              <div style="display:flex;align-items:center;gap:7px;padding:9px 10px;border-radius:9px;background:rgba(244,241,234,.1);font:500 11px/1.25 'IBM Plex Sans',sans-serif;color:#F4F1EA"><span style="width:6px;height:6px;border-radius:50%;background:#E0A030;flex:none"></span>{{ k.cond }}</div>
+              <div style="font:400 11px/1.35 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.75)">{{ k.backNote }}</div>
+              <sc-if value="{{ k.hasCode }}" hint-placeholder-val="{{ false }}">
+              <div style="flex:1;min-height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+                <div style="width:96px;height:96px;background:#F4F1EA;border-radius:10px;padding:6px;box-sizing:border-box;box-shadow:0 0 0 1.5px rgba(224,160,48,.6)"><svg viewBox="0 0 25 25" width="84" height="84" shape-rendering="crispEdges" style="display:block"><sc-for list="{{ k.qr }}" as="q" hint-placeholder-count="0"><rect x="{{ q.x }}" y="{{ q.y }}" width="1" height="1" fill="#1C1D1B"></rect></sc-for></svg></div>
+                <div style="font:700 18px/1 'Sora',sans-serif;letter-spacing:.2em;color:#E0A030">{{ k.code }}</div>
+              </div>
+              </sc-if>
+              <sc-if value="{{ k.noCode }}" hint-placeholder-val="{{ true }}">
+              <a href="{{ k.mapsUrl }}" target="_blank" rel="noopener" onPointerDown="{{ stop }}" onClick="{{ stop }}" style="flex:1;min-height:56px;border-radius:12px;overflow:hidden;position:relative;background:#2A2C29;display:block;cursor:pointer;text-decoration:none;color:inherit;pointer-events:auto">
+                <div style="position:absolute;right:8px;bottom:8px;z-index:2;display:flex;align-items:center;gap:5px;padding:5px 8px;border-radius:999px;background:rgba(28,29,27,.8);border:1px solid rgba(224,160,48,.5);font:600 9px/1 'Sora',sans-serif;color:#E0A030;letter-spacing:.04em">Abrir ubicación<svg width="8" height="8" viewBox="0 0 8 8"><path d="M1.5 6.5 L6.5 1.5 M3 1.5 H6.5 V5" fill="none" stroke="#E0A030" stroke-width="1.3" stroke-linecap="round"></path></svg></div>
+                <svg viewBox="0 0 220 100" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;opacity:1">
+              <g fill="none" stroke="rgba(244,241,234,.18)" stroke-width=".9">
+                <path d="M-10 70 C30 50 60 85 100 60 S170 30 230 50"></path><path d="M-10 85 C30 65 70 100 110 75 S180 45 230 65"></path><path d="M-10 55 C30 35 55 70 95 45 S160 15 230 35"></path><path d="M-10 40 C25 20 50 55 85 30 S150 0 230 20"></path><path d="M-10 100 C40 80 80 115 120 90 S190 60 230 80"></path>
+                <path d="M40 -5 C50 10 30 25 45 40 S70 60 55 80 S60 105 70 110" stroke="rgba(244,241,234,.14)"></path>
+              </g>
+              <path d="M-10 62 C40 58 70 80 120 66 S180 40 230 44" fill="none" stroke="#8FA9A3" stroke-width="2.2" stroke-linecap="round"></path>
+              <path d="M-10 30 C40 32 80 20 130 28 S200 36 230 30" fill="none" stroke="#1C1D1B" stroke-width="3"></path>
+              <path d="M-10 30 C40 32 80 20 130 28 S200 36 230 30" fill="none" stroke="rgba(244,241,234,.6)" stroke-width="1" stroke-dasharray="5 4"></path>
+              <g transform="translate({{ k.pinX }} {{ k.pinY }})"><path d="M0 0 C-7 -8 -9 -12 -9 -16 A9 9 0 0 1 9 -16 C9 -12 7 -8 0 0 Z" fill="#E0A030"></path><circle cx="0" cy="-16" r="3.4" fill="#F4F1EA"></circle></g>
+            </svg>
+              </a>
+              <div style="display:flex;align-items:center;gap:5px;font:500 10px/1 'IBM Plex Sans',sans-serif;color:#F4F1EA"><svg width="9" height="11" viewBox="0 0 9 11"><path d="M4.5 10.5 C1.5 6.8 .5 5.2 .5 4 A4 4 0 0 1 8.5 4 C8.5 5.2 7.5 6.8 4.5 10.5 Z" fill="#E0A030"></path></svg>{{ k.lugar }}</div>
+              </sc-if>
+              <sc-if value="{{ k.tornVis }}" hint-placeholder-val="{{ false }}"><button onPointerDown="{{ stop }}" onClick="{{ k.unflip }}" style="appearance:none;border:0;background:none;color:rgba(244,241,234,.7);font:500 12px/1 'IBM Plex Sans',sans-serif;padding:4px 2px;cursor:pointer;align-self:center">Volver</button></sc-if>
+            </div>
+            <div style="position:relative;height:0;z-index:2"><div style="position:absolute;left:10px;right:10px;top:-.75px;border-top:1.5px dashed rgba(244,241,234,.25);opacity:{{ k.stubOp }}"></div><div style="position:absolute;left:0;top:-10px;width:10px;height:20px;overflow:hidden;z-index:3"><div style="position:absolute;left:-10px;top:0;width:20px;height:20px;border-radius:50%;background:#EAE6DC;border:1.5px solid #E0A030;box-sizing:border-box"></div></div><div style="position:absolute;right:0;top:-10px;width:10px;height:20px;overflow:hidden;z-index:3"><div style="position:absolute;right:-10px;top:0;width:20px;height:20px;border-radius:50%;background:#EAE6DC;border:1.5px solid #E0A030;box-sizing:border-box"></div></div><sc-if value="{{ k.tornVis }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 250 6" preserveAspectRatio="none" style="position:absolute;left:10px;right:10px;top:-1.5px;width:calc(100% - 20px);height:8px;display:block;overflow:visible"><path d="M0 0 L0 1 L6 5 L12 1 L18 5 L24 1 L30 5 L36 1 L42 5 L48 1 L54 5 L60 1 L66 5 L72 1 L78 5 L84 1 L90 5 L96 1 L102 5 L108 1 L114 5 L120 1 L126 5 L132 1 L138 5 L144 1 L150 5 L156 1 L162 5 L168 1 L174 5 L180 1 L186 5 L192 1 L198 5 L204 1 L210 5 L216 1 L222 5 L228 1 L234 5 L240 1 L246 5 L250 1 L250 0 Z" fill="#1C1D1B"></path><path d="M0 1 L6 5 L12 1 L18 5 L24 1 L30 5 L36 1 L42 5 L48 1 L54 5 L60 1 L66 5 L72 1 L78 5 L84 1 L90 5 L96 1 L102 5 L108 1 L114 5 L120 1 L126 5 L132 1 L138 5 L144 1 L150 5 L156 1 L162 5 L168 1 L174 5 L180 1 L186 5 L192 1 L198 5 L204 1 L210 5 L216 1 L222 5 L228 1 L234 5 L240 1 L246 5 L250 1" fill="none" stroke="#E0A030" stroke-width="1.2" vector-effect="non-scaling-stroke"></path></svg></sc-if></div>
+            <div style="height:86px;box-sizing:border-box;padding:10px 14px 10px;display:flex;flex-direction:column;gap:6px;justify-content:center;border-radius:0 0 22px 22px;background:#1C1D1B;position:relative;transform:{{ k.stubTf }};opacity:{{ k.stubOp }};transform-origin:0 0;transition:transform .9s cubic-bezier(.4,.5,.3,1),opacity .5s ease .4s">
+              <div style="position:absolute;inset:0;border-radius:0 0 22px 22px;border:1.5px solid #E0A030;border-top:0;pointer-events:none"></div>
+              <sc-if value="{{ k.hasCode }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:10px;border:1.5px solid rgba(224,160,48,.6);color:#E0A030;font:600 11px/1.2 'Sora',sans-serif"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#E0A030" stroke-width="1.6" stroke-linecap="round"><path d="M1 4V1h3M10 1h3v3M13 10v3h-3M4 13H1v-3M1 7h12"></path></svg>Muestra el QR en caja · esperando escaneo</div>
+              </sc-if>
+              <sc-if value="{{ k.canRedeem }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:10px;border:1.5px dashed rgba(224,160,48,.7);color:#E0A030;font:600 11px/1.2 'Sora',sans-serif"><div style="width:9px;height:9px;border-right:2px solid #E0A030;border-bottom:2px solid #E0A030;transform:rotate(45deg);flex:none;margin-top:-4px;animation:giroPulse 1.2s ease-in-out infinite"></div>Desliza hacia abajo para canjear</div>
+              </sc-if>
+              <sc-if value="{{ k.cantRedeem }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:10px;border:1.5px solid rgba(244,241,234,.25);color:#F4F1EA;font:600 11px/1.2 'Sora',sans-serif"><div style="width:14px;height:14px;border-radius:50%;border:2px solid rgba(244,241,234,.6);flex:none;position:relative;box-sizing:border-box"><div style="position:absolute;left:0px;top:4px;width:10px;height:2px;background:rgba(244,241,234,.6);transform:rotate(-45deg)"></div></div>No se puede canjear ahora</div>
+              </sc-if>
+              <button onPointerDown="{{ stop }}" onClick="{{ k.unflip }}" style="appearance:none;border:0;background:none;color:rgba(244,241,234,.7);font:500 12px/1 'IBM Plex Sans',sans-serif;padding:2px;cursor:pointer;align-self:center">Volver</button>
+            </div>
+          </div>
+          <div style="position:absolute;left:-1px;top:-1px;height:104px;width:{{ rowW }}px;box-sizing:border-box;border:1px solid transparent;border-radius:18px;background:{{ k.bg }};opacity:{{ k.rowOp }};transition:opacity .4s ease {{ k.rowDelay }};display:flex;gap:12px;align-items:center;padding:14px 14px 14px 12px;box-sizing:border-box;overflow:hidden;pointer-events:none">
+            <sc-if value="{{ k.hasLogo }}" hint-placeholder-val="{{ false }}"><div style="width:48px;height:48px;border-radius:14px;flex:none;background:repeating-linear-gradient(135deg,#dcd7cc 0 4px,#e9e5dc 4px 8px);display:flex;align-items:center;justify-content:center;font:500 9px/1 ui-monospace,Menlo,monospace;color:#5A5C57">logo</div></sc-if>
+            <sc-if value="{{ k.noLogo }}" hint-placeholder-val="{{ true }}"><div style="width:48px;height:48px;border-radius:14px;flex:none;background:{{ k.monoBg }};color:{{ k.monoFg }};display:flex;align-items:center;justify-content:center;font:700 22px/1 'Sora',sans-serif">{{ k.initial }}</div></sc-if>
+            <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:5px">
+              <div style="display:flex;gap:6px;align-items:baseline"><div style="font:600 14px/1.2 'Sora',sans-serif;color:{{ k.fg }};white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ k.name }}</div><div style="font:400 11px/1.2 'IBM Plex Sans',sans-serif;color:#5A5C57;flex:none">{{ k.rubro }}</div></div>
+              <div style="font:600 17px/1.2 'Sora',sans-serif;letter-spacing:-.02em;color:{{ k.fg }};white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ k.benefit }}</div>
+              <div style="display:inline-flex;align-self:flex-start;align-items:flex-start;gap:6px;padding:5px 9px;border-radius:6px;background:{{ k.condBg }};font:500 12px/1.2 'IBM Plex Sans',sans-serif;color:{{ k.condFg }};max-width:100%"><span style="width:5px;height:5px;border-radius:50%;background:currentColor;flex:none;margin-top:5px"></span>{{ k.cond }}</div>
+            </div>
+            <sc-if value="{{ k.noStamp }}" hint-placeholder-val="{{ true }}"><div style="flex:none;width:52px;display:flex;flex-direction:column;align-items:flex-end;gap:2px"><div style="font:600 15px/1 'Sora',sans-serif;color:{{ k.fg }}">{{ k.sat }}</div><div style="font:400 10px/1 'IBM Plex Sans',sans-serif;color:#5A5C57">volvería</div></div></sc-if>
+            <sc-if value="{{ k.rowReady }}" hint-placeholder-val="{{ false }}"><div style="flex:none;width:76px;display:flex;flex-direction:column;align-items:flex-end;gap:5px"><div style="padding:6px 8px;border-radius:8px;background:#1C1D1B;color:#E0A030;font:700 11px/1 'Sora',sans-serif;letter-spacing:.1em">{{ k.rowCode }}</div><div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;color:#B07A12">LISTO · {{ k.rowReadyF }}</div></div></sc-if>
+            <sc-if value="{{ k.stamp }}" hint-placeholder-val="{{ false }}"><div style="flex:none;width:76px;display:flex;flex-direction:column;align-items:flex-end;gap:8px"><div style="padding:6px 9px;border:1.5px solid {{ k.stampColor }};color:{{ k.stampColor }};border-radius:999px;background:rgba(244,241,234,.92);font:600 10px/1.2 'Sora',sans-serif;text-align:center;max-width:76px;box-sizing:border-box">{{ k.stamp }}</div><div style="font:400 10px/1 'IBM Plex Sans',sans-serif;color:#5A5C57">{{ k.sat }} volvería</div></div></sc-if>
+          </div>
+        </div>
+      </sc-for>
+      <div style="{{ chevWrapStyle }}">
+        <div style="width:11px;height:11px;border-left:2px solid #5A5C57;border-bottom:2px solid #5A5C57;transform:rotate(-45deg);animation:giroChev 1.7s ease-in-out infinite"></div>
+        <div style="width:11px;height:11px;border-left:2px solid #5A5C57;border-bottom:2px solid #5A5C57;transform:rotate(-45deg);animation:giroChev 1.7s ease-in-out .18s infinite"></div>
+      </div>
+      <div style="{{ mouthStyle }}">
+        <div style="{{ mouthGlow }}"></div>
+        <sc-if value="{{ scanning }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none">
+          <div style="position:absolute;bottom:-6px;height:130%;width:36%;left:-40%;background:radial-gradient(ellipse at 50% 100%,rgba(255,226,160,.95),rgba(255,190,70,.6) 35%,rgba(224,160,48,0) 70%);filter:blur(2px);animation:giroScan .65s cubic-bezier(.45,0,.55,1) 2 alternate"></div>
+        </div>
+        </sc-if>
+      </div>
+      <div style="position:absolute;left:0;right:0;bottom:0;height:148px;background:linear-gradient(180deg,#1C1D1B,#111210);display:flex;flex-direction:column;align-items:center;padding-top:34px;box-sizing:border-box;z-index:120;transform:{{ dockTransform }};opacity:{{ dockOp }};pointer-events:{{ dockPE }};transition:transform .5s cubic-bezier(.4,0,.2,1),opacity .35s ease">
+        <div style="{{ shoulderL }}"></div>
+        <div style="{{ shoulderR }}"></div>
+        <button onClick="{{ openWallet }}" style="position:absolute;right:14px;top:-16px;width:44px;height:44px;border-radius:14px;border:1.5px solid rgba(224,160,48,.55);background:#1C1D1B;color:#E0A030;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,.35);appearance:none;padding:0;z-index:3;animation:{{ walletAnim }}">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M2.5 6.5a1.5 1.5 0 0 1 1.5-1.5h12a1.5 1.5 0 0 1 1.5 1.5v1.2a2 2 0 0 0 0 3.6v1.2a1.5 1.5 0 0 1-1.5 1.5H4a1.5 1.5 0 0 1-1.5-1.5v-1.2a2 2 0 0 0 0-3.6z"></path><path d="M7.5 5v9" stroke-dasharray="1.6 1.6"></path></svg>
+          <sc-if value="{{ walletOn }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;top:-7px;right:-7px;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:#E0A030;color:#1C1D1B;font:700 11px/20px 'Sora',sans-serif;text-align:center;box-sizing:border-box;border:2px solid #1C1D1B">{{ walletBadge }}</div></sc-if>
+        </button>
+        <div style="{{ lipStyle }}"></div>
+        <div style="margin-top:0;font:600 12px/1 'Sora',sans-serif;letter-spacing:.02em;color:#F4F1EA;text-align:center;padding:0 24px">{{ dockLabel }}</div>
+        <div style="margin-top:8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;color:rgba(244,241,234,.45)">{{ dockSub }}</div>
+      </div>
+      <sc-if value="{{ dockCopyOn }}" hint-placeholder-val="{{ false }}">
+      <div style="{{ dockClipStyle }}">
+        <div style="{{ dockCardStyle }}">
+          <sc-if value="{{ scanning }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;inset:-1.5px;border-radius:22px;overflow:hidden;z-index:5;pointer-events:none;mix-blend-mode:soft-light">
+            <div style="position:absolute;top:0;bottom:0;width:34%;left:-40%;background:linear-gradient(90deg,rgba(255,228,170,0),rgba(255,228,170,.9) 50%,rgba(255,228,170,0));animation:giroScan .65s cubic-bezier(.45,0,.55,1) 2 alternate"></div>
+          </div>
+          <div style="position:absolute;left:8%;right:8%;bottom:-2px;height:40%;border-radius:0 0 22px 22px;background:linear-gradient(0deg,rgba(224,160,48,.28),rgba(224,160,48,0));z-index:4;pointer-events:none"></div>
+          </sc-if>
+          <sc-if value="{{ dockBackOn }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;inset:-1.5px;border-radius:22px;box-sizing:border-box;display:flex;flex-direction:column;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:rotateY(180deg);background:#1C1D1B;color:#F4F1EA;box-shadow:inset 0 0 0 1.5px #E0A030, 0 26px 50px -18px rgba(28,29,27,.45);overflow:hidden">
+            <div style="flex:1;min-height:0;padding:14px 14px 10px;display:flex;flex-direction:column;gap:8px">
+              <div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;color:rgba(244,241,234,.55)">{{ dockCard.backKicker }}</div>
+              <div style="display:flex;gap:10px;align-items:center">
+                <div style="width:40px;height:40px;border-radius:11px;flex:none;background:{{ dockCard.tint }};color:#1C1D1B;display:flex;align-items:center;justify-content:center;font:700 16px/1 'Sora',sans-serif">{{ dockCard.initial }}</div>
+                <div style="min-width:0"><div style="font:700 17px/1.1 'Sora',sans-serif;letter-spacing:-.03em;text-wrap:pretty">{{ dockCard.benefit }}</div><div style="font:400 11px/1.3 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.7);margin-top:2px">{{ dockCard.name }}</div></div>
+              </div>
+              <div style="display:flex;align-items:center;gap:7px;padding:9px 10px;border-radius:9px;background:rgba(244,241,234,.1);font:500 11px/1.25 'IBM Plex Sans',sans-serif;color:#F4F1EA"><span style="width:6px;height:6px;border-radius:50%;background:#E0A030;flex:none"></span>{{ dockCard.cond }}</div>
+              <div style="font:400 11px/1.35 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.75)">{{ dockCard.backNote }}</div>
+              <a href="{{ dockCard.mapsUrl }}" target="_blank" rel="noopener" onPointerDown="{{ stop }}" onClick="{{ stop }}" style="flex:1;min-height:56px;border-radius:12px;overflow:hidden;position:relative;background:#2A2C29;display:block;cursor:pointer;text-decoration:none;color:inherit;pointer-events:auto">
+                <div style="position:absolute;right:8px;bottom:8px;z-index:2;display:flex;align-items:center;gap:5px;padding:5px 8px;border-radius:999px;background:rgba(28,29,27,.8);border:1px solid rgba(224,160,48,.5);font:600 9px/1 'Sora',sans-serif;color:#E0A030;letter-spacing:.04em">Abrir ubicación<svg width="8" height="8" viewBox="0 0 8 8"><path d="M1.5 6.5 L6.5 1.5 M3 1.5 H6.5 V5" fill="none" stroke="#E0A030" stroke-width="1.3" stroke-linecap="round"></path></svg></div>
+                <svg viewBox="0 0 220 100" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;opacity:1">
+              <g fill="none" stroke="rgba(244,241,234,.18)" stroke-width=".9">
+                <path d="M-10 70 C30 50 60 85 100 60 S170 30 230 50"></path><path d="M-10 85 C30 65 70 100 110 75 S180 45 230 65"></path><path d="M-10 55 C30 35 55 70 95 45 S160 15 230 35"></path><path d="M-10 40 C25 20 50 55 85 30 S150 0 230 20"></path><path d="M-10 100 C40 80 80 115 120 90 S190 60 230 80"></path>
+                <path d="M40 -5 C50 10 30 25 45 40 S70 60 55 80 S60 105 70 110" stroke="rgba(244,241,234,.14)"></path>
+              </g>
+              <path d="M-10 62 C40 58 70 80 120 66 S180 40 230 44" fill="none" stroke="#8FA9A3" stroke-width="2.2" stroke-linecap="round"></path>
+              <path d="M-10 30 C40 32 80 20 130 28 S200 36 230 30" fill="none" stroke="#1C1D1B" stroke-width="3"></path>
+              <path d="M-10 30 C40 32 80 20 130 28 S200 36 230 30" fill="none" stroke="rgba(244,241,234,.6)" stroke-width="1" stroke-dasharray="5 4"></path>
+              <g transform="translate({{ dockCard.pinX }} {{ dockCard.pinY }})"><path d="M0 0 C-7 -8 -9 -12 -9 -16 A9 9 0 0 1 9 -16 C9 -12 7 -8 0 0 Z" fill="#E0A030"></path><circle cx="0" cy="-16" r="3.4" fill="#F4F1EA"></circle></g>
+            </svg>
+              </a>
+              <div style="display:flex;align-items:center;gap:5px;font:500 10px/1 'IBM Plex Sans',sans-serif;color:#F4F1EA"><svg width="9" height="11" viewBox="0 0 9 11"><path d="M4.5 10.5 C1.5 6.8 .5 5.2 .5 4 A4 4 0 0 1 8.5 4 C8.5 5.2 7.5 6.8 4.5 10.5 Z" fill="#E0A030"></path></svg>{{ dockCard.lugar }}</div>
+            </div>
+            <div style="position:relative;height:0;border-top:1.5px dashed rgba(244,241,234,.25);margin:0 10px"><div style="position:absolute;left:-20px;top:-10px;width:20px;height:20px;border-radius:50%;background:#EAE6DC;border:1.5px solid #E0A030;box-sizing:border-box"></div><div style="position:absolute;right:-20px;top:-10px;width:20px;height:20px;border-radius:50%;background:#EAE6DC;border:1.5px solid #E0A030;box-sizing:border-box"></div></div>
+            <div style="height:86px;box-sizing:border-box;padding:10px 14px 10px;display:flex;flex-direction:column;gap:6px;justify-content:center">
+              <sc-if value="{{ dockCard.canRedeem }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:10px;border:1.5px dashed rgba(224,160,48,.7);color:#E0A030;font:600 11px/1.2 'Sora',sans-serif"><div style="width:9px;height:9px;border-right:2px solid #E0A030;border-bottom:2px solid #E0A030;transform:rotate(45deg);flex:none;margin-top:-4px;animation:giroPulse 1.2s ease-in-out infinite"></div>Desliza hacia abajo para canjear</div>
+              </sc-if>
+              <sc-if value="{{ dockCard.cantRedeem }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:10px;border:1.5px solid rgba(244,241,234,.25);color:#F4F1EA;font:600 11px/1.2 'Sora',sans-serif"><div style="width:14px;height:14px;border-radius:50%;border:2px solid rgba(244,241,234,.6);flex:none;position:relative;box-sizing:border-box"><div style="position:absolute;left:0px;top:4px;width:10px;height:2px;background:rgba(244,241,234,.6);transform:rotate(-45deg)"></div></div>No se puede canjear ahora</div>
+              </sc-if>
+              <div style="font:500 12px/1 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.7);padding:2px;align-self:center">Volver</div>
+            </div>
+          </div>
+          </sc-if>
+          <div style="position:absolute;inset:-1.5px;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;background:{{ dockCard.bg }};box-shadow:inset 0 0 0 1.5px #E0A030, 0 26px 50px -18px rgba(28,29,27,.45);opacity:{{ dockFaceOp }}">
+          <div style="flex:1;min-height:0;padding:14px 14px 10px;display:flex;flex-direction:column;gap:6px">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start">
+            <div style="width:40px;height:40px;border-radius:11px;background:{{ dockCard.monoBg }};color:{{ dockCard.monoFg }};display:flex;align-items:center;justify-content:center;font:700 16px/1 'Sora',sans-serif;letter-spacing:-.02em">{{ dockCard.initial }}</div>
+            <div style="text-align:right"><div style="display:flex;align-items:center;justify-content:flex-end;gap:4px;font:600 15px/1 'Sora',sans-serif;color:{{ dockCard.fg }}"><svg width="12" height="11" viewBox="0 0 12 11"><path d="M6 10.5 L1.2 5.8 A2.9 2.9 0 0 1 6 2.2 A2.9 2.9 0 0 1 10.8 5.8 Z" fill="#2F5D4A"></path></svg>{{ dockCard.sat }}</div><div style="font:400 9px/1 'IBM Plex Sans',sans-serif;color:#5A5C57;margin-top:3px">de los socios volvería</div></div>
+          </div>
+          <div style="font:400 10px/1.2 'IBM Plex Sans',sans-serif;color:#5A5C57;margin-top:2px">{{ dockCard.rubro }}</div>
+          <div style="font:600 13px/1.2 'Sora',sans-serif;color:{{ dockCard.fg }}">{{ dockCard.name }}</div>
+          <div style="font:700 19px/1.1 'Sora',sans-serif;letter-spacing:-.03em;color:{{ dockCard.fg }};text-wrap:pretty">{{ dockCard.benefit }}</div>
+          <sc-if value="{{ dockCard.stamp }}" hint-placeholder-val="{{ false }}"><div style="align-self:flex-start;padding:5px 10px;border-radius:999px;background:{{ dockCard.stampColor }};color:#F4F1EA;font:600 11px/1 'Sora',sans-serif">{{ dockCard.stamp }}</div></sc-if>
+          <sc-if value="{{ dockCard.dockPill }}" hint-placeholder-val="{{ true }}"><div style="align-self:flex-start;padding:5px 10px;border-radius:999px;background:{{ dockCard.tagBg }};color:{{ dockCard.tagFg }};font:600 11px/1 'Sora',sans-serif">{{ dockCard.tag }}</div></sc-if>
+          <div style="flex:1;min-height:60px;border-radius:12px;overflow:hidden;position:relative;margin-top:4px;background:#E9E5DC">
+            <div style="position:absolute;inset:0;filter:{{ dockCard.greyF }};pointer-events:none"><image-slot id="foto-{{ dockCard.id }}" shape="rect" placeholder="Foto de {{ dockCard.name }}"></image-slot></div>
+            <sc-if value="{{ dockCard.stamp }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(233,229,220,.55);pointer-events:none;flex-direction:column"><div style="transform:rotate(-8deg);animation:{{ dockCard.stampAnim }};padding:7px 12px;border:2.5px solid {{ dockCard.stampColor }};border-radius:6px;color:{{ dockCard.stampColor }};font:800 13px/1 'Sora',sans-serif;letter-spacing:.14em;text-transform:uppercase;background:rgba(244,241,234,.85);box-shadow:0 2px 6px rgba(28,29,27,.12)">{{ dockCard.stampWord }}</div><sc-if value="{{ dockCard.countdown }}" hint-placeholder-val="{{ false }}"><div style="margin-top:8px;padding:4px 10px;border-radius:999px;background:#1C1D1B;color:{{ dockCard.cdColor }};font:600 11px/1 'IBM Plex Mono','IBM Plex Sans',monospace;letter-spacing:.08em;font-variant-numeric:tabular-nums">{{ dockCard.countdown }}</div></sc-if></div></sc-if>
+          </div>
+          <div style="display:flex;align-items:center;gap:5px;font:400 10px/1 'IBM Plex Sans',sans-serif;color:#5A5C57;margin-top:2px"><svg width="9" height="11" viewBox="0 0 9 11"><path d="M4.5 10.5 C1.5 6.8 .5 5.2 .5 4 A4 4 0 0 1 8.5 4 C8.5 5.2 7.5 6.8 4.5 10.5 Z" fill="#5A5C57"></path><circle cx="4.5" cy="4" r="1.5" fill="#fff"></circle></svg>{{ dockCard.lugar }}</div>
+          </div>
+          <div style="position:relative;height:0;border-top:1.5px dashed rgba(28,29,27,.2);margin:0 10px"><div style="position:absolute;left:-20px;top:-10px;width:20px;height:20px;border-radius:50%;background:#EAE6DC;border:1.5px solid #E0A030;box-sizing:border-box"></div><div style="position:absolute;right:-20px;top:-10px;width:20px;height:20px;border-radius:50%;background:#EAE6DC;border:1.5px solid #E0A030;box-sizing:border-box"></div></div>
+          <div style="height:86px;box-sizing:border-box;padding:10px 14px 14px;display:flex;flex-direction:column;gap:6px;position:relative">
+            <sc-if value="{{ dockCard.hasCode }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;inset:0;border-radius:0 0 22px 22px;background:#1C1D1B;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;animation:giroIn .5s ease-out">
+              <div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;color:rgba(244,241,234,.5)">CÓDIGO DE CANJE · MUÉSTRALO EN CAJA</div>
+              <div style="font:700 24px/1 'Sora',sans-serif;letter-spacing:.22em;color:#E0A030;font-variant-numeric:tabular-nums">{{ dockCard.code }}</div>
+              <div style="display:flex;gap:3px;margin-top:2px"><span style="width:14px;height:3px;background:#E0A030;border-radius:2px"></span><span style="width:4px;height:3px;background:rgba(244,241,234,.5);border-radius:2px"></span><span style="width:9px;height:3px;background:rgba(244,241,234,.5);border-radius:2px"></span><span style="width:5px;height:3px;background:#E0A030;border-radius:2px"></span><span style="width:12px;height:3px;background:rgba(244,241,234,.5);border-radius:2px"></span></div>
+            </div>
+            </sc-if>
+            <div style="font:500 8px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;color:#5A5C57">CONDICIÓN</div>
+            <div style="display:flex;align-items:center;gap:7px;padding:9px 10px;border-radius:9px;background:{{ dockCard.condBg }};font:500 11px/1.25 'IBM Plex Sans',sans-serif;color:{{ dockCard.condFg }}"><span style="width:6px;height:6px;border-radius:50%;background:currentColor;flex:none"></span>{{ dockCard.cond }}</div>
+          </div>
+        </div>
+      </div>
+      </sc-if>
+    </div>
+    </sc-if>
+
+    </div>
+  </div>
+
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ listWallet }}" hint-placeholder-val="{{ false }}">
+  <button onClick="{{ openWallet }}" style="position:absolute;right:14px;bottom:26px;width:44px;height:44px;border-radius:14px;border:1.5px solid rgba(224,160,48,.55);background:#1C1D1B;color:#E0A030;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 20px rgba(28,29,27,.35);appearance:none;padding:0;z-index:170;animation:{{ walletAnim }}">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M2.5 6.5a1.5 1.5 0 0 1 1.5-1.5h12a1.5 1.5 0 0 1 1.5 1.5v1.2a2 2 0 0 0 0 3.6v1.2a1.5 1.5 0 0 1-1.5 1.5H4a1.5 1.5 0 0 1-1.5-1.5v-1.2a2 2 0 0 0 0-3.6z"></path><path d="M7.5 5v9" stroke-dasharray="1.6 1.6"></path></svg>
+    <sc-if value="{{ walletOn }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;top:-7px;right:-7px;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:#E0A030;color:#1C1D1B;font:700 11px/20px 'Sora',sans-serif;text-align:center;box-sizing:border-box;border:2px solid #F4F1EA">{{ walletBadge }}</div></sc-if>
+  </button>
+  </sc-if>
+  <sc-if value="{{ askRedeem }}" hint-placeholder-val="{{ false }}">
+  <div style="position:absolute;inset:0;z-index:305;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(28,29,27,.28);animation:giroIn .25s ease-out">
+  <div style="width:100%;max-width:340px;pointer-events:auto;background:#F4F1EA;border:1.5px solid #E0A030;border-radius:18px;padding:16px;box-sizing:border-box;box-shadow:0 20px 40px -16px rgba(28,29,27,.5);display:flex;flex-direction:column;gap:12px;animation:giroSlotIn .3s cubic-bezier(.2,.9,.3,1.1) both">
+    <div style="font:600 16px/1.2 'Sora',sans-serif;letter-spacing:-.01em;color:#1C1D1B">{{ askTitle }}</div>
+    <div style="font:400 13px/1.4 'IBM Plex Sans',sans-serif;color:#5A5C57;text-wrap:pretty">{{ askNote }}</div>
+    <div style="display:flex;gap:8px">
+      <button onClick="{{ cancelDock }}" style="flex:1;appearance:none;border:1.5px solid rgba(28,29,27,.2);background:transparent;color:#1C1D1B;border-radius:12px;padding:12px;font:600 13px/1 'Sora',sans-serif;cursor:pointer">Todavía no</button>
+      <button onClick="{{ confirmDock }}" style="flex:1.4;appearance:none;border:0;background:#E0A030;color:#1C1D1B;border-radius:12px;padding:12px;font:600 13px/1 'Sora',sans-serif;cursor:pointer">Sí, canjear</button>
+    </div>
+  </div>
+  </div>
+  </sc-if>
+  <sc-if value="{{ activating }}" hint-placeholder-val="{{ false }}">
+  <div style="position:absolute;inset:0;background:#F4F1EA;z-index:310;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;animation:giroIn .2s ease-out">
+    <div style="width:64px;height:56px;position:relative;animation:giroPulse 1s ease-in-out infinite">
+      <div style="position:absolute;inset:0;background:#1C1D1B;clip-path:polygon(50% 0,100% 100%,0 100%)"><div style="position:absolute;left:18px;top:20px;width:28px;height:26px;background:#F4F1EA;clip-path:polygon(50% 0,100% 100%,0 100%)"></div></div>
+      <div style="position:absolute;left:24px;top:-6px;width:16px;height:16px;border-radius:50%;background:#E0A030"></div>
+      <div style="position:absolute;left:-4px;bottom:-4px;width:16px;height:16px;border-radius:50%;background:#1C1D1B"></div>
+      <div style="position:absolute;right:-4px;bottom:-4px;width:16px;height:16px;border-radius:50%;background:#1C1D1B"></div>
+    </div>
+    <div style="font:600 18px/1.2 'Sora',sans-serif;letter-spacing:-.02em;color:#1C1D1B">Usando tu giro…</div>
+    <div style="font:400 13px/1.3 'IBM Plex Sans',sans-serif;color:#5A5C57">{{ activatingName }}</div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ sheet }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeSheet }}" style="position:absolute;inset:0;background:rgba(28,29,27,.45);z-index:300;display:flex;flex-direction:column;justify-content:flex-end">
+    <div onClick="{{ stop }}" style="background:#F4F1EA;border-radius:28px 28px 0 0;padding:14px 20px 40px;display:flex;flex-direction:column;gap:16px;animation:giroIn .25s ease-out">
+      <div style="width:40px;height:4px;border-radius:2px;background:rgba(28,29,27,.2);align-self:center"></div>
+      <div style="font:500 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#5A5C57">{{ sheet.kicker }}</div>
+
+      <sc-if value="{{ sheet.isCommerce }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;gap:12px;align-items:center">
+        <div style="width:48px;height:48px;border-radius:14px;flex:none;background:{{ sheet.monoBg }};color:#1C1D1B;display:flex;align-items:center;justify-content:center;font:700 22px/1 'Sora',sans-serif">{{ sheet.initial }}</div>
+        <div><div style="font:600 20px/1.2 'Sora',sans-serif;letter-spacing:-.02em">{{ sheet.benefit }}</div><div style="font:400 13px/1.3 'IBM Plex Sans',sans-serif;color:#3F413D;margin-top:2px">{{ sheet.name }}</div></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;padding:10px 12px;border-radius:10px;background:#fff;border:1px solid rgba(0,0,0,.08);font:500 14px/1.3 'IBM Plex Sans',sans-serif;color:#2F5D4A"><span style="width:6px;height:6px;border-radius:50%;background:currentColor;flex:none"></span>{{ sheet.cond }}</div>
+      </sc-if>
+
+      <sc-if value="{{ sheet.isBuy }}" hint-placeholder-val="{{ false }}">
+      <div style="font:600 22px/1.2 'Sora',sans-serif;letter-spacing:-.02em">Cargar giros</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+        <sc-for list="{{ packs }}" as="k" hint-placeholder-count="3">
+        <div onClick="{{ k.pick }}" style="padding:14px 10px;border-radius:14px;background:{{ k.bg }};color:{{ k.fg }};border:1.5px solid {{ k.border }};box-sizing:border-box;display:flex;flex-direction:column;gap:4px;align-items:center;cursor:pointer"><div style="font:700 24px/1 'Sora',sans-serif">{{ k.n }}</div><div style="font:400 11px/1 'IBM Plex Sans',sans-serif">giros</div><div style="font:600 12px/1 'IBM Plex Sans',sans-serif;margin-top:4px">{{ k.price }}</div></div>
+        </sc-for>
+      </div>
+      </sc-if>
+
+      <sc-if value="{{ sheet.isCode }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:10px 0">
+        <div style="font:700 64px/1 'Sora',sans-serif;letter-spacing:.08em;background:#1C1D1B;color:#F4F1EA;padding:18px 26px;border-radius:16px">{{ sheet.code }}</div>
+        <div style="font:600 16px/1.2 'Sora',sans-serif">{{ sheet.benefit }}</div>
+        <div style="font:400 13px/1.3 'IBM Plex Sans',sans-serif;color:#3F413D">{{ sheet.name }}</div>
+      </div>
+      </sc-if>
+
+      <sc-if value="{{ sheet.isWallet }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="font:600 22px/1.2 'Sora',sans-serif;letter-spacing:-.02em">Cartera</div>
+        <sc-if value="{{ sheet.walletEmpty }}" hint-placeholder-val="{{ false }}"><div style="font:400 13px/1.45 'IBM Plex Sans',sans-serif;color:#5A5C57;text-wrap:pretty">{{ sheet.empty }}</div></sc-if>
+        <sc-for list="{{ sheet.items }}" as="w" hint-placeholder-count="0">
+        <div onClick="{{ w.go }}" style="display:flex;align-items:center;gap:12px;padding:12px;border-radius:16px;background:#1C1D1B;color:#F4F1EA;cursor:pointer;position:relative;overflow:hidden">
+          <div style="position:absolute;left:66px;top:-8px;width:16px;height:16px;border-radius:50%;background:#F4F1EA"></div><div style="position:absolute;left:66px;bottom:-8px;width:16px;height:16px;border-radius:50%;background:#F4F1EA"></div>
+          <div style="width:52px;height:52px;border-radius:10px;flex:none;background:#F4F1EA;padding:4px;box-sizing:border-box"><svg viewBox="0 0 25 25" width="44" height="44" shape-rendering="crispEdges" style="display:block"><sc-for list="{{ w.qr }}" as="q" hint-placeholder-count="0"><rect x="{{ q.x }}" y="{{ q.y }}" width="1" height="1" fill="#1C1D1B"></rect></sc-for></svg></div>
+          <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:3px;padding-left:10px;border-left:1.5px dashed rgba(244,241,234,.25)">
+            <div style="font:500 9px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;color:rgba(244,241,234,.55)">{{ w.fname }} · {{ w.flabel }}</div>
+            <div style="font:600 14px/1.2 'Sora',sans-serif;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ w.benefit }}</div>
+            <div style="font:400 11px/1.2 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.75)">{{ w.name }}</div>
+          </div>
+          <div style="flex:none;text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:4px"><div style="font:700 15px/1 'Sora',sans-serif;letter-spacing:.14em;color:#E0A030">{{ w.code }}</div><div style="font:400 9px/1 'IBM Plex Sans',sans-serif;color:rgba(244,241,234,.55)">ver ficha</div></div>
+        </div>
+        </sc-for>
+      </div>
+      </sc-if>
+
+      <sc-if value="{{ sheet.isCard }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="font:600 22px/1.2 'Sora',sans-serif;letter-spacing:-.02em">Tu tarjeta del valle</div>
+        <div style="height:10px;border-radius:5px;background:rgba(28,29,27,.1);overflow:hidden"><div style="height:100%;width:{{ cardPct }};background:#E0A030;border-radius:5px;transition:width .4s"></div></div>
+        <div style="font:400 13px/1.4 'IBM Plex Sans',sans-serif;color:#3F413D">{{ cardText }}</div>
+      </div>
+      </sc-if>
+
+      <div style="font:400 13px/1.4 'IBM Plex Sans',sans-serif;color:#3F413D">{{ sheet.note }}</div>
+      <button onClick="{{ sheet.action }}" style="display:{{ sheetBtnDisplay }};appearance:none;border:0;border-radius:14px;background:{{ sheet.btnBg }};color:#F4F1EA;font:600 16px/1 'Sora',sans-serif;padding:18px;cursor:pointer">{{ sheet.btn }}</button>
+      <button onClick="{{ closeSheet }}" style="appearance:none;border:0;background:none;color:#5A5C57;font:500 14px/1 'IBM Plex Sans',sans-serif;padding:4px;cursor:pointer">Volver a la ruleta</button>
+    </div>
+  </div>
+  </sc-if>
+  </div>
+
+  <sc-if value="{{ simClosed }}" hint-placeholder-val="{{ true }}">
+  <button onClick="{{ toggleSim }}" style="position:absolute;z-index:100;right:12px;bottom:calc(env(safe-area-inset-bottom, 0px) + 12px);appearance:none;display:flex;align-items:center;gap:6px;padding:8px 11px;border-radius:999px;background:rgba(255,255,255,.92);border:1px solid rgba(0,0,0,.08);box-shadow:0 6px 18px -8px rgba(28,29,27,.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#5A5C57;cursor:pointer"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6.5 5 3.5 8 6.5"></path></svg>SIMULAR</button>
+  </sc-if>
+  <sc-if value="{{ simOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="position:absolute;z-index:100;left:8px;right:8px;bottom:calc(env(safe-area-inset-bottom, 0px) + 8px);display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;padding:10px 14px;border-radius:14px;background:#fff;border:1px solid rgba(0,0,0,.08);box-shadow:0 10px 30px -12px rgba(28,29,27,.5)">
+    <div onClick="{{ toggleSim }}" style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#5A5C57;margin-right:4px;cursor:pointer;display:flex;align-items:center;gap:6px"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3.5 5 6.5 8 3.5"></path></svg>SIMULAR</div>
+    <sc-for list="{{ simSlots }}" as="s" hint-placeholder-count="3">
+    <button onClick="{{ s.go }}" style="appearance:none;border:1px solid rgba(0,0,0,.12);border-radius:8px;background:{{ s.bg }};color:{{ s.fg }};font:600 12px/1 'Sora',sans-serif;padding:9px 12px;cursor:pointer">{{ s.name }}</button>
+    </sc-for>
+    <button onClick="{{ simulateScan }}" disabled="{{ scanOff }}" style="appearance:none;border:0;border-radius:8px;background:{{ scanBg }};color:{{ scanFg }};font:600 12px/1 'Sora',sans-serif;padding:9px 12px;cursor:{{ scanCursor }};display:flex;align-items:center;gap:7px;transition:background .25s ease,color .25s ease"><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M1 4V1h3M10 1h3v3M13 10v3h-3M4 13H1v-3M1 7h12"></path></svg>Simular escaneo</button>
+    <button onClick="{{ demoCumbre }}" style="appearance:none;border:1px solid #E0A030;border-radius:8px;background:none;color:#B07A14;font:600 12px/1 'Sora',sans-serif;padding:9px 12px;cursor:pointer">Probar cumbre</button>
+    <button onClick="{{ reset }}" style="appearance:none;border:0;border-radius:8px;background:none;color:#5A5C57;font:500 12px/1 'IBM Plex Sans',sans-serif;padding:9px 10px;cursor:pointer;text-decoration:underline">Reiniciar día</button>
+  </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:560,&quot;height&quot;:1100},&quot;pinCode&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;2026&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Acceso&quot;},&quot;walletMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;reverso&quot;,&quot;options&quot;:[&quot;mazo&quot;,&quot;bolsillo&quot;,&quot;reverso&quot;],&quot;tsType&quot;:&quot;'mazo' | 'bolsillo' | 'reverso'&quot;,&quot;section&quot;:&quot;Cartera en inicio&quot;},&quot;revealSpin&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;tour&quot;,&quot;options&quot;:[&quot;tour&quot;,&quot;360&quot;],&quot;tsType&quot;:&quot;'tour' | '360'&quot;,&quot;section&quot;:&quot;Revelación de tarjeta&quot;}}">
+class Component extends DCLogic {
+  state = { screen: 'login', pin: '', pinErr: false, log: [], franja: 'tarde', giros: 3, used: {}, sheet: null, visitas: 7, pack: 6, view: 'carousel', idx: 0, dx: 0, dy: 0, dragging: false, mode: null, pressed: false, dockCopy: null, dockAnim: null, docking: false, activating: null, flipped: false, morph: null };
+  carRef = React.createRef();
+  COOLDOWN = 3 * 86400000;
+  _demoBase = Date.now() - 86400000 + 5400000; // vuelve:1 → 1h30 para liberarse (contador vivo); vuelve:2 → ~1 día
+  startTick() { this._tick = setInterval(() => { const u = this.state.unlockAt || {}, now = Date.now(); let ch = false; const nu = {}; for (const k in u) { if (u[k] > now) nu[k] = u[k]; else ch = true; } if (ch) { this.setState({ unlockAt: nu }); return; } this.forceUpdate(); }, 1000); }
+  cooldownInfo(c) {
+    const u = this.state.unlockAt || {}; let t = u[c.id];
+    if (!t && c.vuelve) t = this._demoBase ? this._demoBase + c.vuelve * 86400000 : null;
+    if (!t) return null;
+    const ms = t - Date.now(); if (ms <= 0) return null;
+    if (ms >= 86400000) { const d = Math.ceil(ms / 86400000); return { stamp: 'Vuelve en ' + d + (d === 1 ? ' día' : ' días'), countdown: 'Disponible en ' + d + (d === 1 ? ' día' : ' días'), color: '#E0A030' }; }
+    const s = Math.floor(ms / 1000), hh = Math.floor(s / 3600), mm = Math.floor(s % 3600 / 60), ss = s % 60, p = n => (n < 10 ? '0' : '') + n;
+    return { stamp: 'Vuelve en ' + (hh ? hh + ' h' : mm + ' min'), countdown: 'Se libera en ' + p(hh) + ':' + p(mm) + ':' + p(ss), color: hh < 1 ? '#F4F1EA' : '#E0A030' };
+  }
+  capaColors = ['#2F5D4A', '#2C5243', '#2B4038', '#2B2E2B', '#35372F', '#474942', '#5B5D57', '#8A8C86', '#C9C5B8', '#F4F1EA'];
+  ruta = [[1040, 876], [940, 846], [840, 784], [768, 700], [752, 604], [672, 650], [588, 704], [498, 660], [436, 590], [398, 548], [375, 510]];
+  rutaSegs() { const p = this.ruta, n = p.length, segs = []; for (let i = 0; i < n - 1; i++) { const a = p[Math.max(i - 1, 0)], b = p[i], c = p[i + 1], d = p[Math.min(i + 2, n - 1)]; const c1 = [b[0] + (c[0] - a[0]) / 6, b[1] + (c[1] - a[1]) / 6], c2 = [c[0] - (d[0] - b[0]) / 6, c[1] - (d[1] - b[1]) / 6]; segs.push('C' + c1.map(Math.round).join(' ') + ' ' + c2.map(Math.round).join(' ') + ' ' + c.join(' ')); } return segs; }
+  slopeX(y) { const t = (216 - y) / 172; return 165 + 157 * Math.pow(1 - t, 1.6) + 6; }
+  wave(y, i) { const a = 3, ph = i % 2 ? 1 : -1; return 'M0 ' + y + ' Q45 ' + (y - a * ph) + ' 90 ' + y + ' T180 ' + y + ' T270 ' + y + ' T362 ' + y; }
+  CARD_W = 250; CARD_H = 380; DOCK_H = 148;
+  pinPress(k) { const s = this.state; if (s.pinErr || s.pinBusy || k === '') return; if (k === '⌫') { this.setState({ pin: s.pin.slice(0, -1) }); return; } if (s.pin.length < 4) this.setState({ pin: s.pin + k }); }
+  pinSubmit() {
+    const s = this.state; if (s.pinErr || s.pinBusy) return;
+    if (s.pin.length < 4) { this.setState({ pinErr: true }); setTimeout(() => this.setState({ pinErr: false }), 600); return; }
+    const ok = s.pin === String(this.props.pinCode ?? '2026'); this.setState({ pinBusy: true });
+    setTimeout(() => { if (ok) this.setState({ screen: 'home', pin: '', pinBusy: false }); else { this.setState({ pinErr: true, pinBusy: false }); setTimeout(() => this.setState({ pinErr: false, pin: '' }), 700); } }, 450);
+  }
+  pendList() { const p = this.state.pending || {}; return this.franjas.filter(f => p[f.id]).map(f => ({ franja: f, ...p[f.id] })); }
+  reserve(c) {
+    const fr = this.state.franja, code = 'G' + Math.floor(1000 + Math.random() * 9000) + '-' + this.franjas.find(x => x.id === fr).name[0];
+    clearTimeout(this._wb);
+    this.setState(s => ({ pending: { ...(s.pending || {}), [fr]: { id: c.id, code } }, flipped: false, sheet: null, walletBounce: true }));
+    this._wb = setTimeout(() => this.setState({ walletBounce: false }), 900);
+  }
+  sorted() {
+    const s = this.state;
+    const pend = s.pending || {}, pendNow = pend[s.franja], usedId = (s.used || {})[s.franja], libres = s.giros - Object.keys(pend).length;
+    const avail = c => { if (s.holdTear === c.id || s.tearing === c.id || s.activating) return true; if (this.cellState(c)) return false; const pc = this.pendFor(c.id); if (pc) return pc.franja.id === s.franja; return !usedId && !pendNow && libres > 0; };
+    if (this._frozen) return this._frozen;
+    const a = [], b = []; this.commerces.forEach(c => (avail(c) ? a : b).push(c)); return a.concat(b);
+  }
+  pendFor(id) { return this.pendList().find(p => p.id === id) || null; }
+  useGiro(c, fr) {
+    const franja = fr || this.state.franja;
+    if (this.state.view === 'carousel') this._follow = c.id;
+    this._frozen = this.sorted();
+    clearTimeout(this.t);
+    this.setState({ sheet: null });
+    this.t = setTimeout(() => this.setState(s => this.withIdx(s, { activating: null, giros: s.giros - 1, visitas: s.visitas + 1, used: { ...s.used, [franja]: c.id }, unlockAt: { ...(s.unlockAt || {}), [c.id]: Date.now() + this.COOLDOWN }, log: [{ id: c.id, franja, code: (this.pendFor(c.id) || {}).code || this.codeFor(c, franja) }, ...s.log], docking: false, dockCopy: null, dockAnim: null, dx: 0, dy: 0, mode: null, holdTear: c.id, celebra: (s.visitas + 1 - ((s.tier || 1) === 1 ? 0 : 10)) >= ((s.tier || 1) === 1 ? 10 : 50) ? 'ready' : s.celebra }), () => this.afterUse()), 250);
+  }
+  afterUse() { setTimeout(() => this.setState({ holdTear: null, tearing: this.state.holdTear }), 500); setTimeout(() => this.setState(s => { const id = s.tearing; const p = { ...(s.pending || {}) }; for (const k in p) if (p[k].id === id) delete p[k]; return { tearing: null, pending: p }; }), 1500); }
+  rmListeners() {
+    if (this._mv) { window.removeEventListener('pointermove', this._mv); window.removeEventListener('pointerup', this._up); window.removeEventListener('pointercancel', this._up); this._mv = null; }
+  }
+  componentWillUnmount() { this.rmListeners(); clearTimeout(this.t); clearTimeout(this.tm); clearInterval(this._tick); }
+  followIdx() { const id = this._follow; if (!id) return; const ni = this.sorted().findIndex(c => c.id === id); if (ni >= 0 && ni !== this.state.idx) this.setState({ idx: ni }); }
+  withIdx(s, patch) { const id = this._follow; const ns = { ...s, ...patch }; if (!id) return patch; const prev = this.state; this.state = ns; let ni = -1; try { ni = this.sorted().findIndex(c => c.id === id); } finally { this.state = prev; } return ni >= 0 ? { ...patch, idx: ni } : patch; }
+  componentDidUpdate() { this.followIdx(); const L = this._launch; if (!L) return; const big = document.querySelector('[data-layer="tarjeta-grande"]'); if (!big) return; this._launch = null; const prev = big.style.animation; big.style.animation = 'none'; const b = big.getBoundingClientRect(); const { r, host } = L; host.style.setProperty('--cx', (r.left + r.width / 2 - b.left - b.width / 2) + 'px'); host.style.setProperty('--cy', (r.top + r.height / 2 - b.top - b.height / 2) + 'px'); host.style.setProperty('--cs', r.width / b.width); void big.offsetWidth; big.style.animation = prev; }
+  tour() { cancelAnimationFrame(this._tourF); const t0 = performance.now(), D = 1800; const step = now => { let p = Math.min(1, (now - t0) / D); const e = p < .5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2; const a = Math.PI * 0.75 + e * Math.PI * 2; const ramp = Math.min(1, p / .4, (1 - p) / .35); const amp = ramp * ramp * ramp * (ramp * (ramp * 6 - 15) + 10); const px = 0.5 + Math.cos(a) * 0.5 * amp, py = 0.5 + Math.sin(a) * 0.5 * amp; const sx = 70 + (px * 100 - 70) * amp, sy = 20 + (py * 100 - 20) * amp; this.setState({ tilt: p < 1 ? { rx: (0.5 - py) * 24, ry: (px - 0.5) * 28, sx, sy, auto: true } : null }); if (p < 1) this._tourF = requestAnimationFrame(step); }; this._tourF = requestAnimationFrame(step); }
+  componentDidMount() { setTimeout(() => this.measure(), 50); window.__giro = this; this.startTick(); }
+  confetiEl() {
+    if (!this._conf) { const cols = ['#E0A030', '#F4F1EA', '#2F5D4A', '#8FA9A0', '#C9C5B8']; this._conf = Array.from({ length: 48 }, (_, i) => ({ l: Math.random() * 100, d: Math.random() * 1.2, t: 2.6 + Math.random() * 1.6, w: 6 + Math.random() * 6, h: 8 + Math.random() * 8, c: cols[i % cols.length], r: Math.random() * 360, rd: i % 2 ? 1 : -1, round: i % 3 === 0 })); }
+    return React.createElement('div', { style: { position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden' } }, this._conf.map((p, i) => React.createElement('div', { key: i, style: { position: 'absolute', left: p.l + '%', top: '-20px', width: p.w + 'px', height: p.h + 'px', background: p.c, borderRadius: p.round ? '50%' : '2px', transform: 'rotate(' + p.r + 'deg)', animation: 'giroConfeti ' + p.t + 's cubic-bezier(.25,.6,.4,1) ' + (p.d + .7) + 's infinite', '--rd': p.rd } })));
+  }
+  measure() { try { const r = this.carRef.current.getBoundingClientRect(); if (r.height) { this._H = r.height; this._W = r.width; } } catch (e) {} }
+  toggleView() {
+    clearTimeout(this.tm);
+    const { view } = this.state;
+    const base = { dx: 0, dy: 0, mode: null, dockCopy: null, flipped: false };
+    if (view === 'carousel') {
+      this.measure();
+      this.setState({ ...base, morph: 'toList' });
+      this.tm = setTimeout(() => this.setState({ view: 'list', morph: null }), 900);
+    } else {
+      this.setState({ ...base, view: 'carousel', morph: 'fromList' });
+      requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ morph: 'toCarousel' })));
+      this.tm = setTimeout(() => this.setState({ morph: null }), 900);
+    }
+  }
+  startCardDrag(i, e, canPull) {
+    if (this.state.docking || this.state.dockAnim || this.state.activating) return;
+    const frozen = !!(this.pendFor(this.sorted()[i].id) && !this.state.tearing && !this.state.holdTear);
+    e.preventDefault();
+    this._drag = { i, x0: e.clientX, y0: e.clientY, mode: null, canPull: canPull && !frozen, frozen };
+    this._mv = ev => this.dragMove(ev); this._up = () => this.dragEnd();
+    window.addEventListener('pointermove', this._mv); window.addEventListener('pointerup', this._up); window.addEventListener('pointercancel', this._up);
+    this.setState({ dragging: true, dx: 0, dy: 0, mode: null, pressed: i === this.state.idx && canPull });
+  }
+  dragMove(ev) {
+    const d = this._drag; if (!d) return;
+    const dx = ev.clientX - d.x0, dy = ev.clientY - d.y0;
+    if (!d.mode) {
+      if (Math.hypot(dx, dy) < 9) return;
+      d.mode = (dy > Math.abs(dx) * 1.1 && d.i === this.state.idx && d.canPull) ? 'pull' : 'swipe';
+      if (d.frozen && d.mode === 'pull') { d.mode = null; return; }
+    }
+    if (d.mode === 'swipe') {
+      let x = dx; const { idx } = this.state, n = this.sorted().length;
+      if ((idx === 0 && x > 0) || (idx === n - 1 && x < 0)) x *= 0.35;
+      this.setState({ dx: x, dy: 0, mode: 'swipe', pressed: false });
+    } else {
+      if (!this.state.dockCopy) {
+        let W = 402, H = 560;
+        try { const r = this.carRef.current.getBoundingClientRect(); W = r.width; H = r.height; } catch (e) {}
+        this._W = W; this._H = H;
+        this.setState({ dockCopy: { x: W / 2 - this.CARD_W / 2, y: (H - this.DOCK_H) / 2 - this.CARD_H / 2 } });
+      }
+      this.setState({ dy: Math.max(0, dy), dx: dx * 0.25, mode: 'pull' });
+    }
+  }
+  dragEnd() {
+    this.rmListeners();
+    const d = this._drag; this._drag = null;
+    const { dx, dy, idx, mode } = this.state;
+    if (mode === 'pull' && dy > 200) { this.dock(); return; }
+    if (mode === 'pull') {
+      this.setState({ dockAnim: 'back', dragging: false, pressed: false, dx: 0, dy: 0 });
+      setTimeout(() => { this.setState({ mode: null }); requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ dockCopy: null, dockAnim: null }, () => setTimeout(() => this.setState({ holdGrey: false }), 150)))); }, 500);
+      return;
+    }
+    let ni = idx;
+    if (mode === 'swipe') {
+      let mv = Math.round(-dx / 170);
+      if (mv === 0 && Math.abs(dx) > 55) mv = dx < 0 ? 1 : -1;
+      ni = Math.min(this.sorted().length - 1, Math.max(0, idx + mv));
+    } else if (d && d.mode == null) {
+      if (d.i !== idx) ni = d.i; else this._tapCenter = true;
+    }
+    this._follow = (this.sorted()[ni] || {}).id || null;
+    this.setState({ idx: ni, dx: 0, dy: 0, dragging: false, mode: null, pressed: false, flipped: ni === idx && mode !== 'swipe' ? this.state.flipped : false });
+  }
+  dock() {
+    this._dockFranja = this.state.franja;
+    this._frozen = this.sorted();
+    this.setState({ docking: true, dragging: false, mode: 'pull', pressed: false });
+    requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ dockAnim: 'half' })));
+    setTimeout(() => this.setState({ askRedeem: true }), 700);
+  }
+  confirmDock() {
+    const c = this.sorted()[this.state.idx];
+    this._follow = c.id;
+    this.setState({ askRedeem: false, reading: true, scanning: true, holdGrey: true });
+    setTimeout(() => {
+      const fr = this._dockFranja || this.state.franja, code = 'G' + Math.floor(1000 + Math.random() * 9000) + '-' + this.franjas.find(x => x.id === fr).name[0];
+      this.setState(s => this.withIdx(s, { pending: { ...(s.pending || {}), [fr]: { id: c.id, code } } }));
+    }, 700);
+    setTimeout(() => {
+      this.setState({ reading: false, scanning: false, dockAnim: 'back', dx: 0, dy: 0 });
+      setTimeout(() => { this.setState({ docking: false, mode: null }); requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ dockCopy: null, dockAnim: null }, () => setTimeout(() => this.setState({ holdGrey: false }), 150)))); }, 680);
+    }, 1350);
+  }
+  cancelDock() {
+    this.setState({ askRedeem: false, dockAnim: 'back', dx: 0, dy: 0 });
+    setTimeout(() => { this.setState({ docking: false, mode: null }); requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ dockCopy: null, dockAnim: null }, () => setTimeout(() => this.setState({ holdGrey: false }), 150)))); }, 520);
+  }
+  commerces = [
+    { id: 'bruder', name: 'Cervecería Bruder', rubro: 'Cervecería', benefit: 'Schop de cortesía', cond: 'Con la segunda ronda', sat: '97%', logo: false, tint: '#E0A030', opens: 12, closes: 24, lugar: 'Camino a Shangri-La · a 0,6 km', pin: [70, 48], tag: 'Cortesía' },
+    { id: 'termas', name: 'Termas de Chillán', rubro: 'Termas', benefit: '2×1 en entrada diurna', cond: 'Lunes a jueves, antes de las 12:00', sat: '95%', logo: true, tint: '#8FA9A3', opens: 9, closes: 20, vuelve: 1, lugar: 'Valle Hermoso · a 8,4 km', pin: [165, 36], tag: '2×1' },
+    { id: 'rental', name: 'Rental Nevados', rubro: 'Rental de esquí', benefit: 'Casco y bastones sin costo', cond: 'Con arriendo de equipo completo', sat: '94%', logo: true, tint: '#8FA9A3', opens: 8, closes: 19, lugar: 'Los Pangues · a 1,2 km', pin: [112, 52], tag: 'Gratis' },
+    { id: 'coigues', vuelve: 3, name: 'Cabañas Los Coigües', rubro: 'Cabañas', benefit: 'Tinaja caliente incluida', cond: 'Estadías de 2 noches o más', sat: '93%', logo: false, tint: '#2F5D4A', opens: 0, closes: 24, lugar: 'Sector Recinto · a 2,1 km', pin: [48, 70], tag: 'Incluido' },
+    { id: 'chueca', name: 'Casa Chueca', rubro: 'Restaurante', benefit: 'Postre de la casa', cond: 'Con un plato de fondo por persona', sat: '92%', logo: false, tint: '#2F5D4A', opens: 12, closes: 24, agotadoDesde: 'tarde', lugar: 'Camino a Las Trancas · a 0,9 km', pin: [140, 62], tag: 'Cortesía' },
+    { id: 'fogon', name: 'Bar Fogón', rubro: 'Bar', benefit: 'Pisco sour de bienvenida', cond: 'Mesa de 2 o más personas', sat: '90%', logo: true, tint: '#E0A030', opens: 19, closes: 24, lugar: 'Centro Las Trancas · a 0,3 km', pin: [95, 40], tag: 'Bienvenida' },
+    { id: 'alto', name: 'Café Altoandino', rubro: 'Café', benefit: 'Café de grano', cond: 'Con cualquier pastel', sat: '89%', logo: false, tint: '#8FA9A3', opens: 8, closes: 19, lugar: 'Km 72 Ruta N-55 · a 1,5 km', pin: [60, 58], tag: 'Gratis' },
+    { id: 'mini', name: 'Minimarket El Puente', rubro: 'Minimarket', benefit: '10% en tu compra', cond: 'Compras sobre $10.000', sat: '88%', logo: false, tint: '#E0A030', opens: 8, closes: 23, lugar: 'Puente Las Trancas · a 0,4 km', pin: [130, 44], tag: '10% dcto.' },
+    { id: 'pizza', name: 'Pizzería La Cumbre', rubro: 'Restaurante', benefit: 'Bebida con tu pizza', cond: 'Pizza familiar o mediana', sat: '87%', logo: false, tint: '#2F5D4A', opens: 13, closes: 23, lugar: 'Camino a Las Trancas · a 1,1 km', pin: [80, 66], tag: 'Cortesía' },
+    { id: 'pan', name: 'Panadería Doña Rosa', rubro: 'Panadería', benefit: 'Pan amasado para 2', cond: 'Con cualquier compra', sat: '86%', logo: false, tint: '#E0A030', opens: 7, closes: 20, lugar: 'Sector Recinto · a 2,4 km', pin: [40, 50], tag: 'Gratis' },
+    { id: 'spa', name: 'Spa Nieve Azul', rubro: 'Spa', benefit: '20% en masaje relajante', cond: 'Con reserva previa', sat: '85%', logo: false, tint: '#8FA9A3', opens: 10, closes: 20, lugar: 'Valle Hermoso · a 7,9 km', pin: [170, 42], tag: '20% dcto.' },
+    { id: 'trek', name: 'Andes Trekking', rubro: 'Excursiones', benefit: 'Bastones incluidos', cond: 'En salidas de día completo', sat: '84%', logo: false, tint: '#2F5D4A', opens: 8, closes: 18, lugar: 'Centro Las Trancas · a 0,5 km', pin: [100, 36], tag: 'Incluido' },
+  ];
+  filtros = [
+    { id: 'todos', label: 'Todos', rubros: null },
+    { id: 'rest', label: 'Restaurantes', rubros: ['Restaurante', 'Bar'] },
+    { id: 'cafe', label: 'Cafés y panaderías', rubros: ['Café', 'Panadería'] },
+    { id: 'cerv', label: 'Cervecerías', rubros: ['Cervecería'] },
+    { id: 'mini', label: 'Minimarkets', rubros: ['Minimarket'] },
+    { id: 'rental', label: 'Rentals', rubros: ['Rental de esquí'] },
+    { id: 'aloj', label: 'Alojamiento', rubros: ['Cabañas'] },
+    { id: 'bien', label: 'Termas y spa', rubros: ['Termas', 'Spa'] },
+    { id: 'exc', label: 'Excursiones', rubros: ['Excursiones'] },
+  ];
+  franjas = [
+    { id: 'manana', name: 'Mañana', from: 8, to: 12, label: '08:00–12:00' },
+    { id: 'tarde', name: 'Tarde', from: 12, to: 19, label: '12:00–19:00' },
+    { id: 'noche', name: 'Noche', from: 19, to: 24, label: '19:00–00:00' },
+  ];
+  qrCells(code) {
+    let s = 0; for (const ch of code) s = (s * 31 + ch.charCodeAt(0)) >>> 0;
+    const rnd = () => { s ^= s << 13; s >>>= 0; s ^= s >>> 17; s ^= s << 5; s >>>= 0; return s / 4294967296; };
+    const N = 25, out = [], finder = (fx, fy) => { for (let y = 0; y < 7; y++) for (let x = 0; x < 7; x++) { const edge = x === 0 || y === 0 || x === 6 || y === 6, core = x >= 2 && x <= 4 && y >= 2 && y <= 4; if (edge || core) out.push({ x: fx + x, y: fy + y }); } };
+    finder(0, 0); finder(N - 7, 0); finder(0, N - 7);
+    for (let i = 8; i < N - 8; i++) { if (i % 2 === 0) { out.push({ x: i, y: 6 }); out.push({ x: 6, y: i }); } }
+    for (let y = 0; y < N; y++) for (let x = 0; x < N; x++) {
+      const inF = (x < 8 && y < 8) || (x >= N - 8 && y < 8) || (x < 8 && y >= N - 8) || x === 6 || y === 6;
+      if (!inF && rnd() < 0.46) out.push({ x, y });
+    }
+    return out;
+  }
+  initial(c) { return c.name.replace(/^(Cervecería|Cabañas|Bar|Café|Casa|Termas de|Rental) /, '')[0]; }
+  fmt(h) { return (h < 10 ? '0' + h : h) + ':00'; }
+  cellState(c) {
+    const f = this.franjas.find(x => x.id === this.state.franja), idx = this.franjas.indexOf(f);
+    const uf = Object.keys(this.state.used).find(k => this.state.used[k] === c.id);
+    const cd = this.cooldownInfo(c);
+    if (uf && !cd) { /* liberada: se desbloquea completa */ }
+    else if (uf) return { stamp: cd.stamp, countdown: cd.countdown, cdColor: cd.color, color: '#B07A12', why: 'Canjeaste aquí esta ' + this.franjas.find(x => x.id === uf).name.toLowerCase() + '. Cada comercio se puede repetir cada 3 días: ' + cd.countdown.toLowerCase() + '.' };
+    else if (cd) return { stamp: cd.stamp, countdown: cd.countdown, cdColor: cd.color, color: '#B07A12', why: 'Estuviste aquí hace poco. Cada comercio se puede repetir cada 3 días: ' + cd.countdown.toLowerCase() + '.' };
+    if (c.agotadoDesde && this.franjas.findIndex(x => x.id === c.agotadoDesde) <= idx) return { stamp: 'Agotado por hoy', color: '#1C1D1B', why: 'El comercio fija un cupo diario de giros. Hoy ya se usó. Mañana vuelve a estar en la ruleta, en el mismo lugar del ranking.' };
+    const d = new Date(), nowH = d.getHours() + d.getMinutes() / 60, live = nowH >= f.from && nowH < f.to, ref = live ? nowH : f.from;
+    if (c.opens > ref) return { stamp: 'Abre a las ' + this.fmt(c.opens), color: '#5F7C76', why: 'Fuera de horario. Podrás elegirlo cuando esté abierto.' };
+    if (c.closes <= ref) return { stamp: 'Cerró a las ' + this.fmt(c.closes), color: '#5F7C76', why: 'Fuera de horario. Vuelve a abrir mañana a las ' + this.fmt(c.opens) + '.' };
+    if (live && c.closes - nowH <= 0.5) return { stamp: 'Cierra a las ' + this.fmt(c.closes), color: '#5F7C76', why: 'Cierra en menos de 30 minutos; ya no alcanza a tomar el giro.' };
+    return null;
+  }
+  renderVals() {
+    const s = this.state;
+    const { franja, giros, used, sheet, visitas, pack, view, idx, activating } = s;
+    const fIdx = this.franjas.findIndex(x => x.id === franja);
+    const f = this.franjas[fIdx];
+    const usedId = used[franja];
+    const usedC = usedId && this.commerces.find(c => c.id === usedId);
+    const pendAll = this.pendList();
+    const pendNow = (s.pending || {})[franja] || null;
+    const pendC = pendNow && this.commerces.find(c => c.id === pendNow.id);
+    const girosLibres = giros - pendAll.length;
+    const locked = !!usedC || !!pendNow || girosLibres <= 0;
+    const open = s => this.setState({ sheet: s });
+    const close = () => this.setState({ sheet: null });
+    const slots = this.franjas.map((s, i) => {
+      const u = used[s.id];
+      const now = i === fIdx, past = i < fIdx;
+      return { name: s.name, go: () => { if (this.state.docking || this.state.askRedeem || this.state.reading) return; this._follow = null; this._frozen = null; this.setState({ franja: s.id, sheet: null, idx: 0, dx: 0, dy: 0, mode: null, dockCopy: null, flipped: false }); },
+        sel: s.id === franja, unsel: s.id !== franja, usedSel: s.id === franja && !!u, deco: u ? 'line-through' : 'none', bstyle: u ? 'dashed' : 'solid', isM: s.id === 'manana', isT: s.id === 'tarde', isN: s.id === 'noche',
+        sub: u ? 'usado' : 'listo', showSub: !!u || !!((this.state.pending || {})[s.id]),
+        bg: s.id === franja ? (u ? 'rgba(224,160,48,.18)' : now ? '#E0A030' : '#1C1D1B') : u ? 'repeating-linear-gradient(135deg, rgba(28,29,27,.05) 0 3px, transparent 3px 7px)' : 'transparent',
+        fg: s.id === franja ? (u ? '#B07A14' : now ? '#1C1D1B' : '#F4F1EA') : u ? '#A3A49F' : '#5A5C57',
+        border: s.id === franja ? (u ? '#E0A030' : 'transparent') : u ? 'rgba(28,29,27,.22)' : 'rgba(28,29,27,.25)',
+        ring: 'none', op: 1 };
+    });
+    const cells = this.sorted().map(c => {
+      const st0 = this.cellState(c), pc = this.pendFor(c.id);
+      const blk = st0 ? null : pc ? (pc.franja.id !== franja ? { stamp: 'Reservada · ' + pc.franja.name.toLowerCase(), color: '#B07A12', why: 'Ya guardaste esta ficha en tu cartera para la ' + pc.franja.name.toLowerCase() + ' (código ' + pc.code + '). Cada comercio se usa una vez por día.' } : null) : usedC ? { soft: true, stamp: 'Ya usado', color: '#5A5C57', why: 'Ya elegiste ' + usedC.name + ' en esta franja. El próximo giro se abre en la siguiente franja.' }
+        : pendNow ? { soft: true, stamp: 'Franja reservada', color: '#B07A12', why: 'Tienes un código listo en ' + pendC.name + ' para esta franja. Escanéalo o cancélalo desde la cartera.' }
+        : girosLibres <= 0 ? { soft: true, stamp: 'Sin giros', color: '#5A5C57', why: pendAll.length ? 'Tus ' + giros + ' giros ya están reservados en la cartera. Escanea uno, cancélalo o carga más giros.' : 'Carga giros para elegir esta casilla.' } : null;
+      const st = st0 || (s.holdGrey && !pc ? null : blk), off = !!st, dim = off || (locked && !pc);
+      return { ...c, usedHere: !!(st && st.countdown), hasLogo: c.logo, noLogo: !c.logo, initial: this.initial(c), pinX: c.pin[0], pinY: c.pin[1], mapOp: dim ? .55 : 1, tagBg: dim ? 'rgba(28,29,27,.1)' : '#E0A030', tagFg: dim ? '#5A5C57' : '#1C1D1B',
+        monoBg: dim ? '#DDD8CC' : c.tint, monoFg: dim ? '#5A5C57' : '#1C1D1B',
+        bg: off ? '#E9E5DC' : pc ? '#FFFFFF' : locked ? '#F9F7F2' : '#FFFFFF', border: off ? 'rgba(28,29,27,.1)' : pc ? '#E0A030' : locked ? 'rgba(28,29,27,.12)' : '#E0A030',
+        fg: dim ? '#5A5C57' : '#1C1D1B', condBg: dim ? 'rgba(28,29,27,.06)' : 'rgba(47,93,74,.1)', condFg: dim ? '#5A5C57' : '#2F5D4A',
+        stamp: st && !st.soft && st.stamp, stampColor: st && st.color, noStamp: !st && !pc, dockPill: !st, pillText: st ? st.stamp : c.tag, pillBg: st ? '#8A8C86' : dim ? 'rgba(28,29,27,.1)' : '#E0A030', pillFg: st ? '#F4F1EA' : dim ? '#5A5C57' : '#1C1D1B', rowReady: !!pc && !st && pc.franja.id === franja, rowCode: pc ? pc.code : '', rowReadyF: pc ? pc.franja.name.toUpperCase() : '', countdown: st && st.countdown || null, cdColor: st && st.cdColor || '#E0A030',
+        mapsUrl: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(c.name + ', Valle Las Trancas, Chile'),
+        stampWord: st ? (/Vuelve/.test(st.stamp) ? 'Canjeada' : /Cerró|Cierra|Abre/.test(st.stamp) ? 'Cerrado' : /reservada/i.test(st.stamp) ? (/·/.test(st.stamp) ? 'Reservada · ' + st.stamp.split('· ')[1] : 'Reservada') : /usado/i.test(st.stamp) ? 'Usado' : /giros/i.test(st.stamp) ? 'Sin giros' : 'No disponible') : '',
+        greyF: st ? 'grayscale(1) opacity(.82)' : locked ? 'grayscale(.6) opacity(.9)' : 'none',
+        blockKicker: st ? st.stamp.toUpperCase() : pc ? 'CÓDIGO LISTO · GIRO DE LA ' + pc.franja.name.toUpperCase() : null,
+        why: st ? st.why : pc ? 'Esta ficha ya está en tu cartera con el código ' + pc.code + '. Muéstrala en caja para escanear.' : null,
+        onTap: () => {
+          const base = { isCommerce: true, initial: this.initial(c), monoBg: c.tint, benefit: c.benefit, name: c.name + ' · ' + c.rubro, cond: c.cond };
+          if (st0) return open({ ...base, kicker: st0.stamp.toUpperCase(), note: st0.why, btn: null });
+          if (pc) return this.renderVals().openWallet();
+          if (blk && blk.stamp === 'Franja reservada') return open({ ...base, kicker: blk.stamp.toUpperCase(), note: blk.why, btn: 'Ver cartera', btnBg: '#1C1D1B', action: () => this.renderVals().openWallet() });
+          if (blk && blk.stamp === 'Sin giros') return open({ ...base, kicker: blk.stamp.toUpperCase(), note: blk.why, btn: 'Cargar giros', btnBg: '#E0A030', action: () => open(this.buySheet()) });
+          if (blk) return open({ ...base, kicker: blk.stamp.toUpperCase(), note: blk.why, btn: null });
+          if (usedC) return open({ ...base, kicker: 'GIRO DE LA ' + f.name.toUpperCase() + ' YA USADO', note: 'Ya elegiste ' + usedC.name + ' en esta franja. El próximo giro se abre ' + (fIdx < 2 ? 'a las ' + this.fmt(this.franjas[fIdx + 1].from) : 'mañana') + '.', btn: null });
+          open({ ...base, kicker: 'USAR TU GIRO DE LA ' + f.name.toUpperCase() + ' AQUÍ', note: 'Se guarda en tu cartera con su código; el giro se descuenta cuando el comercio lo escanea. Te quedan ' + girosLibres + ' libres.', btn: 'Guardar giro de la ' + f.name.toLowerCase() + ' en la cartera', btnBg: '#1C1D1B',
+            action: () => this.reserve(c) });
+        } };
+    });
+    const canDrag = !locked;
+    const scanTarget = (() => { if (s.holdTear || s.tearing) return null; const cc = this.sorted()[idx]; const pc = cc && this.pendFor(cc.id); return pc || pendAll[0] || null; })();
+    const canScan = !!scanTarget;
+    const scanOn = s.screen === 'home' ? !!(s.wCard && s.wSel && !s.wScan) : canScan;
+    const pull = s.mode === 'pull' || s.docking;
+    const glow = s.docking ? 1 : (s.mode === 'pull' ? Math.min(s.dy / 200, 1) : 0);
+    const pos = idx - (s.mode === 'swipe' ? s.dx : 0) / 170;
+    const filt = this.filtros.find(x => x.id === (s.filtro || 'todos')) || this.filtros[0];
+    const vis = cells.map(c => !filt.rubros || filt.rubros.includes(c.rubro));
+    const rowIdx = []; let ri = 0; vis.forEach((v, i) => { rowIdx[i] = v ? ri++ : -1; });
+    const CW = this.CARD_W, CH = this.CARD_H, DH = this.DOCK_H;
+    if (this._tapCenter) { this._tapCenter = false; const cc = cells[idx]; if (cc) setTimeout(() => this.setState(st => ({ flipped: !st.flipped })), 0); else setTimeout(() => cc && cc.onTap(), 0); }
+    const cards = cells.map((c, i) => {
+      const off = i - pos, a = Math.abs(off), isC = i === idx;
+      const draggablePull = isC && canDrag && !c.blockKicker;
+      const pC = this.pendFor(c.id); const hasCodeC = !!pC;
+      let tr, z = 100 - Math.round(a * 10), op = a > 2.6 ? 0 : 1;
+      if (isC && pull) {
+        const p = Math.min(s.dy / 200, 1);
+        tr = 'translate(-50%,-50%) translate(' + s.dx + 'px,' + s.dy + 'px) rotateZ(' + (s.dx * 0.05) + 'deg) scale(' + (1.05 - p * 0.12) + ')';
+        z = 110; if (s.dockCopy) op = 0;
+      } else {
+        const ry = Math.max(-42, Math.min(42, -off * 30));
+        const sc = (isC && s.pressed) ? 1.05 : 1;
+        tr = 'translate(-50%,-50%) translateX(' + (off * 170) + 'px) translateZ(' + (-a * 130) + 'px) rotateY(' + ry + 'deg) scale(' + sc + ')';
+        if (!isC) op = op * (1 - glow * 0.45);
+      }
+      const isList = view === 'list';
+      const toRow = s.morph === 'toList' || s.morph === 'fromList' || isList;
+      const morphing = !!s.morph;
+      const W0 = this._W || 402;
+      let geo = { left: '50%', top: 'calc(50% - ' + (DH / 2) + 'px)', width: CW, height: CH, borderRadius: 22 };
+      if (toRow) { tr = 'none'; const r = rowIdx[i] < 0 ? i : rowIdx[i]; geo = { left: 16, top: r * 112, width: W0 - 32, height: 104, borderRadius: 18 }; z = 100 - i; op = (i < 6 || (isList && !morphing)) ? 1 : 0; if (isList && !morphing && !vis[i]) { op = 0; tr = 'scale(.96)'; } }
+      const fl = isC && s.flipped && !(s.dragging && s.mode === 'swipe') && !morphing;
+      if (fl) { tr += ' rotateY(180deg)'; z = 115; }
+      const md = (s.morph === 'toList' ? i * 70 : (5 - Math.min(i, 5)) * 70) + 'ms';
+      const trans = s.morph === 'fromList' ? 'none' : (isList && !morphing) ? 'opacity .35s ease' : s.morph ? 'left .6s cubic-bezier(.4,0,.2,1) ' + md + ', top .6s cubic-bezier(.4,0,.2,1) ' + md + ', width .6s cubic-bezier(.4,0,.2,1) ' + md + ', height .6s cubic-bezier(.4,0,.2,1) ' + md + ', border-radius .6s ' + md + ', box-shadow .6s ease ' + md + ', transform .6s cubic-bezier(.4,0,.2,1) ' + md + ', opacity .3s ease' : (isC && (s.docking || s.dockCopy)) ? 'none' : (s.dragging && s.mode) ? 'none' : isC ? 'transform .7s cubic-bezier(.35,.1,.2,1), opacity .45s ease' : 'transform .45s cubic-bezier(.22,1,.36,1), opacity .45s ease';
+      return { ...c, key: c.id,
+        onDown: isList || morphing ? undefined : e => this.startCardDrag(i, e, draggablePull),
+        backKicker: hasCodeC ? 'CÓDIGO LISTO · GIRO DE LA ' + pC.franja.name.toUpperCase() : c.blockKicker || 'USAR TU GIRO DE LA ' + f.name.toUpperCase() + ' AQUÍ',
+        backNote: hasCodeC ? 'Muestra el QR o el código en caja. El giro se descuenta cuando el comercio lo escanea.' : c.blockKicker ? c.why : 'Se guarda en tu cartera con su código; el giro se descuenta al escanear. Te quedan ' + girosLibres + ' libres.',
+        canRedeem: !c.blockKicker && !hasCodeC, cantRedeem: !!c.blockKicker && !hasCodeC, qr: hasCodeC ? this.qrCells(pC.code) : [],
+        confirmLabel: 'Guardar en la cartera',
+        confirm: e => { e.stopPropagation(); this.reserve(c); },
+        unflip: e => { e.stopPropagation(); this.setState({ flipped: false }); },
+        faceOp: toRow ? 0 : 1, rowOp: toRow ? 1 : 0, backOp: toRow ? 0 : 1, facePE: toRow ? 'none' : 'auto',
+        onClick: isList && !morphing && vis[i] ? () => c.onTap() : undefined,
+        faceDelay: s.morph === 'toList' ? (i * 70 + 80) + 'ms' : (5 - Math.min(i, 5)) * 70 + 250 + 'ms',
+        rowDelay: s.morph === 'toList' ? (i * 70 + 220) + 'ms' : (5 - Math.min(i, 5)) * 70 + 'ms',
+        ring: isC && draggablePull ? '#E0A030' : c.border, slotPE: isC && !s.dragging && !s.docking ? 'auto' : 'none',
+        tornVis: c.usedHere && s.holdTear !== c.id, stampAnim: (s.holdTear === c.id || s.tearing === c.id) ? 'giroStamp .6s cubic-bezier(.2,1.2,.3,1) .35s both' : 'none', stampFade: (s.holdTear === c.id || s.tearing === c.id) ? 'giroIn .5s ease .3s both' : 'giroIn .7s ease .15s both', hasCode: hasCodeC, noCode: !hasCodeC, code: hasCodeC ? pC.code : '',
+        stubTf: c.usedHere && s.holdTear !== c.id ? 'translateY(90px) rotate(-10deg)' : 'none', stubOp: c.usedHere && s.holdTear !== c.id ? 0 : 1, faceFilter: toRow ? 'none' : isC ? 'drop-shadow(0 22px 26px rgba(28,29,27,.28))' : 'drop-shadow(0 10px 16px rgba(28,29,27,.18))',
+        style: { position: 'absolute', ...geo, transform: tr, transition: trans, zIndex: z, opacity: op,
+          border: toRow ? '1px solid ' + (hasCodeC ? c.border : 'rgba(28,29,27,.1)') : '1.5px solid transparent', cursor: toRow ? 'pointer' : 'grab', boxSizing: 'border-box', overflow: (isList && !morphing) ? 'hidden' : 'visible', transformStyle: toRow ? 'flat' : 'preserve-3d', background: toRow ? c.bg : 'transparent',
+          boxShadow: toRow ? '0 1px 2px rgba(28,29,27,.04)' : 'none', willChange: 'transform', touchAction: 'none', pointerEvents: isList && !morphing && !vis[i] ? 'none' : 'auto' },
+        faceShadow: toRow ? 'none' : isC ? '0 26px 50px -18px rgba(28,29,27,.45)' : '0 12px 30px -14px rgba(28,29,27,.3)' };
+    });
+    const dc = s.dockCopy, W = this._W || 402, H = this._H || 560;
+    const dockCardStyle = (() => {
+      if (!dc) return { display: 'none' };
+      const dist = (H - DH) - dc.y + 36, cx = W / 2 - CW / 2 - dc.x;
+      const halfY = dist - CH * 0.5;
+      const flipTr = s.flipped ? ' rotateY(180deg)' : '';
+      const tr = (s.dockAnim === 'in' ? 'translate(' + cx + 'px,' + dist + 'px) scale(.96)' : s.dockAnim === 'half' ? 'translate(' + cx + 'px,' + halfY + 'px) scale(.96)' : s.dockAnim === 'back' ? 'translate(0px,0px) scale(1)' : 'translate(' + s.dx + 'px,' + s.dy + 'px) scale(' + (1.05 - Math.min(s.dy / 200, 1) * 0.12) + ')') + flipTr;
+      const c = cells[idx];
+      return { position: 'absolute', left: dc.x, top: dc.y, width: CW, height: CH, borderRadius: 22, background: 'transparent', border: '1.5px solid transparent', boxSizing: 'border-box', overflow: 'visible',
+        transform: tr,
+        transformStyle: 'preserve-3d', transition: s.dockAnim === 'in' ? 'transform .85s cubic-bezier(.6,.08,.52,1)' : s.dockAnim === 'half' ? 'transform .7s cubic-bezier(.5,.05,.4,1)' : s.dockAnim === 'back' ? 'transform .65s cubic-bezier(.3,.9,.3,1)' : 'none' };
+    })();
+    const centerCell = cells[idx];
+    const packs = [[3, '$9.900'], [6, '$17.900'], [9, '$24.900']].map(([n, price]) => ({ n, price,
+      bg: pack === n ? '#1C1D1B' : '#fff', fg: pack === n ? '#F4F1EA' : '#1C1D1B', border: pack === n ? 'transparent' : 'rgba(0,0,0,.1)',
+      pick: () => this.setState({ pack: n }) }));
+    const nextLabel = fIdx < 2 ? 'El próximo giro se abre a las ' + this.fmt(this.franjas[fIdx + 1].from) + '.' : 'Mañana vuelve la ruleta a las 08:00.';
+    const tier = s.tier || 1, cardGoal = tier === 1 ? 10 : 50, tierBase = tier === 1 ? 0 : 10, visitasT = Math.max(0, visitas - tierBase), routeStep = Math.min(10, Math.floor(visitasT / (cardGoal / 10))), cardPct = Math.min(100, Math.round(visitasT / cardGoal * 100)) + '%';
+    const fName = id => this.franjas.find(x => x.id === id).name.toLowerCase();
+    const seed = [{ id: 'termas', franja: 'tarde', when: 'Ayer' }, { id: 'bruder', franja: 'noche', when: 'Ayer' }, { id: 'fogon', franja: 'noche', when: 'Sáb 11' }, { id: 'rental', franja: 'manana', when: 'Sáb 11' }, { id: 'chueca', franja: 'tarde', when: 'Vie 10' }, { id: 'alto', franja: 'manana', when: 'Vie 10' }, { id: 'coigues', franja: 'noche', when: 'Jue 9' }];
+    const hist = [...s.log.map(l => ({ ...l, when: 'Hoy', today: true })), ...seed].map((l, i) => {
+      const c = this.commerces.find(x => x.id === l.id);
+      return { code: l.code || this.codeFor(c, l.franja), tilt: (i % 2 ? -0.6 : 0.5) + 'deg', initial: this.initial(c), tint: c.tint, fg: c.tint === '#2F5D4A' ? '#F4F1EA' : '#1C1D1B', benefit: c.benefit, name: c.name + ' · ' + fName(l.franja), when: l.when, state: l.today && l.franja === franja ? 'VIGENTE' : 'USADO', stateFg: l.today && l.franja === franja ? '#2F5D4A' : '#8A8C86' };
+    });
+    const wMode = this.props.walletMode ?? 'reverso';
+    const walletSheet = { isWallet: true, walletEmpty: pendAll.length === 0, kicker: 'TU CARTERA · ' + pendAll.length + (pendAll.length === 1 ? ' GIRO LISTO' : ' GIROS LISTOS'), btn: null,
+        items: pendAll.map(p => { const c = this.commerces.find(x => x.id === p.id); return { ...p, name: c.name, benefit: c.benefit, initial: this.initial(c), monoBg: c.tint, fname: p.franja.name, flabel: p.franja.label, qr: this.qrCells(p.code),
+          go: () => { this._frozen = null; this._follow = null; this.setState({ sheet: null, screen: 'ruleta', view: 'carousel', franja: p.franja.id, dx: 0, dy: 0, mode: null, dockCopy: null }, () => this.setState({ idx: Math.max(0, this.sorted().indexOf(c)) })); setTimeout(() => this.setState({ flipped: true }), 450); } }; }),
+        empty: 'Cuando grabes un giro en el lector, la ficha con su código queda guardada aquí para que solo llegues a escanear.' };
+    return {
+      giros, girosLabel: giros === 0 ? 'giros · cargar' : giros === 1 ? 'giro' : 'giros',
+      pillBg: giros === 0 ? '#E0A030' : '#1C1D1B', pillFg: giros === 0 ? '#1C1D1B' : '#F4F1EA',
+      slots, cells, cards, packs, cardPct, visitasLabel: visitas + ' visitas',
+      dotManana: used.manana ? '#E0A030' : franja === 'manana' ? '#E0A030' : 'currentColor',
+      dotTarde: used.tarde || franja === 'tarde' ? '#E0A030' : 'currentColor',
+      dotNoche: used.noche || franja === 'noche' ? '#E0A030' : 'currentColor',
+      isCarousel: true,
+      carStyle: view === 'list' && !s.morph
+        ? { position: 'relative', height: ri * 112 + 24, userSelect: 'none' }
+        : { position: 'relative', flex: 1, minHeight: 680, perspective: 1300, touchAction: 'none', overflow: 'hidden', userSelect: 'none' }, viewBtn: view === 'carousel' ? 'Ver lista' : 'Ver ruleta',
+      toggleView: () => this.toggleView(),
+      filtRows: view === 'list' && !s.morph ? '1fr' : '0fr',
+      filtChips: this.filtros.map(x => { const on = x.id === filt.id; return { label: x.label, bg: on ? '#1C1D1B' : 'transparent', fg: on ? '#F4F1EA' : '#1C1D1B', bd: on ? '#1C1D1B' : 'rgba(28,29,27,.2)', go: () => this.setState({ filtro: x.id }) }; }),
+      hint: usedC ? f.name + ' lista. ' + nextLabel : pendC ? f.name + ' reservada en ' + pendC.name + '. Escanea al llegar.' : girosLibres <= 0 && pendAll.length ? 'Tus giros ya están reservados en la cartera.' : giros === 0 ? 'Estás en la ' + f.name.toLowerCase() + ', pero sin giros. Carga giros para elegir.' : f.name + ' · ' + f.label + '. Elige dónde usar este giro.',
+      dockTransform: (s.morph || view === 'list') ? 'translateY(110%)' : 'translateY(0)', dockOp: (s.morph || view === 'list') ? 0 : 1, dockPE: (s.morph || view === 'list') ? 'none' : 'auto',
+      activating, activatingName: activating ? activating.name + ' · ' + activating.benefit : '',
+      rowW: (this._W || 402) - 32, carRef: this.carRef, dockCard: cards[idx] || cells[idx], dockCopyOn: !!dc, dockCardStyle, dockBackOn: !!(dc && s.flipped), dockFaceOp: dc && s.flipped ? 0 : 1,
+      askRedeem: !!s.askRedeem, scanning: !!s.scanning,
+      simulateScan: () => { if (s.screen === 'home') { if (!s.wCard || !s.wSel || s.wScan) return; const w = walletSheet.items.find(x => x.id === s.wSel); if (!w) return; const c = this.commerces.find(x => x.id === w.id); this.setState({ wScan: w.id }); setTimeout(() => { this.setState({ wScan: null, wSel: null }); this.useGiro(c, w.franja.id); }, 1200); return; }
+        if (!canScan) return; const c = this.commerces.find(x => x.id === scanTarget.id), fr = scanTarget.franja.id; const go = () => this.useGiro(c, fr); const ci = this.sorted().indexOf(c);
+        if (ci !== idx || fr !== franja) { this.setState({ franja: fr, flipped: false, sheet: null, dx: 0, dy: 0, mode: null }, () => this.setState({ idx: Math.max(0, this.sorted().indexOf(c)) })); setTimeout(go, 750); }
+        else if (s.flipped) { this.setState({ flipped: false, sheet: null }); setTimeout(go, 650); } else { this.setState({ sheet: null }); go(); } },
+      walletAnim: s.walletBounce ? 'giroWallet .7s cubic-bezier(.3,1.4,.4,1) both' : pendAll.length >= this.franjas.length ? 'giroWalletIdle 1.6s ease-in-out infinite' : 'none', isList: view === 'list', listWallet: view === 'list' && s.screen === 'ruleta' && !s.morph,
+      walletN: pendAll.length, walletOn: pendAll.length > 0, walletBadge: String(pendAll.length + Object.keys(used || {}).length),
+      openWallet: () => open(walletSheet), walletSheet,
+      walletEmpty: pendAll.length === 0, wTrans: s.wDrag ? 'none' : 'transform .55s cubic-bezier(.4,0,.2,1), opacity .4s ease',
+      wOverlay: !!s.wOpen && wMode !== 'reverso' && pendAll.length > 0, modeMazoOn: wMode === 'mazo' && pendAll.length > 0, modeBolsilloOn: wMode === 'bolsillo' && pendAll.length > 0, modeReversoOn: wMode === 'reverso' && (pendAll.length > 0 || Object.keys(used || {}).length > 0),
+      mazoTop: wMode === 'mazo' && pendAll.length > 0 ? (pendAll.length * 30 + 8) + 'px' : '0px',
+      walletHomeLabelUp: (pendAll.length === 0 ? 'sin códigos listos' : pendAll.length + (pendAll.length === 1 ? ' código listo' : ' códigos listos')).toUpperCase(),
+      homeCardHint: wMode === 'mazo' && pendAll.length ? 'Toca la tarjeta para abrir la ruleta · toca un cupón para sacarlo' : wMode === 'bolsillo' && pendAll.length ? 'Toca la tarjeta para abrir la ruleta · toca un código para ver su cupón' : 'Toca la tarjeta para abrir la ruleta del día',
+      wCardFlip: e => { e.stopPropagation(); clearTimeout(this._wfl); this.setState({ wCard: true, wFlip: false, hTilt: null, wSel: null, wFlipping: true }); this._wfl = setTimeout(() => this.setState({ wFlipping: false }), 750); }, wCardBack: e => { e.stopPropagation(); clearTimeout(this._wfl); this.setState({ wCard: false, wFlip: false, wSel: null, hTilt: null, wFlipping: true }); this._wfl = setTimeout(() => this.setState({ wFlipping: false }), 750); },
+      wClose: e => { e.stopPropagation(); this.setState({ wOpen: false, wFlip: false, wDx: 0 }); },
+      walletHint: s.wFlip ? 'Toca la ficha para volver al frente' : (pendAll.length > 1 ? 'Desliza para cambiar · toca para ver el QR' : 'Toca la ficha para ver el QR'),
+      wDown: e => { if (e.target.closest('image-slot')) return; e.preventDefault(); const x0 = e.clientX, y0 = e.clientY; let moved = false; const mv = ev => { const dx = ev.clientX - x0; if (!moved && Math.abs(dx) < 8) return; if (!moved && Math.abs(ev.clientY - y0) > Math.abs(dx)) { up(); return; } moved = true; this._wMoved = true; this.setState({ wDrag: true, wDx: dx }); }; const up = () => { window.removeEventListener('pointermove', mv); window.removeEventListener('pointerup', up); const dx = this.state.wDx || 0, n = pendAll.length, cur = Math.min(s.wIdx || 0, n - 1); let ni = cur; if (Math.abs(dx) > 50) ni = Math.min(n - 1, Math.max(0, cur + (dx < 0 ? 1 : -1))); this.setState({ wDrag: false, wDx: 0, wIdx: ni, wFlip: ni === cur ? this.state.wFlip : false }); setTimeout(() => { this._wMoved = false; }, 0); }; window.addEventListener('pointermove', mv); window.addEventListener('pointerup', up); },
+      walletHome: walletSheet.items.map((w, i, arr) => { const c = this.commerces.find(x => x.id === w.id), n = arr.length, cur = Math.min(s.wIdx || 0, n - 1), pos = cur - (s.wDx || 0) / 270, off = i - pos, a = Math.abs(off), isC = i === cur;
+        let tf = 'translateX(' + (off * 270) + 'px) scale(' + Math.max(.86, 1 - a * .08) + ')' + (isC && s.wFlip && !s.wDrag ? ' rotateY(180deg)' : ''), z = 10 - Math.round(a), op = a > 1.8 ? 0 : 1 - Math.min(a, 1) * .35;
+        const peekT = (-(n - i) * 30 - 2) + 'px', peekTH = (-(n - i) * 30 - 12) + 'px', peekL = (6 + (n - 1 - i) * 6) + 'px';
+        return { ...w, fnameUp: w.fname.toUpperCase(), rubro: c.rubro, tag: c.tag, cond: c.cond, qr: this.qrCells(w.code), tf, z, op,
+          dotW: isC ? '18px' : '6px', dotBg: isC ? '#E0A030' : 'rgba(244,241,234,.3)', goDot: e => { e.stopPropagation(); this.setState({ wIdx: i, wFlip: false }); },
+          rowSel: s.wSel === w.id, rowIdle: s.wSel !== w.id, rowFlex: s.wSel === w.id ? '1 1 100%' : s.wSel ? '0 0 0px' : '0 0 30px', rowH: s.wSel === w.id ? '100%' : s.wSel ? '0px' : '30px', rowOp: s.wSel && s.wSel !== w.id ? 0 : 1, rowMt: s.wSel && s.wSel !== w.id ? '-6px' : '0px',
+          rowBg: s.wSel === w.id ? 'rgba(28,29,27,.55)' : 'rgba(244,241,234,.08)', rowRing: s.wSel === w.id ? 'rgba(224,160,48,.7)' : 'rgba(244,241,234,.18)', rowBodyOp: s.wSel === w.id ? 1 : 0,
+          sel: e => { e.stopPropagation(); if (!s.wSel) this.setState({ wSel: w.id }); }, unsel: e => { e.stopPropagation(); this.setState({ wSel: null }); },
+          peekT, peekTH, peekL, peek: e => { e.stopPropagation(); this.setState({ wOpen: true, wIdx: i, wFlip: false, hTilt: null }); },
+          tap: e => { e.stopPropagation(); if (this._wMoved) return; if (isC) this.setState({ wFlip: !s.wFlip }); else this.setState({ wIdx: i, wFlip: false }); } }; }),
+      walletBack: (() => { const rows = []; this.franjas.forEach((fr, fi) => { const p = (s.pending || {})[fr.id]; const u = (used || {})[fr.id];
+          if (p && !u) { const w = walletSheet.items.find(x => x.franja.id === fr.id); const c = this.commerces.find(x => x.id === p.id); const sel = s.wSel === w.id, other = s.wSel && !sel, sc = s.wScan === w.id;
+            rows.push({ ...w, key: fr.id, fnameUp: fr.name.toUpperCase(), fname: fr.name.toLowerCase(), benefit: c.benefit, qr: this.qrCells(p.code), strike: 0, fnameFg: 'rgba(244,241,234,.6)', codeOp: 1, rowSel: sel, rowIdle: !sel, scanning: sc,
+              rowFlex: sel ? '1 1 100%' : other ? '0 0 0px' : '0 0 30px', rowH: sel ? '100%' : other ? '0px' : '30px', rowOp: other ? 0 : 1, rowMt: other ? '-6px' : '0px', rowBg: sel ? 'rgba(28,29,27,.78)' : 'rgba(28,29,27,.62)', rowRing: sel ? 'rgba(224,160,48,.7)' : 'rgba(244,241,234,.22)', rowBodyOp: sel ? 1 : 0, rowBodyPE: sel ? 'auto' : 'none',
+              scanBg: sc ? 'rgba(224,160,48,.25)' : '#E0A030', scanFg: sc ? '#F4F1EA' : '#1C1D1B', scanLabel: sc ? 'Escaneando…' : 'Simular escaneo',
+              sel: e => { e.stopPropagation(); if (!s.wSel) this.setState({ wSel: w.id }); }, unsel: e => { e.stopPropagation(); this.setState({ wSel: null }); },
+              zoom: e => { e.stopPropagation(); this.setState({ qrZoom: { code: p.code, qr: this.qrCells(p.code), name: c.name, benefit: c.benefit, fnameUp: fr.name.toUpperCase() } }); },
+              scan: e => { e.stopPropagation(); if (this.state.wScan) return; this.setState({ wScan: w.id }); setTimeout(() => { this.useGiro(c, fr.id); setTimeout(() => this.setState({ wScan: null, wSel: null }), 400); }, 1400); } }); }
+          else if (u) { const c = this.commerces.find(x => x.id === u); const L = (s.log || []).find(l => l.id === u && l.franja === fr.id); const other = !!s.wSel && s.wSel !== u;
+            rows.push({ id: 'used-' + fr.id, key: fr.id, name: c.name, initial: this.initial(c), monoBg: c.tint, code: L ? L.code : '', fnameUp: 'CANJEADO · ' + fr.name.toUpperCase(), fname: fr.name.toLowerCase(), benefit: c.benefit, qr: [], strike: 1, fnameFg: '#E0A030', codeOp: .5, rowSel: false, rowIdle: true, scanning: false,
+              rowFlex: other ? '0 0 0px' : '0 0 30px', rowH: other ? '0px' : '30px', rowOp: other ? 0 : .75, rowMt: other ? '-6px' : '0px', rowBg: 'rgba(28,29,27,.5)', rowRing: 'rgba(244,241,234,.12)', rowBodyOp: 0, rowBodyPE: 'none', scanBg: 'none', scanFg: 'none', scanLabel: '', sel: e => e.stopPropagation(), unsel: e => e.stopPropagation(), scan: e => e.stopPropagation() }); } });
+        return rows; })(),
+      qrZoomOn: !!s.qrZoom, qrZoom: s.qrZoom || {}, qrZoomClose: () => this.setState({ qrZoom: null }),
+      pendRowH: s.wSel ? '0px' : '30px', pendRowOp: s.wSel ? 0 : 1, pendRowMt: s.wSel ? '-6px' : '0px',
+      walletPend: (giros - pendAll.length > 0) ? this.franjas.filter(f => !(s.pending || {})[f.id] && !(s.used || {})[f.id]).map(f => ({ id: f.id, fname: f.name.toLowerCase(), go: e => { e.stopPropagation(); this._frozen = null; this._follow = null; this.setState({ wCard: false, wSel: null, screen: 'ruleta', view: 'carousel', franja: f.id, idx: 0, dx: 0, dy: 0, mode: null, dockCopy: null, sheet: null }); } })) : [],
+      walletShort: pendAll.length + (pendAll.length === 1 ? ' listo' : ' listos'),
+      walletHomeLabel: pendAll.length === 0 ? 'vacía' : pendAll.length + (pendAll.length === 1 ? ' código listo' : ' códigos listos'),
+      scanOff: !scanOn, scanBg: scanOn ? '#1C1D1B' : 'rgba(28,29,27,.06)', scanFg: scanOn ? '#E0A030' : 'rgba(28,29,27,.35)', scanCursor: scanOn ? 'pointer' : 'default', askTitle: '¿Canjear este beneficio?', askNote: centerCell ? centerCell.benefit + ' en ' + centerCell.name + '. Gastas 1 giro de la ' + f.name.toLowerCase() + '.' : '', confirmDock: () => this.confirmDock(), cancelDock: () => this.cancelDock(),
+      dockClipStyle: { position: 'absolute', left: 0, right: 0, top: 0, height: H, overflow: 'hidden', zIndex: 115, pointerEvents: 'none' },
+      groundStyle: { position: 'absolute', left: '50%', top: 'calc(50% - ' + (DH / 2 - CH / 2 - 10) + 'px)', transform: 'translateX(-50%)', width: 190, height: 26, borderRadius: '50%', background: 'radial-gradient(closest-side, rgba(28,29,27,.28), rgba(28,29,27,0))', opacity: (view === 'list' || s.morph) ? 0 : pull ? Math.max(0, 1 - s.dy / 160) : 1, transition: s.dragging ? 'none' : 'opacity .4s' },
+      ghostStyle: { position: 'absolute', left: '50%', top: 'calc(50% - ' + (DH / 2) + 'px)', width: CW, height: CH, transform: 'translate(-50%,-50%)', borderRadius: 22, border: '1.5px dashed rgba(28,29,27,.35)', background: 'rgba(28,29,27,.03)', opacity: pull ? Math.min(s.dy / 70, 1) : 0, transition: 'opacity .25s ease', zIndex: 5, pointerEvents: 'none' },
+      haloStyle: { position: 'absolute', left: '50%', top: 'calc(50% - ' + (DH / 2) + 'px)', width: CW + 80, height: CH + 70, transform: 'translate(-50%,-50%) translate(' + (pull ? s.dx : 0) + 'px,' + (pull ? s.dy : 0) + 'px) scale(' + ((s.pressed || pull) ? 1.04 : .88) + ')', background: 'radial-gradient(closest-side, rgba(224,160,48,.55), rgba(224,160,48,.16) 55%, rgba(224,160,48,0) 74%)', filter: 'blur(13px)', opacity: s.docking ? 0 : (s.pressed || pull) ? Math.max(.35, .95 - glow * .5) : 0, transition: (s.dragging && s.mode) ? 'opacity .3s ease' : 'opacity .35s ease, transform .5s cubic-bezier(.22,1,.36,1)', zIndex: 20, pointerEvents: 'none' },
+      chevWrapStyle: { position: 'absolute', left: 0, right: 0, bottom: DH + 10, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, opacity: canDrag && centerCell && !centerCell.stamp && view === 'carousel' && !s.morph ? 1 - glow : 0, transition: 'opacity .2s', pointerEvents: 'none' },
+      mouthStyle: { position: 'absolute', left: '50%', bottom: DH - 1, width: CW * 0.96 - 6, height: 30, transform: 'translateX(-50%)', zIndex: 112, background: 'transparent', overflow: 'visible', pointerEvents: 'none', opacity: (s.morph || view === 'list') ? 0 : 1, transition: 'box-shadow .25s ease, opacity .3s ease' },
+      shoulderL: { position: 'absolute', left: 0, bottom: 0, top: -30, width: 'calc(50% - ' + (CW * 0.48 - 3) + 'px)', background: 'linear-gradient(180deg,#1C1D1B,#1C1D1B 40px,transparent 80px)', borderRadius: '30px 0 0 0', clipPath: 'polygon(0 0, calc(100% - 16px) 0, 100% 30px, 100% 100%, 0 100%)' },
+      shoulderR: { position: 'absolute', right: 0, bottom: 0, top: -30, width: 'calc(50% - ' + (CW * 0.48 - 3) + 'px)', background: 'linear-gradient(180deg,#1C1D1B,#1C1D1B 40px,transparent 80px)', borderRadius: '0 30px 0 0', clipPath: 'polygon(16px 0, 100% 0, 100% 100%, 0 100%, 0 30px)' },
+      mouthGlow: { position: 'absolute', left: '4%', right: '4%', bottom: -2, height: '90%', background: 'radial-gradient(ellipse at 50% 100%, rgba(255,205,96,.9), rgba(240,170,50,.55) 30%, rgba(224,160,48,.18) 58%, rgba(224,160,48,0) 80%)', filter: 'blur(4px)', opacity: 0.45 + 0.55 * glow, transition: 'opacity .3s ease', animation: s.scanning ? 'giroPulse 1.1s ease-in-out infinite' : 'none' },
+      lipStyle: { position: 'absolute', left: '50%', top: -1, width: CW * 0.96 - 6, height: 2, transform: 'translateX(-50%)', background: 'rgba(224,160,48,' + (0.35 + 0.65 * glow) + ')', boxShadow: '0 -2px 10px rgba(224,160,48,' + (0.3 + 0.6 * glow) + ')', transition: 'background .25s ease' },
+      dockLabel: s.reading ? 'Grabando tu código…' : s.docking ? 'Lector listo' : (centerCell && this.pendFor(centerCell.id)) ? (this.pendFor(centerCell.id).franja.id === franja ? 'Código listo · escanea al llegar' : 'Reservada para la ' + this.pendFor(centerCell.id).franja.name.toLowerCase() + ' · desliza a otra ficha') : pendC ? pendC.name + ' listo · escanea al llegar' : usedC ? 'Giro de la ' + f.name.toLowerCase() + ' ya usado' : girosLibres <= 0 && pendAll.length ? 'Sin giros libres · ' + pendAll.length + ' en la cartera' : giros === 0 ? 'Sin giros · toca la píldora para cargar' : centerCell && centerCell.stamp ? centerCell.stamp + ' · desliza a otra ficha' : glow >= 1 ? 'Suelta para usar tu giro' : 'Arrastra la ficha al lector',
+      dockSub: 'LECTOR · GIRO DE LA ' + f.name.toUpperCase(),
+      sheet, sheetBtnDisplay: sheet && sheet.btn ? 'block' : 'none', closeSheet: close, stop: e => e.stopPropagation(),
+      openBuy: () => open(this.buySheet()),
+      openCode: () => usedC && open({ isCode: true, kicker: 'MUESTRA ESTO EN EL MESÓN', code: this.codeFor(usedC, franja), benefit: usedC.benefit, name: usedC.name + ' · ' + usedC.cond.toLowerCase(), note: 'Vale hasta las ' + this.fmt(f.to === 24 ? 0 : f.to) + '. El comercio lo ingresa en su app.', btn: null }),
+      openCard: () => open({ isCard: true, kicker: 'PERTENENCIA', note: '', btn: null }),
+      simOpen: !!s.simOpen, simClosed: !s.simOpen, toggleSim: () => this.setState({ simOpen: !this.state.simOpen }),
+      isLogin: s.screen === 'login', pin: s.pin, pinEmpty: s.pin.length === 0, pinDots: Array.from({ length: s.pin.length }, () => ({ bg: s.pinErr ? '#D9534F' : '#F4F1EA' })),
+      pinShake: s.pinErr ? 'giroShake .45s ease both' : 'none', pinMsg: s.pinErr ? 'INCORRECTA' : s.pinBusy ? 'VERIFICANDO' : '', pinMsgFg: s.pinErr ? '#D9534F' : '#E0A030', pinRing: s.pinErr ? 'rgba(217,83,79,.8)' : s.pin.length === 4 ? 'rgba(224,160,48,.7)' : 'rgba(244,241,234,.3)',
+      pinChange: e => { if (s.pinErr || s.pinBusy) return; this.setState({ pin: e.target.value.replace(/\D/g, '').slice(0, 4) }); },
+      pinKeys: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '', '0', '⌫'].map((k, i) => ({ label: k, cursor: k === '' ? 'default' : 'pointer', go: () => this.pinPress(k) })),
+      pinEnter: e => { if (e.key === 'Enter') this.pinSubmit(); }, pinKeyDown: e => { if (e.target.tagName === 'INPUT') return; if (/^[0-9]$/.test(e.key)) this.pinPress(e.key); else if (e.key === 'Backspace') this.pinPress('⌫'); else if (e.key === 'Enter') this.pinSubmit(); }, pinSubmit: () => this.pinSubmit(), pinBio: () => { if (s.pinBusy) return; this.setState({ pinBusy: true }); setTimeout(() => this.setState({ screen: 'home', pin: '', pinBusy: false }), 650); },
+      isHome: s.screen === 'home', isRuleta: s.screen === 'ruleta', isHistorial: s.screen === 'historial', 
+      goHome: () => this.setState({ screen: 'home', sheet: null }), goRuleta: () => { if (s.wCard) return; this._frozen = null; this._follow = null; this.setState({ screen: 'ruleta', idx: 0 }); }, goHistorial: () => this.setState({ histOpen: !s.histOpen }),
+      histBtn: s.histOpen ? 'Ocultar historial' : 'Ver historial', histRot: s.histOpen ? '-135deg' : '45deg', histRows: s.histOpen ? '1fr' : '0fr',
+      histCount: hist.length + (hist.length === 1 ? ' canje' : ' canjes'), hist, hist5: hist.slice(0, 5), histMore: hist.length > 5,
+      histDates: ['Todos', ...hist.map(x => x.when).filter((w, i, a) => a.indexOf(w) === i)].map(w => { const on = (s.histFilter || 'Todos') === w; const n = w === 'Todos' ? hist.length : hist.filter(x => x.when === w).length; return { label: w, n: String(n), bg: on ? '#1C1D1B' : 'transparent', fg: on ? '#F4F1EA' : '#1C1D1B', bd: on ? '#1C1D1B' : 'rgba(28,29,27,.25)', go: () => this.setState({ histFilter: w }) }; }),
+      histFiltered: hist.filter(x => !s.histFilter || s.histFilter === 'Todos' || x.when === s.histFilter),
+      histFiltSub: (!s.histFilter || s.histFilter === 'Todos') ? 'Todos tus canjes, del más reciente al más antiguo.' : 'Canjes de ' + s.histFilter.toLowerCase() + '.', goHistAll: () => this.setState({ screen: 'historial', sheet: null, histFilter: 'Todos' }),
+      histSub: hist.length ? 'Cada canje suma una visita a tu tarjeta.' : 'Aún no has canjeado giros.',
+      cardStep: visitasT + ' / ' + cardGoal + ' ESCANEOS', cardPct: cardPct,
+      capas: this.capaColors.map((col, i) => ({ y: 216 - 18 * (i + 1), fill: i < visitas ? col : (i === visitas ? 'rgba(224,160,48,.28)' : '#DCD8CD') })),
+      rutaDone: 'M' + this.ruta[0].join(' ') + ' ' + this.rutaSegs().slice(0, routeStep).join(' '),
+      rutaNext: visitasT < cardGoal ? 'M' + this.ruta[visitas].join(' ') + ' ' + this.rutaSegs()[visitas] : '',
+      rutaRest: 'M' + this.ruta[0].join(' ') + ' ' + this.rutaSegs().join(' '),
+      paradas: this.ruta.slice(1).map((p, i) => ({ x: p[0], y: p[1], r: i === routeStep ? 12 : 9, fill: i < routeStep ? '#E0A030' : (i === routeStep ? '#F4F1EA' : '#2B2E2B'), stroke: i === routeStep ? '#E0A030' : (i < routeStep ? '#2B2E2B' : '#F4F1EA') })),
+      pinOp: s.volcanMode === 'erupting' || s.volcanMode === 'boom' || s.celebra === 'show' || s.newCard === 'hidden' ? 0 : (visitasT >= cardGoal ? 1 : .85),
+      cumbre: visitasT >= cardGoal, notCumbre: visitasT < cardGoal,
+      celebra: s.celebra === 'show', closeCelebra: () => { clearTimeout(this._nt); clearTimeout(this._et); this.setState({ celebra: null, volcanMode: 'erupting', tier: 2, newCard: 'hidden' }); this._et = setTimeout(() => { this.setState({ volcanMode: null, newCard: 'drop', newTip: true }); this._nt = setTimeout(() => this.setState({ newTip: false, newCard: null }), 5000); }, 2000); },
+      spinAnim: (this.props.revealSpin ?? 'tour') === '360' ? 'giroSpin 1.6s cubic-bezier(.45,0,.2,1) 1.7s both' : 'none', sheenAnim: (this.props.revealSpin ?? 'tour') === '360' ? 'giroSheen 1.6s cubic-bezier(.45,0,.2,1) 1.7s both' : 'none',
+      homeTf: s.wCard ? 'rotateX(0) rotateY(180deg) scale(1)' : s.hTilt ? 'rotateX(' + s.hTilt.rx.toFixed(2) + 'deg) rotateY(' + s.hTilt.ry.toFixed(2) + 'deg) scale(1.015)' : 'rotateX(0) rotateY(0) scale(1)',
+      homeBgTf: s.hTilt ? 'translate(' + (-s.hTilt.ry * 0.5).toFixed(2) + 'px,' + (s.hTilt.rx * 0.5).toFixed(2) + 'px) scale(1.02)' : 'translate(0,0) scale(1.02)',
+      homeTr: (s.hTilt && !s.wFlipping) ? 'transform .08s linear, background-position .08s linear' : 'transform .7s cubic-bezier(.4,0,.2,1), background-position .7s cubic-bezier(.4,0,.2,1)',
+      homeTiltMove: e => { if (this.state.wCard || this.state.wFlipping) return; const r = e.currentTarget.getBoundingClientRect(); const px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height; this.setState({ hTilt: { rx: (0.5 - py) * 9, ry: (px - 0.5) * 11, sx: px * 100, sy: py * 100 } }); },
+      homeTiltEnd: () => this.setState({ hTilt: null }),
+      tiltMove: e => { cancelAnimationFrame(this._tourF); const r = e.currentTarget.getBoundingClientRect(); const px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height; this.setState({ tilt: { rx: (0.5 - py) * 24, ry: (px - 0.5) * 28, sx: px * 100, sy: py * 100 } }); }, tiltEnd: () => this.setState({ tilt: null }), stopProp: e => e.stopPropagation(),
+      tiltTf: s.tilt ? 'rotateX(' + s.tilt.rx.toFixed(2) + 'deg) rotateY(' + s.tilt.ry.toFixed(2) + 'deg) scale(' + (s.tilt.auto ? (1 + 0.03 * Math.min(1, Math.hypot(s.tilt.rx / 12, s.tilt.ry / 14))).toFixed(3) : '1.03') + ')' : 'rotateX(0) rotateY(0) scale(1)', tiltTr: s.tilt ? (s.tilt.auto ? 'none' : 'transform .06s linear') : 'transform .5s cubic-bezier(.22,1,.36,1)', sheenX: s.tilt ? s.tilt.sx + '%' : '70%', sheenY: s.tilt ? s.tilt.sy + '%' : '20%',
+      caminoTitle: tier === 1 ? 'Camino a tu tarjeta física' : 'Camino a tu Tarjeta Cumbre', cumbreLabel: 'CUMBRE · ' + cardGoal, miniBg: tier === 1 ? '#1C1D1B' : '#F4F1EA', miniFg: tier === 1 ? '#F4F1EA' : '#1C1D1B', newTip: !!s.newTip, tierLabel: tier === 1 ? 'Tarjeta física' : 'Tarjeta Cumbre', tier2: tier === 2, confeti: this.confetiEl(),
+      cardText: visitasT >= cardGoal ? 'Camino completo.' : (tier === 1 ? 'Cada canje avanza una parada. Faltan ' + (cardGoal - visitasT) + ' para la cumbre.' : 'Cada ' + (cardGoal / 10) + ' escaneos avanzan una parada. Faltan ' + (cardGoal - visitasT) + ' para la Tarjeta Cumbre.'),
+      cardTextFg: '#5A5C57', readyTip: visitasT >= cardGoal && s.celebra !== 'done' && !s.volcanMode,
+      volcanAnim: s.volcanMode === 'erupting' ? 'giroRumble .25s ease-in-out infinite' : s.volcanMode === 'boom' ? 'giroBoomSq 1.1s ease-out both' : s.volcanMode === 'pop' ? ((s.tapK || 0) % 2 ? 'giroSquashA' : 'giroSquashB') + ' 1s ease-out both' : 'none',
+      cardAnim: s.newCard === 'drop' ? 'giroDrop 1.1s cubic-bezier(.34,1.56,.64,1) both' : (!s.volcanMode && visitasT >= cardGoal && s.celebra !== 'done') ? 'giroShiver 1.6s ease-in-out infinite' : s.volcanMode === 'pop' ? ((s.tapK || 0) % 2 ? 'giroHopA' : 'giroHopB') + ' .9s ease-out .12s both' : 'none',
+      humoOp: 0,
+      readyIdle: !s.volcanMode && visitasT >= cardGoal && s.celebra !== 'done',
+      puffSmall: s.volcanMode === 'pop', puffBig: s.volcanMode === 'boom' || s.volcanMode === 'erupting', 
+      tapVolcan: () => { if (s.volcanMode) return; clearTimeout(this._vt); const k = (s.tapK || 0) + 1; if (visitasT >= cardGoal && s.celebra !== 'done') { const card = document.querySelector('[data-layer="tarjeta"]'), scr = card && card.closest('[data-screen-label]'), host = scr && scr.parentElement; if (card && host) { this._launch = { r: card.getBoundingClientRect(), host }; } this.setState({ tapK: k, volcanMode: 'boom', celebra: 'show' }); clearTimeout(this._tourT); if ((this.props.revealSpin ?? 'tour') === 'tour') this._tourT = setTimeout(() => this.tour(), 2000); this._vt = setTimeout(() => this.setState({ volcanMode: 'erupting' }), 1100); } else { this.setState({ tapK: k, volcanMode: 'pop' }); this._vt = setTimeout(() => this.setState({ volcanMode: null }), 1100); clearTimeout(this._tt); this.setState({ volcanTip: true }); this._tt = setTimeout(() => this.setState({ volcanTip: false }), 3200); } },
+      volcanTip: !!s.volcanTip && visitasT < cardGoal, volcanText: 'Aún no. Completa ' + (cardGoal - visitasT) + (cardGoal - visitasT === 1 ? ' escaneo más' : ' escaneos más') + ' para desbloquear tu tarjeta física.',
+      isManana: franja === 'manana', isTarde: franja === 'tarde', isNoche: franja === 'noche',
+      simSlots: this.franjas.map(fr => ({ name: fr.name, bg: fr.id === franja ? '#1C1D1B' : '#fff', fg: fr.id === franja ? '#F4F1EA' : '#1C1D1B', go: () => (this.state.docking || this.state.askRedeem || this.state.reading) ? null : this.setState({ franja: fr.id, sheet: null, idx: 0, dx: 0, dy: 0, mode: null, dockCopy: null, flipped: false }) })),
+      demoCumbre: () => { clearTimeout(this._vt); this.setState({ screen: 'home', tier: 1, visitas: 10, celebra: 'ready', volcanMode: null, newTip: false, histOpen: false }); },
+      reset: () => this.setState({ unlockAt: {}, pending: {}, tier: 1, newTip: false, newCard: null, celebra: null, volcanMode: null, franja: 'manana', giros: 3, used: {}, log: [], sheet: null, visitas: 7, idx: 0, dx: 0, dy: 0, mode: null, dockCopy: null, flipped: false, dockAnim: null, docking: false, activating: null }),
+    };
+  }
+  buySheet() {
+    return { isBuy: true, kicker: 'GIROS', note: 'Los giros no vencen y valen en todos los valles de la red.', btn: 'Cargar giros', btnBg: '#1C1D1B',
+      action: () => this.setState(s => ({ giros: s.giros + s.pack, sheet: null })) };
+  }
+  codeFor(c, franja) { let s = 0; for (const ch of c.id + (franja || '')) s = (s * 33 + ch.charCodeAt(0)) >>> 0; const f = this.franjas.find(x => x.id === franja); return 'G' + (1000 + s % 9000) + '-' + (f ? f.name[0] : 'T'); }
+}
+</script>
+</body>
+</html>
