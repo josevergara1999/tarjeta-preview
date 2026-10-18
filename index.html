@@ -810,7 +810,8 @@ class Component extends DCLogic {
     if (!this._conf) { const cols = ['#E0A030', '#F4F1EA', '#2F5D4A', '#8FA9A0', '#C9C5B8']; this._conf = Array.from({ length: 48 }, (_, i) => ({ l: Math.random() * 100, d: Math.random() * 1.2, t: 2.6 + Math.random() * 1.6, w: 6 + Math.random() * 6, h: 8 + Math.random() * 8, c: cols[i % cols.length], r: Math.random() * 360, rd: i % 2 ? 1 : -1, round: i % 3 === 0 })); }
     return React.createElement('div', { style: { position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden' } }, this._conf.map((p, i) => React.createElement('div', { key: i, style: { position: 'absolute', left: p.l + '%', top: '-20px', width: p.w + 'px', height: p.h + 'px', background: p.c, borderRadius: p.round ? '50%' : '2px', transform: 'rotate(' + p.r + 'deg)', animation: 'giroConfeti ' + p.t + 's cubic-bezier(.25,.6,.4,1) ' + (p.d + .7) + 's infinite', '--rd': p.rd } })));
   }
-  measure() { try { const r = this.carRef.current.getBoundingClientRect(); if (r.height) { this._H = r.height; this._W = r.width; } } catch (e) {} }
+  zf() { const e = document.querySelector('[data-screen-label="Ruleta"]'); return (e && parseFloat(e.style.zoom)) || 1; }
+  measure() { try { const r = this.carRef.current.getBoundingClientRect(), z = this.zf(); if (r.height) { this._H = r.height / z; this._W = r.width / z; } } catch (e) {} }
   toggleView() {
     clearTimeout(this.tm);
     const { view } = this.state;
@@ -836,7 +837,7 @@ class Component extends DCLogic {
   }
   dragMove(ev) {
     const d = this._drag; if (!d) return;
-    const dx = ev.clientX - d.x0, dy = ev.clientY - d.y0;
+    const zf = this.zf(), dx = (ev.clientX - d.x0) / zf, dy = (ev.clientY - d.y0) / zf;
     if (!d.mode) {
       if (Math.hypot(dx, dy) < 9) return;
       d.mode = (dy > Math.abs(dx) * 1.1 && d.i === this.state.idx && d.canPull) ? 'pull' : 'swipe';
@@ -849,7 +850,7 @@ class Component extends DCLogic {
     } else {
       if (!this.state.dockCopy) {
         let W = 402, H = 560;
-        try { const r = this.carRef.current.getBoundingClientRect(); W = r.width; H = r.height; } catch (e) {}
+        try { const r = this.carRef.current.getBoundingClientRect(), z = this.zf(); W = r.width / z; H = r.height / z; } catch (e) {}
         this._W = W; this._H = H;
         this.setState({ dockCopy: { x: W / 2 - this.CARD_W / 2, y: (H - this.DOCK_H) / 2 - this.CARD_H / 2 } });
       }
